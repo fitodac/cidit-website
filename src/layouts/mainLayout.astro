@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 interface Props {
   title?: string;
 }
@@ -13,16 +16,19 @@ const { title = "CIDIT" } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{title}</title>
+    <title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Place favicon.ico in the root directory -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/logo/favicon.png"
-    />
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="favicon.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
@@ -73,7 +79,17 @@ const { title = "CIDIT" } = Astro.props;
     </div>
     <!-- back to top end -->
 
-    <slot />
+    <Header />
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <slot />
+        </main>
+
+        <Footer />
+      </div>
+    </div>
 
     <!-- JS here -->
     <script is:inline src="assets/js/vendor/jquery.js"></script>

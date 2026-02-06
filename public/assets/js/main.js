@@ -156,8 +156,10 @@
 		let scroll = $(window).scrollTop();
 		if (scroll < 20) {
 			$("#header-sticky").removeClass("header-sticky");
+			$(".main-logo").attr("src", "/assets/img/logo-white.svg");
 		} else {
 			$("#header-sticky").addClass("header-sticky");
+			$(".main-logo").attr("src", "/assets/img/logo-black.svg");
 		}
 	});
 
@@ -270,7 +272,8 @@
 	gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 	if($('#smooth-wrapper').length && $('#smooth-content').length){
 		ScrollSmoother.create({
-			smooth: 1.35,
+			speed: 2,
+			smooth: 1.4,
 			effects: true,
 			smoothTouch: .1,
 			ignoreMobileResize: true

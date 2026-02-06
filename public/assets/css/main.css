@@ -10440,32 +10440,31 @@ body.tp-magic-cursor #magic-cursor {
   background-color: var(--tp-common-white);
 }
 .ma-hero-title {
-  font-size: 180px;
+  font-size: 90px;
   font-weight: 600;
-  line-height: 1;
-  margin-bottom: 33px;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   color: var(--tp-common-white);
+  text-wrap: balance;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ma-hero-title {
-    font-size: 150px;
+    font-size: 80px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .ma-hero-title {
-    font-size: 100px;
-    margin-bottom: 40px;
+    font-size: 45px;
   }
 }
 @media (max-width: 767px) {
   .ma-hero-title {
-    font-size: 75px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .ma-hero-title {
-    font-size: 92px;
+    font-size: 40px;
   }
 }
 .ma-hero-title i {
