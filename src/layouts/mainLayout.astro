@@ -6,7 +6,7 @@ import OffCanvas from "../components/OffCanvas";
 import Footer from "../components/Footer";
 
 interface Props {
-  title?: string;
+	title?: string;
 }
 
 const { title = "CIDIT" } = Astro.props;
@@ -14,98 +14,99 @@ const { title = "CIDIT" } = Astro.props;
 
 <!doctype html>
 <html class="no-js" lang="zxx">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon and Touch Icons -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.svg" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="favicon.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+		<!-- Favicon and Touch Icons -->
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon.svg" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon.svg" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon.svg" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="mask-icon" href="favicon.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
-    <link rel="stylesheet" href="assets/css/spacing.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- CSS here -->
-  </head>
+		<!-- CSS here -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+		<link rel="stylesheet" href="assets/css/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+		<link rel="stylesheet" href="assets/css/spacing.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- CSS here -->
+	</head>
 
-  <body class="tp-magic-cursor">
-    <!-- Begin magic cursor -->
-    <div id="magic-cursor" class="cursor-white-bg">
-      <div id="ball"></div>
-    </div>
-    <!-- End magic cursor -->
+	<body class="tp-magic-cursor">
+		<!-- Begin magic cursor -->
+		<div id="magic-cursor" class="cursor-white-bg">
+			<div id="ball"></div>
+		</div>
+		<!-- End magic cursor -->
 
-    <!-- preloader -->
-    <div id="preloader">
-      <div class="preloader">
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <!-- preloader end  -->
+		<!-- preloader -->
+		<div id="preloader">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- preloader end  -->
 
-    <div class="tp-blur-bottom"></div>
+		<div class="tp-blur-bottom"></div>
 
-    <!-- back to top start -->
-    <div class="back-to-top-wrapper">
-      <button id="back_to_top" type="button" class="back-to-top-btn">
-        <svg
-          width="12"
-          height="7"
-          viewBox="0 0 12 7"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 6L6 1L1 6"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-      </button>
-    </div>
-    <!-- back to top end -->
+		<!-- back to top start -->
+		<div class="back-to-top-wrapper">
+			<button id="back_to_top" type="button" class="back-to-top-btn">
+				<svg
+					width="12"
+					height="7"
+					viewBox="0 0 12 7"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M11 6L6 1L1 6"
+						stroke="currentColor"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</div>
+		<!-- back to top end -->
 
-    <Header />
-    <OffCanvas />
+		<Header />
+		<OffCanvas />
 
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <main>
-          <slot />
-        </main>
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<main>
+					<slot />
+				</main>
 
-        <Footer />
-      </div>
-    </div>
+				<Footer />
+			</div>
+		</div>
 
-    <!-- JS here -->
-    <script is:inline src="assets/js/vendor/jquery.js"></script>
-    <script is:inline src="assets/js/bootstrap-bundle.js"></script>
-    <script is:inline src="assets/js/swiper-bundle.js"></script>
-    <script is:inline src="assets/js/plugin.js"></script>
-    <script is:inline src="assets/js/three.js"></script>
-    <script is:inline src="assets/js/hover-effect.umd.js"></script>
-    <script is:inline src="assets/js/magnific-popup.js"></script>
-    <script is:inline src="assets/js/purecounter.js"></script>
-    <script is:inline src="assets/js/imagesloaded-pkgd.js"></script>
-    <script is:inline src="assets/js/ajax-form.js"></script>
-    <script is:inline src="assets/js/slider-active.js"></script>
-    <script is:inline src="assets/js/main.js"></script>
-    <!-- JS here -->
-  </body>
+		<!-- JS here -->
+		<script is:inline src="assets/js/vendor/jquery.js"></script>
+		<script is:inline src="assets/js/bootstrap-bundle.js"></script>
+		<script is:inline src="assets/js/swiper-bundle.js"></script>
+		<script is:inline src="assets/js/plugin.js"></script>
+		<script is:inline src="assets/js/three.js"></script>
+		<script is:inline src="assets/js/hover-effect.umd.js"></script>
+		<script is:inline src="assets/js/magnific-popup.js"></script>
+		<script is:inline src="assets/js/purecounter.js"></script>
+		<script is:inline src="assets/js/imagesloaded-pkgd.js"></script>
+		<script is:inline src="assets/js/ajax-form.js"></script>
+		<script is:inline src="assets/js/slider-active.js"></script>
+		<script is:inline src="assets/js/main.js"></script>
+		<script is:inline src="assets/js/tp-cursor.js"></script>
+		<!-- JS here -->
+	</body>
 </html>

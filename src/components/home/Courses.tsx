@@ -41,7 +41,7 @@ export default function Courses() {
 
 					<div className="col-lg-8">
 						<div className="tp-service-item-box tp_fade_anim" data-delay=".5">
-							<div className="row">
+							<div className="grid gap-8 lg:grid-cols-2 xl:gap-10">
 								<Card
 									{...{
 										month: "Febrero",
@@ -155,8 +155,8 @@ type CardProps = {
 
 const Card = ({ month, title, duration, professors }: CardProps) => {
 	return (
-		<div className="col-lg-6">
-			<div className="bg-white tp-service-item mb-30 shadow-2xl shadow-black/10">
+		<div className="bg-lime-500">
+			<div className="bg-white tp-service-item h-full shadow-2xl shadow-black/10">
 				<p>
 					<span className="text-xl font-semibold">{month}</span>
 				</p>

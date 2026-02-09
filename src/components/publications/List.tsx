@@ -127,7 +127,7 @@ export default function List() {
 								{e.list.map((item, idx) => (
 									<div className="row" key={idx}>
 										<div className="ca-award-item-wrap">
-											<div className="ca-award-item hover-reveal-item p-relative mb-5">
+											<div className="ca-award-item hover-reveal-item p-relative mb-5 bg-gray-100">
 												<div className="flex justify-between items-center gap-5">
 													<div className="flex-1 overflow-hidden">
 														<div className="ca-award-box-left z-index-3">

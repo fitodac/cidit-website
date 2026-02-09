@@ -1,36 +1,62 @@
 export default function About() {
-  return (
-    <div className="ma-about-ptb pt-120 pb-100">
-      <div className="container container-1510">
-        <div className="row">
-          <div className="col-xl-4">
-            <div className="ma-about-title-box tp_fade_anim" data-delay=".3">
-              <span className="tp-section-subtitle">// About Us</span>
-            </div>
-          </div>
-          <div className="col-xl-8">
-            <div className="ma-about-title-box">
-              <h4
-                className="tp-section-title fs-52 tl-unbounded fw-500 text-capitalize mb-30 tp-text-revel tp_fade_anim"
-                data-delay=".4"
-              >
-                world is constantly <br />
-                evolving, we are at the <br />
-                forefront of shaping.
-              </h4>
-              <div className="tp_fade_anim" data-delay=".5">
-                <p>
-                  Our dedication to quality over quantity has earned us the
-                  trust of <br />
-                  clients value precision, authenticity, and excellence. We believe
-                  that a single <br />
-                  masterpiece can speak louder than a hundred.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="tp-about-me-ab-ptb p-relative pt-220 pb-100">
+			<div className="tp-about-me-ab-shape" data-speed=".9">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="123"
+					height="111"
+					viewBox="0 0 123 111"
+					fill="none"
+				>
+					<path
+						opacity="0.6"
+						d="M5.26102 14.872L4.61827 14.106L5.26102 14.872ZM41.5848 23.6997L42.5553 23.4587L41.5848 23.6997ZM65.3831 51.4438L65.4233 52.443L65.4602 52.4415L65.4968 52.4373L65.3831 51.4438ZM123 104.41L112.643 99.3044L113.4 110.827L123 104.41ZM1.43642 1.99775C2.93896 2.0986 4.62019 2.37571 6.10537 2.87415C7.61323 3.3802 8.79453 4.07277 9.44769 4.92064C10.0414 5.69136 10.2806 6.69091 9.69972 8.13403C9.08938 9.65028 7.57587 11.6245 4.61827 14.106L5.90378 15.6381C8.95837 13.0752 10.7641 10.8458 11.555 8.88087C12.3754 6.84284 12.098 5.08374 11.0321 3.7001C10.0256 2.39359 8.40434 1.53607 6.74171 0.978077C5.05639 0.412468 3.1992 0.11157 1.57037 0.00223976L1.43642 1.99775ZM4.61827 14.106C2.6073 15.7932 1.58273 17.6209 1.66138 19.5338C1.73871 21.4148 2.87363 23.0695 4.46826 24.4546C7.65162 27.2198 13.2102 29.3931 18.9801 30.6664C24.7683 31.9437 30.9853 32.3627 35.574 31.4592C37.8582 31.0095 39.8706 30.2069 41.192 28.8911C42.5781 27.5108 43.103 25.6644 42.5553 23.4587L40.6142 23.9407C41.006 25.5183 40.6306 26.6276 39.7807 27.4739C38.8661 28.3847 37.3068 29.0797 35.1876 29.4969C30.9694 30.3275 25.0523 29.9583 19.4111 28.7134C13.7515 27.4645 8.58518 25.3816 5.77981 22.9447C4.38007 21.7289 3.70468 20.5461 3.65969 19.4517C3.61601 18.3892 4.15712 17.1036 5.90378 15.6381L4.61827 14.106ZM42.5553 23.4587C41.6437 19.7876 39.1526 17.5973 35.8894 16.6005C32.6839 15.6212 28.7373 15.7846 24.7187 16.6864C16.693 18.4873 7.91219 23.3439 3.29419 28.9789C0.983534 31.7984 -0.400224 34.9602 0.102461 38.1133C0.610426 41.2997 2.98769 44.1444 7.44942 46.4327C11.908 48.7193 18.5838 50.5289 28.0169 51.616C37.4628 52.7045 49.734 53.0748 65.4233 52.443L65.3429 50.4446C49.7187 51.0738 37.5571 50.7021 28.2458 49.6291C18.9216 48.5546 12.5155 46.7832 8.36211 44.6531C4.21187 42.5246 2.4471 40.1168 2.07752 37.7985C1.70265 35.4471 2.70582 32.8521 4.84109 30.2466C9.11496 25.0315 17.462 20.3645 25.1566 18.6378C28.9982 17.7758 32.5598 17.6745 35.3051 18.5132C37.9929 19.3343 39.8951 21.0447 40.6142 23.9407L42.5553 23.4587ZM65.4968 52.4373C70.041 51.9174 75.4401 51.6737 80.6953 52.0044C85.9638 52.3359 91.0173 53.2408 94.9123 54.9742C98.8031 56.7057 101.388 59.1879 102.073 62.6225C102.767 66.1073 101.575 70.8888 97.1252 77.3602L98.7732 78.4934C103.342 71.8494 104.884 66.5001 104.034 62.2317C103.174 57.9132 99.9343 55.02 95.7254 53.1469C91.5207 51.2757 86.1989 50.3467 80.8209 50.0083C75.4294 49.669 69.9106 49.9193 65.2694 50.4503L65.4968 52.4373ZM97.1252 77.3602C93.3511 82.8489 91.4564 87.4121 91.0711 91.1999C90.6806 95.0389 91.8478 98.0416 94.0706 100.289C96.2554 102.498 99.3917 103.911 102.855 104.779C106.331 105.65 110.223 105.994 114.017 106L114.02 104C110.331 103.994 106.611 103.659 103.341 102.839C100.06 102.017 97.3183 100.729 95.4926 98.8827C93.7049 97.0751 92.7285 94.6689 93.0608 91.4024C93.3983 88.0847 95.0927 83.8459 98.7732 78.4934L97.1252 77.3602Z"
+						fill="#717171"
+					/>
+				</svg>
+			</div>
+			<div
+				className="tp-about-me-ab-text tp_fade_anim"
+				data-delay=".5"
+				data-fade-from="top"
+				data-ease="bounce"
+			>
+				<h4 className="text-gray-100!">Cidit</h4>
+			</div>
+			<div className="container">
+				<div className="row">
+					<div className="col-lg-12">
+						<div className="tp-about-me-ab-heading mb-50">
+							<h4 className="tp-about-me-ab-title text-black tp-text-revel">
+								Innovación tecnológica <br />
+								que transforma Paraguay
+							</h4>
+						</div>
+					</div>
+					<div className="col-lg-4">
+						<div className="tp-about-me-ab-thumb">
+							<img
+								data-speed="1.1"
+								src="assets/img/inner-image/about-me/about-me-shape-1.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div className="col-lg-8">
+						<div className="tp-about-me-ab-wrap">
+							<p className="tp-text-perspective text-black">
+								CIDIT impulsa la innovación tecnológica en Paraguay desde 2014.
+								<br />
+								Unimos academia, empresas y Estado para convertir investigación
+								en soluciones reales. <br />
+								Transferimos conocimiento, fortalecemos talentos y aceleramos el
+								desarrollo del país.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
