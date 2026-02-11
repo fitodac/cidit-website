@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
-
-
 @theme {
-  --color-base: #345892;
-  --color-primary: #1DAABA;
-  --color-secondary: #78B5A2;
+	--color-base: #345892;
+	--color-primary: #1daaba;
+	--color-secondary: #78b5a2;
+}
+
+.mfp-container {
+	@apply flex justify-center;
+}
+
+.mfp-close {
+	font-size: 2.4rem;
+	@apply left-1/2 top-12 translate-x-110;
 }

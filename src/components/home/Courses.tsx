@@ -2,145 +2,128 @@ import parse from "html-react-parser";
 
 export default function Courses() {
 	return (
-		<div className="tp-service-area tp-item-anime-area-md tp-fixed-title-wrap position-relative tp-about-dgm-ptb pt-120 pb-130">
-			<span className="tp-service-inner-2-shape" data-speed="1.1">
-				<svg
-					width="109"
-					height="117"
-					viewBox="0 0 109 117"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M108 45.004C101.431 48.7694 86.3472 54.7917 72.3355 54.9021M72.3355 54.9021C63.2351 54.9739 54.5867 52.5518 49.0166 45.3978C41.9197 35.9121 35.3239 15.1685 63.2763 2.37334C73.8209 -2.45343 84.3714 5.43994 80.3657 26.102C79.1386 32.4314 77.1035 43.5113 72.3355 54.9021ZM72.3355 54.9021C68.1235 64.9649 61.7787 75.2705 51.9743 82.7581C41.4633 90.7852 19.4538 99.558 3.35013 98.7752M3.35013 98.7752C2.55152 98.7364 1.76744 98.6741 1 98.587M3.35013 98.7752C2.51408 98.6783 1.72434 98.6171 1 98.587M3.35013 98.7752C11.5166 99.7216 24.1022 104.069 23.3176 116M1 98.587C6.10855 98.6647 17.9069 93.9861 24.2319 74.6501M82.1839 64.3617C80.7331 69.1506 73.4038 84.7265 58.5056 91.7165"
-						stroke="#010103"
-						stroke-width="1.5"
-					/>
-				</svg>
-			</span>
-
-			<h2 className="tp-service-inner-2-bigtext tp-item-anime-md marque d-none d-lg-block">
-				Calendario de cursos 2026
-			</h2>
-
+		<div className="bnc-service-area bnc-service-ptb bg-primary py-30!">
 			<div className="container container-1510">
-				<div className="row">
-					<div className="col-lg-4">
-						<div className="tp-service-heading tp-service-inner-2-title tp-fixed-title mb-30">
-							<h3 className="tp-section-title mb-35 tp-split-title">
-								Lo que puedes aprender
-							</h3>
+				<div className="row align-items-end">
+					<div className="col-lg-8">
+						<div className="bnc-service-title-box pb-70">
 							<span
-								className="tp-section-subtitle tp_fade_anim"
-								data-delay=".5"
+								className="tp-section-subtitle fs-16 st-dot tp_fade_anim text-white! before:bg-white!"
+								data-delay=".3"
 							>
 								Calendario de cursos 2026
 							</span>
-						</div>
-					</div>
 
-					<div className="col-lg-8">
-						<div className="tp-service-item-box tp_fade_anim" data-delay=".5">
-							<div className="grid gap-8 lg:grid-cols-2 xl:gap-10">
-								<Card
-									{...{
-										month: "Febrero",
-										title:
-											"Gestión de Contratos de Obra Pública con Experiencia FIDIC",
-										duration: "12 horas",
-										professors: ["Ing. Mauricio Guglielmi"],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Marzo",
-										title: "Curso Costo 4W 2026",
-										duration: "24 horas",
-										professors: ["Ing. Carlos Aguade"],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Abril",
-										title:
-											"Proceso de Estabilización de Subrasantes, Sub-bases y Bases de Camino",
-										duration: "42 horas",
-										professors: [
-											"Dr. Ing. Gerardo Botasso",
-											"Dr. Ing. Hugo Bianchetto",
-										],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Mayo",
-										title: "Tecnología de Hormigón Aplicada",
-										duration: "105 horas",
-										professors: ["CDH Ing. Maximiliano Segerer y equipo"],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Junio",
-										title:
-											"Planificación y Administración de la Red Vial<br/>Concesiones – C.RE.MA - GMANS",
-										duration: "24 horas",
-										professors: [
-											"Dr. Ing. Gerardo Botasso",
-											"Dr. Ing. Hugo Bianchetto",
-										],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Agosto",
-										title: "Inspección, Evaluación y Gerenciamiento de Puentes",
-										duration: "24 horas",
-										professors: [
-											"Ing. Pedro Manuel Lozada",
-											"Arq. Gustavo Javier Bandel",
-										],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Septiembre",
-										title: "Control de Obras Viales",
-										duration: "18 horas",
-										professors: ["Dr. Ing. Gerardo Botasso"],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Octubre",
-										title: "Perfil 4W 2026",
-										duration: "24 horas",
-										professors: ["Ing. Carlos Aguade"],
-									}}
-								/>
-
-								<Card
-									{...{
-										month: "Noviembre",
-										title: "Mantenimiento de Hospitales",
-										duration: "10 horas",
-										professors: [
-											"Arq. Jorge Raúl Carrasquet",
-											"Arq. Jorge Manuel",
-										],
-									}}
-								/>
-							</div>
+							<h3 className="tp-section-title fs-72 tp-text-revel text-white!">
+								Lo que puedes aprender
+							</h3>
 						</div>
 					</div>
 				</div>
+
+				<section className="grid grid-cols-3 gap-10">
+					<Card
+						{...{
+							month: "Febrero",
+							title:
+								"Gestión de Contratos de Obra Pública con Experiencia FIDIC",
+							duration: "12 horas",
+							professors: ["Ing. Mauricio Guglielmi"],
+							link: "/cursos/gestion-de-contratos-de-obra-publica-con-experiencia-fidici",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Marzo",
+							title: "Curso Costo 4W 2026",
+							duration: "24 horas",
+							professors: ["Ing. Carlos Aguade"],
+							link: "/cursos/curso-costo-4w-2026",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Abril",
+							title:
+								"Proceso de Estabilización de Subrasantes, Sub-bases y Bases de Camino",
+							duration: "42 horas",
+							professors: [
+								"Dr. Ing. Gerardo Botasso",
+								"Dr. Ing. Hugo Bianchetto",
+							],
+							link: "/cursos/proceso-de-estabilizacion-de-subrasantes-y-bases-de-camino",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Mayo",
+							title: "Tecnología de Hormigón Aplicada",
+							duration: "105 horas",
+							professors: ["CDH Ing. Maximiliano Segerer y equipo"],
+							link: "/cursos/tecnologias-de-hormigon-aplicada",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Junio",
+							title:
+								"Planificación y Administración de la Red Vial<br/>Concesiones – C.RE.MA - GMANS",
+							duration: "24 horas",
+							professors: [
+								"Dr. Ing. Gerardo Botasso",
+								"Dr. Ing. Hugo Bianchetto",
+							],
+							link: "/cursos/planificacion-y-administracion-de-la-red-vial-concesiones-crema-gmans",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Agosto",
+							title: "Inspección, Evaluación y Gerenciamiento de Puentes",
+							duration: "24 horas",
+							professors: [
+								"Ing. Pedro Manuel Lozada",
+								"Arq. Gustavo Javier Bandel",
+							],
+							link: "/cursos/inspeccion-evaluacion-y-gerenciamiento-de-puentes",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Septiembre",
+							title: "Control de Obras Viales",
+							duration: "18 horas",
+							professors: ["Dr. Ing. Gerardo Botasso"],
+							link: "/cursos/control-de-obras-viales",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Octubre",
+							title: "Perfil 4W 2026",
+							duration: "24 horas",
+							professors: ["Ing. Carlos Aguade"],
+							link: "/cursos/perfil-4w-2026",
+						}}
+					/>
+
+					<Card
+						{...{
+							month: "Noviembre",
+							title: "Mantenimiento de Hospitales",
+							duration: "10 horas",
+							professors: ["Arq. Jorge Raúl Carrasquet", "Arq. Jorge Manuel"],
+							link: "/cursos/mantenimiento-de-hospitales",
+						}}
+					/>
+				</section>
 			</div>
 		</div>
 	);
@@ -151,68 +134,56 @@ type CardProps = {
 	title: string;
 	duration: string;
 	professors: string[];
+	link: string;
 };
 
-const Card = ({ month, title, duration, professors }: CardProps) => {
+const Card = ({ month, title, duration, professors, link }: CardProps) => {
 	return (
-		<div className="bg-lime-500">
-			<div className="bg-white tp-service-item h-full shadow-2xl shadow-black/10">
-				<p>
-					<span className="text-xl font-semibold">{month}</span>
-				</p>
-				<h4 className="tp-service-item-title">
-					<span className="tp-line-black">{parse(title)}</span>
-				</h4>
-
-				<div className="flex gap-4">
-					<div className="font-semibold w-15">Duración</div>
-					<div className="leading-relaxed">{duration}</div>
-				</div>
-
-				<div className="flex gap-4 mt-3!">
-					<div className="font-semibold w-15">Docente</div>
-					<div className="leading-relaxed space-y-2">
-						{professors.map((e, idx) => (
-							<div key={idx}>{e}</div>
-						))}
+		<div className="">
+			<div className="bnc-service-item w-full hover:shadow-2xl hover:shadow-black/30">
+				<div className="bnc-service-item-content">
+					<div className="bnc-service-item-wrap">
+						<h4 className="bnc-service-item-title">
+							<a className="tp-line-black" href={link}>
+								{parse(title)}
+							</a>
+						</h4>
+						<div className="bnc-service-item-text">
+							<p>
+								El objetivo del curso es formarte en el análisis, administración
+								y ejecución de contratos públicos bajo el modelo FIDIC,
+								incorporando herramientas prácticas aplicables al contexto local
+								y exigencias internacionales.
+							</p>
+						</div>
 					</div>
-				</div>
-
-				<div className="tp-service-item-btn mt-7!">
-					<a
-						className=" tp-btn-anim tp-doubble-effect"
-						href="service-details.html"
-					>
-						<div className="tp-btn-text">Quiero saber más</div>
-						<i>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="14"
-								height="12"
-								viewBox="0 0 14 12"
-								fill="none"
+					<div className="bnc-service-item-btn-box z-index-1 d-flex justify-content-between align-items-center">
+						<div className="bnc-service-item-btn">
+							<a
+								className="tp-btn-green bdr-5 fw-700 ff-bricolage bg-none-style tp-btn-anim"
+								href={link}
 							>
-								<path
-									d="M1.01301 10.9362L10.9225 1.65031L3.41074 2.83889"
-									stroke="currentColor"
-									stroke-width="1.5"
-								/>
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="14"
-								height="12"
-								viewBox="0 0 14 12"
-								fill="none"
-							>
-								<path
-									d="M1.01301 10.9362L10.9225 1.65031L3.41074 2.83889"
-									stroke="currentColor"
-									stroke-width="1.5"
-								/>
-							</svg>
-						</i>
-					</a>
+								<div className="tp-btn-text">Más info</div>
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="18"
+										height="10"
+										viewBox="0 0 18 10"
+										fill="none"
+									>
+										<path
+											d="M8.29231 0C10.773 2.00217 14.7748 3.89283 18 5.00061C14.7748 6.10761 10.7731 7.99749 8.29278 10L10.0219 5.5746L0.619514 5.57487C0.455171 5.57467 0.297634 5.51408 0.181516 5.40642C0.0948336 5.32613 0.0358078 5.22386 0.011901 5.11253C-0.0120059 5.0012 0.00027696 4.8858 0.0472025 4.78093C0.0941274 4.67606 0.173586 4.58643 0.275531 4.52336C0.377475 4.46029 0.497332 4.42662 0.619946 4.4266L10.022 4.42665L8.29231 0Z"
+											fill="currentColor"
+										/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div className="bnc-service-item-number">
+							<span>{month}</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

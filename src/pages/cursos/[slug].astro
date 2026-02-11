@@ -1,0 +1,65 @@
+---
+import MainLayout from "../../layouts/mainLayout.astro";
+import CourseContent from "../../components/courses/CourseContent";
+
+export function getStaticPaths() {
+	return [
+		{
+			params: {
+				slug: "gestion-de-contratos-de-obra-publica-con-experiencia-fidici",
+			},
+			props: {
+				title: "Gestión de Contratos de Obra Pública con Experiencia FIDIC",
+			},
+		},
+		{
+			params: { slug: "curso-costo-4w-2026" },
+			props: { title: "Curso Costo 4W 2026" },
+		},
+		{
+			params: {
+				slug: "proceso-de-estabilizacion-de-subrasantes-y-bases-de-camino",
+			},
+			props: {
+				title: "Proceso de estabilización de subrasantes y bases de camino",
+			},
+		},
+		{
+			params: { slug: "tecnologias-de-hormigon-aplicada" },
+			props: { title: "Tecnologías de hormigón aplicada" },
+		},
+		{
+			params: {
+				slug: "planificacion-y-administracion-de-la-red-vial-concesiones-crema-gmans",
+			},
+			props: {
+				title:
+					"Planificación y administración de la red vial concesiones crema gmans",
+			},
+		},
+		{
+			params: { slug: "inspeccion-evaluacion-y-gerenciamiento-de-puentes" },
+			props: { title: "Inspección evaluación y gerenciamiento de puentes" },
+		},
+		{
+			params: { slug: "control-de-obras-viales" },
+			props: { title: "Control de obras viales" },
+		},
+		{
+			params: { slug: "perfil-4w-2026" },
+			props: { title: "Perfil 4W 2026" },
+		},
+		{
+			params: { slug: "mantenimiento-de-hospitales" },
+			props: { title: "Mantenimiento de hospitales" },
+		},
+	];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<MainLayout title={title}>
+	<CourseContent title={title} />
+</MainLayout>

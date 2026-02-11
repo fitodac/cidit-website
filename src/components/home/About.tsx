@@ -38,7 +38,7 @@ export default function About() {
 						<div className="tp-about-me-ab-thumb">
 							<img
 								data-speed="1.1"
-								src="assets/img/inner-image/about-me/about-me-shape-1.png"
+								src="/assets/img/inner-image/about-me/about-me-shape-1.png"
 								alt=""
 							/>
 						</div>

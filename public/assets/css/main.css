@@ -2903,28 +2903,28 @@ input[type="color"] {
 }
 
 .tp-section-title {
-	font-size: 62px;
+	font-size: 4rem;
 	line-height: 1;
 	font-weight: 600;
-	letter-spacing: -0.04em;
+	letter-spacing: -0.05em;
 	color: var(--tp-common-black);
 	font-family: var(--tp-ff-bricolage);
 }
 @media only screen and (min-width: 1600px) and (max-width: 1700px),
 	only screen and (min-width: 1400px) and (max-width: 1599px) {
 	.tp-section-title {
-		font-size: 60px;
+		font-size: 5rem;
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.tp-section-title {
-		font-size: 55px;
+		font-size: 4.5rem;
 	}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 	only screen and (min-width: 768px) and (max-width: 991px) {
 	.tp-section-title {
-		font-size: 50px;
+		font-size: 4rem;
 	}
 }
 @media (max-width: 767px) {
@@ -6524,7 +6524,7 @@ body.tp-magic-cursor #magic-cursor {
 	border-radius: 100px;
 }
 .postbox-details-without-ptb {
-	padding-top: 215px;
+	padding-top: 6rem;
 	padding-bottom: 45px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -15550,7 +15550,6 @@ body.tp-magic-cursor #magic-cursor {
 	}
 }
 .bnc-service-item:hover {
-	background-color: transparent;
 	border-color: rgba(1, 1, 3, 0.1);
 }
 .bnc-service-item:hover .bnc-service-item-icon {
@@ -24473,7 +24472,7 @@ body.tp-magic-cursor #magic-cursor {
 /*  7.2 application Css
 /*----------------------------------------*/
 .tp-application-form-spacing {
-	padding-top: 218px;
+	padding-top: 6rem;
 	padding-bottom: 125px;
 }
 @media (max-width: 767px) {

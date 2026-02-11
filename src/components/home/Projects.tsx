@@ -1,4 +1,4 @@
-export default function Projects() {
+export default function Projects_old() {
 	return (
 		<div className="sa-work-ptb pt-150 mb-200">
 			<div className="container container-1510">
@@ -20,7 +20,7 @@ export default function Projects() {
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="project-details.html">
 							<img
-								src="assets/img/startup-agancy/work/work-thumb-1.jpg"
+								src="/assets/img/startup-agancy/work/work-thumb-1.jpg"
 								alt=""
 							/>
 						</a>
@@ -33,7 +33,7 @@ export default function Projects() {
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="project-details.html">
 							<img
-								src="assets/img/home/projects/guarania-banner-01.png"
+								src="/assets/img/home/projects/guarania-banner-01.png"
 								alt="GuaranIA"
 								className="w-full h-101 object-cover"
 							/>
@@ -47,7 +47,7 @@ export default function Projects() {
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="project-details.html">
 							<img
-								src="assets/img/startup-agancy/work/work-thumb-3.jpg"
+								src="/assets/img/startup-agancy/work/work-thumb-3.jpg"
 								alt=""
 							/>
 						</a>

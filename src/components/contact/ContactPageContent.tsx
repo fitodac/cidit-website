@@ -1,21 +1,11 @@
+import PageHeader from "../PageHeader";
+
 export const ContactPageContent = () => {
 	return (
 		<>
-			<div className="bg-base relative overflow-hidden lg:h-80">
-				<div className="bg-[url('assets/img/granite.avif')] bg-size-[70%] size-full mix-blend-overlay opacity-30" />
-				<img
-					src="assets/img/shape.png"
-					alt="shape-1"
-					className="w-170 h-auto -left-60 -top-40 absolute rotate-90"
-				/>
-				<img
-					src="assets/img/shape.png"
-					alt="shape-2"
-					className="w-200 h-auto -right-100 -top-70 absolute -rotate-45"
-				/>
-			</div>
+			<PageHeader />
 
-			<div className="tp-application-form-spacing-- -mt-40! relative z-30">
+			<div className="tp-application-form-spacing relative z-30">
 				<div className="container">
 					<div className="row justify-content-center">
 						<div className="col-lg-10">
