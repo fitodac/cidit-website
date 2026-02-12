@@ -6,13 +6,11 @@ export default function PageHeader() {
 				src="/assets/img/shape.png"
 				alt="shape-1"
 				className="w-170 h-auto -left-60 top-170 absolute rotate-90"
-				data-speed="-.3"
 			/>
 			<img
 				src="/assets/img/shape.png"
 				alt="shape-2"
 				className="w-200 h-auto -right-50 top-200 absolute -rotate-45"
-				data-speed="-.5"
 			/>
 		</div>
 	);

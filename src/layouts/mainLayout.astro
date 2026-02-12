@@ -7,9 +7,15 @@ import Footer from "../components/Footer";
 
 interface Props {
 	title?: string;
+	baseLogoColor?: "white" | "black";
+	baseMenuLight?: boolean;
 }
 
-const { title = "CIDIT" } = Astro.props;
+const {
+	title = "CIDIT",
+	baseMenuLight = true,
+	baseLogoColor = "white",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -80,7 +86,10 @@ const { title = "CIDIT" } = Astro.props;
 		</div>
 		<!-- back to top end -->
 
-		<Header />
+		<Header
+			{...{ baseMenuLight, baseLogoColor, pathname: Astro.url.pathname }}
+		/>
+
 		<OffCanvas />
 
 		<div id="smooth-wrapper">
@@ -99,6 +108,7 @@ const { title = "CIDIT" } = Astro.props;
 		<script is:inline src="/assets/js/swiper-bundle.js"></script>
 		<script is:inline src="/assets/js/plugin.js"></script>
 		<script is:inline src="/assets/js/three.js"></script>
+		<script is:inline src="/assets/js/webgl.js"></script>
 		<script is:inline src="/assets/js/hover-effect.umd.js"></script>
 		<script is:inline src="/assets/js/magnific-popup.js"></script>
 		<script is:inline src="/assets/js/purecounter.js"></script>

@@ -1,12 +1,9 @@
-import PageHeader from "../PageHeader";
 import InscriptionForm from "./InscriptionForm";
 
 export default function CourseContent({ title }: { title: string }) {
 	return (
 		<>
-			<PageHeader />
-
-			<div className="tp-blog-sidebar-area postbox-details-without-ptb">
+			<div className="tp-blog-sidebar-area postbox-details-without-ptb mt-21!">
 				<div className="container container-1510">
 					<div className="row">
 						<div className="col-xl-12">

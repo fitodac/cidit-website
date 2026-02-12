@@ -176,11 +176,13 @@
 	smoothSctoll();
 
 	// 12. Sticky Header Js //
+	const initialLogoSrc = $(".main-logo").attr("src");
+
 	$(window).on("scroll", function () {
 		let scroll = $(window).scrollTop();
 		if (scroll < 20) {
 			$("#header-sticky").removeClass("header-sticky");
-			$(".main-logo").attr("src", "/assets/img/logo-white.svg");
+			$(".main-logo").attr("src", initialLogoSrc);
 		} else {
 			$("#header-sticky").addClass("header-sticky");
 			$(".main-logo").attr("src", "/assets/img/logo-black.svg");

@@ -15,28 +15,48 @@ export default function Footer() {
 								<div className="tp-footer-widget-menu">
 									<ul>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Home
+											<a className="tp-hover-line-white border-up" href="/">
+												Inicio
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												About Us
+											<a
+												className="tp-hover-line-white border-up"
+												href="/cursos"
+											>
+												Cursos
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Services
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos"
+											>
+												Proyectos
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Case Studies
+											<a
+												className="tp-hover-line-white border-up"
+												href="/publicaciones"
+											>
+												Publicaciones
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Blog
+											<a
+												className="tp-hover-line-white border-up"
+												href="/nosotros"
+											>
+												Nosotros
+											</a>
+										</li>
+										<li>
+											<a
+												className="tp-hover-line-white border-up"
+												href="/contacto"
+											>
+												Contacto
 											</a>
 										</li>
 									</ul>
@@ -49,34 +69,57 @@ export default function Footer() {
 								data-delay=".5"
 							>
 								<h4 className="tp-footer-widget-title ff-unbounded fs-20 fw-500 mb-30">
-									Support
+									Proyectos
 								</h4>
 								<div className="tp-footer-widget-menu">
 									<ul>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Help Centre
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos/guarania"
+											>
+												GuaranIA
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Privacy policy
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos/proteia"
+											>
+												ProteIA
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												FAQ
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos/cofar"
+											>
+												Cofar
 											</a>
 										</li>
 										<li>
-											<a className="tp-hover-line-white border-up" href="#">
-												Community
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos/bootcamp"
+											>
+												Bootcamp
+											</a>
+										</li>
+										<li>
+											<a
+												className="tp-hover-line-white border-up"
+												href="/proyectos/covida"
+											>
+												Covida
 											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
+
+						<div className="col-lg-3 col-md-6"></div>
+
 						<div className="col-lg-3 col-md-6 tp_fade_anim" data-delay=".6">
 							<div className="tp-footer-widget mb-40 tp-footer-3-col-4">
 								<h4 className="tp-footer-widget-title ff-unbounded fs-20 fw-500 mb-40">
@@ -92,7 +135,7 @@ export default function Footer() {
 										</label>
 									</div>
 									<button className="tp-btn-green input-hover">
-										Submit Now
+										Suscribirme
 									</button>
 								</div>
 							</div>
@@ -111,9 +154,11 @@ export default function Footer() {
 									data-fade-from="bottom"
 									data-ease="bounce"
 								>
-									<a href="index-digital-agency.html">
-										<img src="/assets/img/others/footer-7-logo.png" alt="" />
-									</a>
+									<img
+										src="/assets/img/logo-white.svg"
+										alt="CIDIT logo"
+										className="w-2/3"
+									/>
 								</div>
 							</div>
 							<div className="col-md-4">

@@ -181,7 +181,7 @@ const Card = ({ month, title, duration, professors, link }: CardProps) => {
 							</a>
 						</div>
 						<div className="bnc-service-item-number">
-							<span>{month}</span>
+							<span className="text-[1.1rem]! font-bold!">{month}</span>
 						</div>
 					</div>
 				</div>

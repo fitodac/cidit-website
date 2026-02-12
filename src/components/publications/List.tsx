@@ -109,10 +109,7 @@ const listOfDocuments = [
 
 export default function List() {
 	return (
-		<div
-			className="tp-career-inner-award-ptb pt-150 pb-150"
-			// data-bg-color="#010103"
-		>
+		<div className="tp-career-inner-award-ptb pt-150 pb-150">
 			<div className="container">
 				<section className="space-y-22!">
 					{listOfDocuments.map((e, idx) => (

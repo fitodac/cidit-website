@@ -1,20 +1,22 @@
 import PageHeader from "../PageHeader";
+import PageHeaderAnimated from "../PageHeaderAnimated";
 
 export const ContactPageContent = () => {
 	return (
 		<>
-			<PageHeader />
+			{/* <PageHeader /> */}
+			<PageHeaderAnimated headline="Contacto" />
 
-			<div className="tp-application-form-spacing relative z-30">
+			<div className="-mt-21! relative z-30">
 				<div className="container">
 					<div className="row justify-content-center">
 						<div className="col-lg-10">
-							<div className="tp-application-form-wrap bg-white px-10! pt-50">
-								<div className="tp-application-form-title-wrap mb-50 text-center">
+							<div className="tp-application-form-wrap bg-white px-10!">
+								{/* <div className="tp-application-form-title-wrap mb-50 text-center">
 									<h2 className="tp-section-title fs-42 tp-split-title">
 										Contacto
 									</h2>
-								</div>
+								</div> */}
 
 								<div
 									className="tp-application-form tp_fade_anim"

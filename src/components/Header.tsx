@@ -1,4 +1,17 @@
-export default function Header() {
+import { useEffect } from "react";
+import { cn } from "../utils/cn";
+
+type Props = {
+	baseLogoColor: "white" | "black";
+	baseMenuLight: boolean;
+	pathname?: string;
+};
+
+export default function Header({
+	baseLogoColor,
+	baseMenuLight,
+	pathname,
+}: Props) {
 	return (
 		<div
 			id="header-sticky"
@@ -11,7 +24,7 @@ export default function Header() {
 							<a href="/">
 								<img
 									data-width="150"
-									src="/assets/img/logo-white.svg"
+									src={`/assets/img/logo-${baseLogoColor}.svg`}
 									alt=""
 									className="main-logo"
 								/>
@@ -21,26 +34,55 @@ export default function Header() {
 
 					<div className="hidden lg:flex">
 						<div className="tp-header-box text-center">
-							<div className="tp-header-menu tp-header-dropdown dropdown-white-bg">
+							<div
+								className={cn(
+									"tp-header-menu tp-header-dropdown dropdown-white-bg",
+									!baseMenuLight && "tp-header-5-menu"
+								)}
+							>
 								<nav className="tp-mobile-menu-active">
 									<ul>
 										<li>
-											<a href="/">Inicio</a>
+											{pathname === "/" ? (
+												<span>Inicio</span>
+											) : (
+												<a href="/">Inicio</a>
+											)}
 										</li>
 										<li>
-											<a href="/cursos">Cursos</a>
+											{pathname === "/cursos" ? (
+												<span>Cursos</span>
+											) : (
+												<a href="/cursos">Cursos</a>
+											)}
 										</li>
 										<li>
-											<a href="/proyectos">Proyectos</a>
+											{pathname === "/proyectos" ? (
+												<span>Proyectos</span>
+											) : (
+												<a href="/proyectos">Proyectos</a>
+											)}
 										</li>
 										<li>
-											<a href="/publicaciones">Publicaciones</a>
+											{pathname === "/publicaciones" ? (
+												<span>Publicaciones</span>
+											) : (
+												<a href="/publicaciones">Publicaciones</a>
+											)}
 										</li>
 										<li>
-											<a href="/nosotros">Nosotros</a>
+											{pathname === "/nosotros" ? (
+												<span>Nosotros</span>
+											) : (
+												<a href="/nosotros">Nosotros</a>
+											)}
 										</li>
 										<li>
-											<a href="/contacto">Contacto</a>
+											{pathname === "/contacto" ? (
+												<span>Contacto</span>
+											) : (
+												<a href="/contacto">Contacto</a>
+											)}
 										</li>
 									</ul>
 								</nav>

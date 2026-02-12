@@ -1,5 +1,8 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import CoursesPageContent from "../components/courses/CoursesPageContent";
 ---
 
-<MainLayout title="Cursos" />
+<MainLayout title="Cursos" baseMenuLight={false} baseLogoColor="black">
+	<CoursesPageContent />
+</MainLayout>
