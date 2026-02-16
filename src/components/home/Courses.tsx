@@ -1,8 +1,12 @@
 import parse from "html-react-parser";
+import { useState, type HTMLAttributes } from "react";
+import { cn } from "../../utils/cn";
 
 export default function Courses() {
+	const [hover, setHover] = useState<number>(0);
+
 	return (
-		<div className="bnc-service-area bnc-service-ptb bg-primary py-30!">
+		<div className="bnc-service-area bnc-service-ptb bg-primary-600 relative py-30! z-10">
 			<div className="container container-1510">
 				<div className="row align-items-end">
 					<div className="col-lg-8">
@@ -24,27 +28,39 @@ export default function Courses() {
 				<section className="grid grid-cols-3 gap-10">
 					<Card
 						{...{
+							id: 1,
 							month: "Febrero",
 							title:
 								"Gestión de Contratos de Obra Pública con Experiencia FIDIC",
 							duration: "12 horas",
 							professors: ["Ing. Mauricio Guglielmi"],
 							link: "/cursos/gestion-de-contratos-de-obra-publica-con-experiencia-fidici",
+							coverSrc:
+								"/assets/img/courses/gestion-contratos-obra-publica-fidic-600.avif",
+							hover,
+							onMouseEnter: () => setHover(1),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 2,
 							month: "Marzo",
 							title: "Curso Costo 4W 2026",
 							duration: "24 horas",
 							professors: ["Ing. Carlos Aguade"],
 							link: "/cursos/curso-costo-4w-2026",
+							coverSrc: "/assets/img/courses/curso-costo-4w-2026-600.avif",
+							hover,
+							onMouseEnter: () => setHover(2),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 3,
 							month: "Abril",
 							title:
 								"Proceso de Estabilización de Subrasantes, Sub-bases y Bases de Camino",
@@ -54,35 +70,52 @@ export default function Courses() {
 								"Dr. Ing. Hugo Bianchetto",
 							],
 							link: "/cursos/proceso-de-estabilizacion-de-subrasantes-y-bases-de-camino",
+							coverSrc:
+								"/assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino-600.avif",
+							hover,
+							onMouseEnter: () => setHover(3),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 4,
 							month: "Mayo",
 							title: "Tecnología de Hormigón Aplicada",
 							duration: "105 horas",
 							professors: ["CDH Ing. Maximiliano Segerer y equipo"],
 							link: "/cursos/tecnologias-de-hormigon-aplicada",
+							coverSrc:
+								"/assets/img/courses/tecnologia-hormigon-aplicada-600.avif",
+							hover,
+							onMouseEnter: () => setHover(4),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 5,
 							month: "Junio",
-							title:
-								"Planificación y Administración de la Red Vial<br/>Concesiones – C.RE.MA - GMANS",
+							title: "Planificación y Administración de la Red Vial",
 							duration: "24 horas",
 							professors: [
 								"Dr. Ing. Gerardo Botasso",
 								"Dr. Ing. Hugo Bianchetto",
 							],
 							link: "/cursos/planificacion-y-administracion-de-la-red-vial-concesiones-crema-gmans",
+							coverSrc:
+								"/assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans-600.avif",
+							hover,
+							onMouseEnter: () => setHover(5),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 6,
 							month: "Agosto",
 							title: "Inspección, Evaluación y Gerenciamiento de Puentes",
 							duration: "24 horas",
@@ -91,36 +124,57 @@ export default function Courses() {
 								"Arq. Gustavo Javier Bandel",
 							],
 							link: "/cursos/inspeccion-evaluacion-y-gerenciamiento-de-puentes",
+							coverSrc:
+								"/assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes-600.avif",
+							hover,
+							onMouseEnter: () => setHover(6),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 7,
 							month: "Septiembre",
 							title: "Control de Obras Viales",
 							duration: "18 horas",
 							professors: ["Dr. Ing. Gerardo Botasso"],
 							link: "/cursos/control-de-obras-viales",
+							coverSrc: "/assets/img/courses/control-obras-viales-600.avif",
+							hover,
+							onMouseEnter: () => setHover(7),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 8,
 							month: "Octubre",
 							title: "Perfil 4W 2026",
 							duration: "24 horas",
 							professors: ["Ing. Carlos Aguade"],
 							link: "/cursos/perfil-4w-2026",
+							coverSrc: "/assets/img/courses/perfil-4w-2026-600.avif",
+							hover,
+							onMouseEnter: () => setHover(8),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 
 					<Card
 						{...{
+							id: 9,
 							month: "Noviembre",
 							title: "Mantenimiento de Hospitales",
 							duration: "10 horas",
 							professors: ["Arq. Jorge Raúl Carrasquet", "Arq. Jorge Manuel"],
 							link: "/cursos/mantenimiento-de-hospitales",
+							coverSrc:
+								"/assets/img/courses/mantenimiento-edilicio-hospitales-600.avif",
+							hover,
+							onMouseEnter: () => setHover(9),
+							onMouseLeave: () => setHover(0),
 						}}
 					/>
 				</section>
@@ -129,21 +183,47 @@ export default function Courses() {
 	);
 }
 
-type CardProps = {
+type CardBaseProps = {
+	id: number;
 	month: string;
 	title: string;
 	duration: string;
 	professors: string[];
 	link: string;
+	hover: number;
+	coverSrc: string;
 };
 
-const Card = ({ month, title, duration, professors, link }: CardProps) => {
+type CardProps = CardBaseProps & Omit<HTMLAttributes<HTMLDivElement>, "id">;
+
+const Card = ({
+	id,
+	month,
+	title,
+	duration,
+	professors,
+	link,
+	hover,
+	coverSrc,
+	...rest
+}: CardProps) => {
 	return (
-		<div className="">
-			<div className="bnc-service-item w-full hover:shadow-2xl hover:shadow-black/30">
+		<div className="" {...rest}>
+			<div
+				className={cn(
+					"bnc-service-item w-full overflow-hidden group hover:shadow-2xl hover:shadow-black/60",
+					hover !== id && hover > 0 && "opacity-50 blur"
+				)}
+			>
 				<div className="bnc-service-item-content">
 					<div className="bnc-service-item-wrap">
-						<h4 className="bnc-service-item-title">
+						<img
+							src={coverSrc}
+							alt="course image"
+							className="border-b- border-white mask-b-from-30% mask-b-to-100% w-[calc(100%+86px)] max-w-screen! h-71 -mb-30! -left-[43px] -top-[61px] will-change-[height] relative transition-all duration-700 object-cover group-hover:h-30"
+						/>
+
+						<h4 className="bnc-service-item-title relative z-10">
 							<a className="tp-line-black" href={link}>
 								{parse(title)}
 							</a>
@@ -157,6 +237,7 @@ const Card = ({ month, title, duration, professors, link }: CardProps) => {
 							</p>
 						</div>
 					</div>
+
 					<div className="bnc-service-item-btn-box z-index-1 d-flex justify-content-between align-items-center">
 						<div className="bnc-service-item-btn">
 							<a

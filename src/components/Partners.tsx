@@ -20,91 +20,91 @@ export default function Partners() {
 						<PartnerBox
 							{...{
 								name: "Univ. Nac. Tecnológica de La Plata",
-								logo: "assets/img/partners/universidad-de-la-plata.webp",
+								logo: "assets/img/digital-marketing/brand/brand-1.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Centro Asturiano de Innovación",
-								logo: "assets/img/partners/innoasturias.webp",
+								logo: "assets/img/digital-marketing/brand/brand-2.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Cámara Paraguaya para la Construcción",
-								logo: "assets/img/partners/capaco.webp",
+								logo: "assets/img/digital-marketing/brand/brand-3.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Cámara Vial Paraguaya",
-								logo: "assets/img/partners/cavialpa.webp",
+								logo: "assets/img/digital-marketing/brand/brand-4.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Heisecke",
-								logo: "assets/img/partners/heisecke.webp",
+								logo: "assets/img/digital-marketing/brand/brand-5.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Benito Roggio",
-								logo: "assets/img/partners/roggio.webp",
+								logo: "assets/img/digital-marketing/brand/brand-6.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Tecnoedil",
-								logo: "assets/img/partners/tecnoedil.webp",
+								logo: "assets/img/digital-marketing/brand/brand-1.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Concret Mix",
-								logo: "assets/img/partners/concret-mix.webp",
+								logo: "assets/img/digital-marketing/brand/brand-2.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Tocsa",
-								logo: "assets/img/partners/tocsa.webp",
+								logo: "assets/img/digital-marketing/brand/brand-3.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Ocho A",
-								logo: "assets/img/partners/ochoa.webp",
+								logo: "assets/img/digital-marketing/brand/brand-4.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Const. Acaray",
-								logo: "assets/img/partners/acaray.webp",
+								logo: "assets/img/digital-marketing/brand/brand-5.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Typsa",
-								logo: "assets/img/partners/typsa.webp",
+								logo: "assets/img/digital-marketing/brand/brand-6.png",
 							}}
 						/>
 
 						<PartnerBox
 							{...{
 								name: "Conacyt",
-								logo: "assets/img/partners/conacyt.webp",
+								logo: "assets/img/digital-marketing/brand/brand-1.png",
 							}}
 						/>
 					</div>
@@ -156,13 +156,12 @@ const PartnerBox = ({ name, logo }: PartnerBoxType) => {
 	return (
 		<div className="col-lg-3 col-md-6">
 			<div className="tp-benefit-item tp-benefit-borber-bottom h-48!">
-				<div className="tp-benefit-item-icon pb-30 flex justify-center">
+				<div className="tp-benefit-item-icon pb-30">
 					<span>
-						<img src={logo} alt={name} className="w-auto h-20" />
+						<img src={logo} alt={name} />
 					</span>
 				</div>
-
-				<h4 className="tp-benefit-item-title text-center">{name}</h4>
+				<h4 className="tp-benefit-item-title">{name}</h4>
 			</div>
 		</div>
 	);

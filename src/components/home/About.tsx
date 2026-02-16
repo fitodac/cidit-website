@@ -1,7 +1,7 @@
 export default function About() {
 	return (
 		<div className="tp-about-me-ab-ptb p-relative pt-220 pb-100">
-			<div className="tp-about-me-ab-shape" data-speed=".9">
+			{/* <div className="tp-about-me-ab-shape" data-speed=".9">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="123"
@@ -15,15 +15,17 @@ export default function About() {
 						fill="#717171"
 					/>
 				</svg>
-			</div>
+			</div> */}
+
 			<div
 				className="tp-about-me-ab-text tp_fade_anim"
-				data-delay=".5"
+				// data-delay="3.5"
 				data-fade-from="top"
-				data-ease="bounce"
+				data-speed=".5"
 			>
 				<h4 className="text-gray-100!">Cidit</h4>
 			</div>
+
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -34,18 +36,19 @@ export default function About() {
 							</h4>
 						</div>
 					</div>
-					<div className="col-lg-4">
+					<div className="col-lg-4 relative z-1">
 						<div className="tp-about-me-ab-thumb">
 							<img
-								data-speed="1.1"
-								src="/assets/img/inner-image/about-me/about-me-shape-1.png"
-								alt=""
+								data-speed="1.7"
+								src="/assets/img/shape.png"
+								alt="shape"
+								className="w-220! max-w-screen! object-cover -top-100 -left-100 absolute rotate-90 opacity-50"
 							/>
 						</div>
 					</div>
-					<div className="col-lg-8">
+					<div className="col-lg-8 relative z-10">
 						<div className="tp-about-me-ab-wrap">
-							<p className="tp-text-perspective text-black">
+							<p className="tp-text-perspective text-xl! text-black">
 								CIDIT impulsa la innovación tecnológica en Paraguay desde 2014.
 								<br />
 								Unimos academia, empresas y Estado para convertir investigación

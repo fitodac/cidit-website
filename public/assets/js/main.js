@@ -301,8 +301,8 @@
 	gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 	if ($("#smooth-wrapper").length && $("#smooth-content").length) {
 		ScrollSmoother.create({
-			speed: 2,
-			smooth: 1.4,
+			speed: 1.5,
+			smooth: 1,
 			effects: true,
 			smoothTouch: 0.1,
 			ignoreMobileResize: true,
@@ -1141,4 +1141,23 @@
 			},
 		});
 	}
+
+	$(".js-fade-out-on-scroll").each(function () {
+		var $el = $(this);
+		var wrap = $el.closest(".ma-hero-area")[0] || $el[0];
+		gsap.fromTo(
+			$el,
+			{ opacity: 1 },
+			{
+				opacity: 0,
+				ease: "none",
+				scrollTrigger: {
+					trigger: wrap,
+					start: "top top",
+					end: "bottom top",
+					scrub: true,
+				},
+			}
+		);
+	});
 })(jQuery);

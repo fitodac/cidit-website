@@ -1,4 +1,3 @@
-import PageHeader from "../PageHeader";
 import PageHeaderAnimated from "../PageHeaderAnimated";
 
 export const ContactPageContent = () => {

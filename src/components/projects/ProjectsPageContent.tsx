@@ -2,24 +2,29 @@ const projects = [
 	{
 		headline: "GuaraIA",
 		subHeadline: "Integrando el idioma guaraní en el ámbito digital",
+		link: "/proyectos/guarania",
 	},
 	{
 		headline: "ProteIA",
 		subHeadline:
 			"Inteligencia artificial para la identificación de complejos proteicos",
+		link: "/proyectos/proteia",
 	},
 	{
 		headline: "Cofar",
 		subHeadline:
 			"Modelos interpretables de Machine Learning para la predicción de efectos secundarios en terapias combinadas",
+		link: "/proyectos/cofar",
 	},
 	{
 		headline: "Bootcamp",
 		subHeadline: "Creando oportunidades globales para jóvenes de 18 a 29 años",
+		link: "/proyectos/bootcamp",
 	},
 	{
 		headline: "Covida",
 		subHeadline: "Inteligencia artificial en favor de la humanidad",
+		link: "/proyectos/covida",
 	},
 ];
 
@@ -49,7 +54,7 @@ export default function ProjectsPageContent() {
 												<div className="col-xl-8">
 													<div className="port-showcase-slider-item">
 														<div className="port-showcase-slider-content">
-															<a href="project-details.html">
+															<a href={e.link}>
 																<h4 className="port-showcase-slider-title">
 																	<span>{e.headline}</span>
 																</h4>

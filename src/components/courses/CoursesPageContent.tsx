@@ -1,7 +1,7 @@
-import Testimonials from "../home/Testimonials";
 import { cn } from "../../utils/cn";
 import parse from "html-react-parser";
 import PageHeaderAnimated from "../PageHeaderAnimated";
+import Reviews from "../Reviews";
 
 import { useMemo } from "react";
 
@@ -17,8 +17,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "02",
 						images: [
-							"assets/img/inner-image/service/thumb.jpg",
-							"assets/img/inner-image/service/thumb-sm.jpg",
+							"/assets/img/courses/gestion-contratos-obra-publica-fidic.avif",
+							"/assets/img/courses/gestion-contratos-obra-publica-fidic-2.avif",
 						],
 						professors: ["Ing. Mauricio Guglielmi"],
 						link: "/cursos/gestion-de-contratos-de-obra-publica-con-experiencia-fidici",
@@ -31,8 +31,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "03",
 						images: [
-							"assets/img/inner-image/service/thumb-2.jpg",
-							"assets/img/inner-image/service/thumb-sm-2.jpg",
+							"/assets/img/courses/curso-costo-4w-2026.avif",
+							"/assets/img/courses/curso-costo-4w-2026-2.avif",
 						],
 						professors: ["Ing. Carlos Aguade"],
 						link: "/cursos/curso-costo-4w-2026",
@@ -46,8 +46,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "04",
 						images: [
-							"assets/img/inner-image/service/thumb-3.jpg",
-							"assets/img/inner-image/service/thumb-sm-3.jpg",
+							"/assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino.avif",
+							"/assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino-2.avif",
 						],
 						professors: [
 							"Dr. Ing. Gerardo Botasso",
@@ -63,8 +63,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "05",
 						images: [
-							"assets/img/inner-image/service/thumb-2.jpg",
-							"assets/img/inner-image/service/thumb-sm-2.jpg",
+							"/assets/img/courses/tecnologia-hormigon-aplicada.avif",
+							"/assets/img/courses/tecnologia-hormigon-aplicada-2.avif",
 						],
 						professors: ["CDH Ing. Maximiliano Segerer y equipo"],
 						link: "/cursos/tecnologias-de-hormigon-aplicada",
@@ -73,12 +73,12 @@ export default function CoursesPageContent() {
 
 				<Course
 					{...{
-						title: "Gestión de Contratos de Obra Pública con Experiencia FIDIC",
+						title: "Planificación y administración de la Red Vial",
 						bgColor: "black",
 						monthNumber: "06",
 						images: [
-							"assets/img/inner-image/service/thumb-3.jpg",
-							"assets/img/inner-image/service/thumb-sm-3.jpg",
+							"/assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans.avif",
+							"/assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans-2.avif",
 						],
 						professors: [
 							"Dr. Ing. Gerardo Botasso",
@@ -94,8 +94,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "08",
 						images: [
-							"assets/img/inner-image/service/thumb-2.jpg",
-							"assets/img/inner-image/service/thumb-sm-2.jpg",
+							"/assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes.avif",
+							"/assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes-2.avif",
 						],
 						professors: [
 							"Ing. Pedro Manuel Lozada",
@@ -111,8 +111,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "09",
 						images: [
-							"assets/img/inner-image/service/thumb-3.jpg",
-							"assets/img/inner-image/service/thumb-sm-3.jpg",
+							"/assets/img/courses/control-obras-viales.avif",
+							"/assets/img/courses/control-obras-viales-2.avif",
 						],
 						professors: ["Dr. Ing. Gerardo Botasso"],
 						link: "/cursos/control-de-obras-viales",
@@ -121,12 +121,12 @@ export default function CoursesPageContent() {
 
 				<Course
 					{...{
-						title: "Inspección, Evaluación y Gerenciamiento de Puentes",
+						title: "Perfil 4W 2026",
 						bgColor: "gray",
 						monthNumber: "10",
 						images: [
-							"assets/img/inner-image/service/thumb-2.jpg",
-							"assets/img/inner-image/service/thumb-sm-2.jpg",
+							"/assets/img/courses/perfil-4w-2026.avif",
+							"/assets/img/courses/perfil-4w-2026-2.avif",
 						],
 						professors: ["Ing. Carlos Aguade"],
 						link: "/cursos/perfil-4w-2026",
@@ -139,8 +139,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "11",
 						images: [
-							"assets/img/inner-image/service/thumb-3.jpg",
-							"assets/img/inner-image/service/thumb-sm-3.jpg",
+							"/assets/img/courses/mantenimiento-edilicio-hospitales.avif",
+							"/assets/img/courses/mantenimiento-edilicio-hospitales-2.avif",
 						],
 						professors: ["Arq. Jorge Raúl Carrasquet", "Arq. Jorge Manuel"],
 						link: "/cursos/mantenimiento-de-hospitales",
@@ -148,9 +148,9 @@ export default function CoursesPageContent() {
 				/>
 			</div>
 
-			<div className=" lg:h-91!"></div>
-
-			<Testimonials />
+			<div className="bg-white mt-20! relative z-10">
+				<Reviews />
+			</div>
 		</>
 	);
 }
@@ -276,12 +276,20 @@ const Course = ({
 				<div className="row">
 					<div className="col-lg-8 mb-30">
 						<div className="service-3-process-thumb">
-							<img src={image} alt="Imagen principal del curso" />
+							<img
+								src={image}
+								alt="Main course image"
+								className="w-full h-80! object-cover"
+							/>
 						</div>
 					</div>
 					<div className="col-lg-4 mb-30">
 						<div className="service-3-process-thumb">
-							<img src={imageSm} alt="Detalle del curso" />
+							<img
+								src={imageSm}
+								alt="Secondary course image"
+								className="w-full h-80! object-cover"
+							/>
 						</div>
 					</div>
 				</div>

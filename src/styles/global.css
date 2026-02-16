@@ -6,6 +6,21 @@
 	--color-secondary: #78b5a2;
 }
 
+@layer base {
+	.bg-primary {
+		background-color: var(--tp-theme-primary) !important;
+	}
+	.bg-primary-600 {
+		background-color: var(--tp-theme-primary-600) !important;
+	}
+	.bg-primary-700 {
+		background-color: var(--tp-theme-primary-700) !important;
+	}
+	.bg-primary-800 {
+		background-color: var(--tp-theme-primary-800) !important;
+	}
+}
+
 .mfp-container {
 	@apply flex justify-center;
 }
