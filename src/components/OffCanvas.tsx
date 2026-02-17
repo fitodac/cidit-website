@@ -4,22 +4,6 @@ export default function OffCanvas() {
 			<div className="tp-offcanvas-area">
 				<div className="tp-offcanvas-wrapper offcanvas-black-bg">
 					<div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
-						<div className="tp-offcanvas-logo">
-							<a href="index-digital-agency.html">
-								<img
-									className="logo-1"
-									data-width="120"
-									src="/assets/img/logo/logo-black.png"
-									alt=""
-								/>
-								<img
-									className="logo-2"
-									data-width="120"
-									src="/assets/img/logo/logo-white.png"
-									alt=""
-								/>
-							</a>
-						</div>
 						<div className="tp-offcanvas-close">
 							<button className="tp-offcanvas-close-btn">
 								<svg
@@ -47,15 +31,18 @@ export default function OffCanvas() {
 							</button>
 						</div>
 					</div>
+
 					<div className="tp-offcanvas-main">
-						<div className="tp-offcanvas-content d-none d-xl-block">
+						{/* <div className="tp-offcanvas-content d-none d-xl-block">
 							<h3 className="tp-offcanvas-title">Hello There!</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-						</div>
+						</div> */}
+
 						<div className="tp-offcanvas-menu d-xl-none">
 							<nav></nav>
 						</div>
-						<div className="tp-offcanvas-gallery d-none d-xl-block">
+
+						{/* <div className="tp-offcanvas-gallery d-none d-xl-block">
 							<div className="row gx-2">
 								<div className="col-md-3 col-3">
 									<div className="tp-offcanvas-gallery-img fix">
@@ -98,8 +85,9 @@ export default function OffCanvas() {
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className="tp-offcanvas-contact">
+						</div> */}
+
+						{/* <div className="tp-offcanvas-contact">
 							<h3 className="tp-offcanvas-title sm">Information</h3>
 							<ul>
 								<li>
@@ -112,8 +100,9 @@ export default function OffCanvas() {
 									<a href="#">Avenue de Roma 158b, Lisboa</a>
 								</li>
 							</ul>
-						</div>
-						<div className="tp-offcanvas-social">
+						</div> */}
+
+						{/* <div className="tp-offcanvas-social">
 							<h3 className="tp-offcanvas-title sm">Follow Us</h3>
 							<ul>
 								<li>
@@ -231,7 +220,7 @@ export default function OffCanvas() {
 									</a>
 								</li>
 							</ul>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

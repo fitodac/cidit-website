@@ -3,28 +3,33 @@ const projects = [
 		headline: "GuaraIA",
 		subHeadline: "Integrando el idioma guaraní en el ámbito digital",
 		link: "/proyectos/guarania",
+		image: "/assets/img/projects/guarania.webp",
 	},
 	{
 		headline: "ProteIA",
 		subHeadline:
 			"Inteligencia artificial para la identificación de complejos proteicos",
 		link: "/proyectos/proteia",
+		image: "/assets/img/projects/proteia.webp",
 	},
 	{
 		headline: "Cofar",
 		subHeadline:
 			"Modelos interpretables de Machine Learning para la predicción de efectos secundarios en terapias combinadas",
 		link: "/proyectos/cofar",
+		image: "/assets/img/projects/cofar.webp",
 	},
 	{
 		headline: "Bootcamp",
 		subHeadline: "Creando oportunidades globales para jóvenes de 18 a 29 años",
 		link: "/proyectos/bootcamp",
+		image: "/assets/img/projects/bootcamp.webp",
 	},
 	{
 		headline: "Covida",
 		subHeadline: "Inteligencia artificial en favor de la humanidad",
 		link: "/proyectos/covida",
+		image: "/assets/img/projects/covida.webp",
 	},
 ];
 
@@ -44,7 +49,7 @@ export default function ProjectsPageContent() {
 						>
 							<div className="swiper-wrapper" id="trigger-slides">
 								{projects.map((e, idx) => (
-									<div className="swiper-slide" key={idx}>
+									<div className="swiper-slide select-none" key={idx}>
 										<div
 											className={`slide-wrap ${idx === 0 ? "active" : ""}`}
 											data-slide={idx}
@@ -71,13 +76,44 @@ export default function ProjectsPageContent() {
 								))}
 							</div>
 						</div>
+
 						<div className="tp-showcase-arrow-box d-flex justify-content-between">
 							<button className="tp-showcase__button-prev swiper-prev d-inline-flex align-items-center">
 								<i className="fas fa-chevron-left"></i>
-								<span>Next</span>
+								<span>Anterior</span>
 							</button>
+
+							<div className="flex-1 flex items-center justify-center gap-3 text-white text-[0.7rem]">
+								<svg
+									className="w-5 h-8"
+									viewBox="0 0 24 40"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect
+										x="1.5"
+										y="1.5"
+										width="21"
+										height="37"
+										rx="10.5"
+										stroke="currentColor"
+										strokeWidth="2"
+									/>
+									<circle
+										cx="12"
+										cy="12"
+										r="3"
+										fill="currentColor"
+										className="origin-center animate-[mouseWheel_1.2s_ease-in-out_infinite]"
+									/>
+								</svg>
+								<span className="uppercase tracking-wide">
+									scrolea para avanzar
+								</span>
+							</div>
+
 							<button className="tp-showcase__button-next swiper-next d-inline-flex align-items-center">
-								<span>Prev</span>
+								<span>Siguiente</span>
 								<i className="fas fa-chevron-right"></i>
 							</button>
 						</div>
@@ -87,48 +123,15 @@ export default function ProjectsPageContent() {
 			</div>
 
 			<div id="canvas-slider" className="canvas-slider">
-				<div className="slider-img" data-slide="0">
-					<img
-						className="slide-img"
-						src="/assets/img/webgl/webgl-1.jpg"
-						alt=""
-					/>
-				</div>
-				<div className="slider-img" data-slide="1">
-					<img
-						className="slide-img"
-						src="/assets/img/webgl/webgl-2.jpg"
-						alt=""
-					/>
-				</div>
-				<div className="slider-img" data-slide="2">
-					<img
-						className="slide-img"
-						src="/assets/img/webgl/webgl-3.jpg"
-						alt=""
-					/>
-				</div>
-				<div className="slider-img" data-slide="3">
-					<img
-						className="slide-img"
-						src="assets/img/webgl/webgl-4.jpg"
-						alt=""
-					/>
-				</div>
-				<div className="slider-img" data-slide="4">
-					<img
-						className="slide-img"
-						src="assets/img/webgl/webgl-5.jpg"
-						alt=""
-					/>
-				</div>
-				<div className="slider-img" data-slide="5">
-					<img
-						className="slide-img"
-						src="assets/img/webgl/webgl-6.jpg"
-						alt=""
-					/>
-				</div>
+				{projects.map((e, idx) => (
+					<div className="slider-img" data-slide={idx} key={idx}>
+						<img
+							className="slide-img h-full! object-cover!"
+							src={e.image}
+							alt={e.headline}
+						/>
+					</div>
+				))}
 			</div>
 		</>
 	);

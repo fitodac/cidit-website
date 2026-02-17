@@ -19,6 +19,25 @@
 	.bg-primary-800 {
 		background-color: var(--tp-theme-primary-800) !important;
 	}
+
+	@keyframes mouseWheel {
+		0% {
+			transform: translateY(0) scale(1, 1);
+			opacity: 1;
+		}
+		40% {
+			transform: translateY(6px) scale(0.3, 0.3);
+			opacity: 0;
+		}
+		70% {
+			transform: translateY(0) scale(1, 1);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0) scale(1, 1);
+			opacity: 1;
+		}
+	}
 }
 
 .mfp-container {

@@ -1,13 +1,13 @@
 const reviews = [
 	{
-		picture: "/assets/img/modern-agency/testimonial/testimonial-1.jpg",
+		picture: "/assets/img/reviews/portrait-3.avif",
 		name: "Diego Rubén González",
 		position: "Ingeniero",
 		review:
 			"Me llevé una visión estratégica muy sólida para gestionar contratos y proyectos viales; el curso fue claro, ordenado y realmente útil para aplicar en obra.",
 	},
 	{
-		picture: "/assets/img/modern-agency/testimonial/testimonial-2.jpg",
+		picture: "/assets/img/reviews/portrait-2.avif",
 		name: "Israel Cabrera",
 		position: null,
 		review:
@@ -31,13 +31,17 @@ export default function Reviews() {
 				<div className="ma-testimonial-wrap p-relative">
 					<div className="swiper tp-testimonial-active">
 						<div className="swiper-wrapper">
-							<div className="swiper-slide">
-								{reviews.map((e, idx) => (
+							{reviews.map((e, idx) => (
+								<div className="swiper-slide">
 									<div className="ma-testimonial-item" key={idx}>
 										<div className="row align-items-center">
 											<div className="col-lg-4">
 												<div className="ma-testimonial-thumb">
-													<img src={e.picture} alt={e.name} />
+													<img
+														src={e.picture}
+														alt={e.name}
+														className="object-cover aspect-square rounded-full"
+													/>
 													<span className="ma-testimonial-quote">
 														<svg
 															width="28"
@@ -73,8 +77,8 @@ export default function Reviews() {
 											</div>
 										</div>
 									</div>
-								))}
-							</div>
+								</div>
+							))}
 						</div>
 					</div>
 					<div className="ma-testimonial-arrow d-flex justify-content-end">

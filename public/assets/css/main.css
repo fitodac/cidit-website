@@ -4784,13 +4784,15 @@ body.tp-magic-cursor #magic-cursor {
 .tp-offcanvas-menu ul li {
 	position: relative;
 }
-.tp-offcanvas-menu ul li > a {
+.tp-offcanvas-menu ul li > a,
+.tp-offcanvas-menu ul li > span {
 	padding: 10px 0;
 	display: block;
 	font-size: 20px;
 	font-weight: 500;
 }
-.tp-offcanvas-menu ul li.active > a {
+.tp-offcanvas-menu ul li.active > a,
+.tp-offcanvas-menu ul li.active > span {
 	color: var(--tp-common-black);
 }
 .tp-offcanvas-menu ul li.active > .tp-menu-close i {
@@ -18661,7 +18663,6 @@ body.tp-magic-cursor #magic-cursor {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: -0.03em;
-	text-transform: capitalize;
 	color: var(--tp-common-black);
 	font-family: var(--tp-ff-unbounded);
 }
