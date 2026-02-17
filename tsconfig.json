@@ -5,7 +5,8 @@
     "**/*"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "src/components/about/hero.tsx"
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
