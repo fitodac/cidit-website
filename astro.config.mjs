@@ -10,5 +10,5 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	site: "https://fitodac.github.io",
-	base: "/cidit-website",
+	base: "/",
 });
