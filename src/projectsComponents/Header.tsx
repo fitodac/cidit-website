@@ -1,9 +1,14 @@
 type Props = {
 	title: string;
 	logoSrc: string;
+	logoHeight?: string;
 };
 
-export default function Header({ title, logoSrc }: Props) {
+export default function Header({
+	title,
+	logoSrc,
+	logoHeight = "h-12!",
+}: Props) {
 	return (
 		<>
 			<nav className="mxd-nav__wrap" data-lenis-prevent="">
@@ -124,7 +129,7 @@ export default function Header({ title, logoSrc }: Props) {
 				<div className="mxd-header__logo loading__fade">
 					<h1 className="mxd-logo">
 						{logoSrc.length && (
-							<img src={logoSrc} alt={title} className="h-12!" />
+							<img src={logoSrc} alt={title} className={logoHeight} />
 						)}
 
 						<span className="sr-only">{title}</span>

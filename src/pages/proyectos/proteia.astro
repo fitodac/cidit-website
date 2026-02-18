@@ -78,5 +78,13 @@ const staff = [
 	<div class="h-15"></div>
 	<About />
 	<HowItWorks />
-	<Staff {...{ staff }} />
+	<Staff
+		{...{
+			staff,
+			description: `<p>Un equipo de experimentados investigadores 
+										en biología molecular, computación y inteligencia 
+										artificial, comprometidos en revolucionar la 
+										predicción de complejos proteicos.</p>`,
+		}}
+	/>
 </ProjectLayout>

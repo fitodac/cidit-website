@@ -164,7 +164,15 @@ const staff = [
 
 	<div class="h-56"></div>
 
-	<Staff {...{ staff }} />
+	<Staff
+		{...{
+			staff,
+			description: `<p>Un equipo de experimentados investigadores 
+										en biología molecular, computación y inteligencia 
+										artificial, comprometidos en revolucionar la 
+										predicción de complejos proteicos.</p>`,
+		}}
+	/>
 
 	<Brochure />
 </ProjectLayout>

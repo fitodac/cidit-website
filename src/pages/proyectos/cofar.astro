@@ -2,12 +2,91 @@
 import "../../styles/cofar.css";
 
 import ProjectLayout from "../../layouts/projectLayout.astro";
+
+import Hero from "../../projectsComponents/cofar/Hero.tsx";
+import HowItWorks from "../../projectsComponents/cofar/HowItWorks.tsx";
+import Staff from "../../projectsComponents/Staff.tsx";
+
+import type { StaffType } from "./types.d.ts";
+import { pathHasLocale } from "astro:i18n";
+
+const staff = [
+	{
+		name: "Luca Cernuzzi",
+		position: "Representante legal e investigador principal",
+		description:
+			"Responsable de la ejecución del proyecto, gestionando contratos y comunicaciones formales con AONACYT, con posibilidades de delegación.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Alberto Paccanaro",
+		position: "Investigador asociado",
+		description:
+			"Lidera la investigación en biología computacional e inteligencia artificial.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Ruben Jimenez",
+		position: "Investigador asociado",
+		description:
+			"Supervisa el desarrollo de modelos matemáticos y la caracterización de fármacos y sus efectos.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Mateo Torres",
+		position: "Investigador asociado",
+		description:
+			"Supervisa el modelo matemático en especial en redes neuronales profundas y el estudio del estado del arte.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Aldo Galeano",
+		position: "Investigador en formación",
+		description:
+			"Implementa y evalúa modelos predictivos para combinaciones de fármacos.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Marcelo Báez",
+		position: "Investigador en formación",
+		description:
+			"Evalúa los modelos predictivos desarrollados y realiza comparaciones con métricas de machine learning.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "María del Mar Sánchez",
+		position: "Investigador en formación",
+		description:
+			"Desarrolla herramientas y visualizaciones interactivas de datos para explotar información biológica compleja.",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+] as StaffType[];
 ---
 
 <ProjectLayout
 	title="Cofar"
-	logoSrc="/projects/img/proteia/logo.svg"
-	footerLogoSrc="/projects/img/proteia/logo-black.svg"
+	logoSrc="/projects/img/cofar/logo.svg"
+	logoHeight="h-20!"
+	footerLogoSrc="/projects/img/cofar/logo-black.svg"
 >
-	<p>Cofar</p>
+	<div class="h-5"></div>
+	<Hero />
+	<HowItWorks />
+	<Staff
+		{...{
+			staff,
+			description: `<p>Este proyecto busca revolucionar la biología molecular 
+        mediante la predicción de complejos proteicos en organismos para los 
+        cuales no existe información experimental previa.</p>
+				<p>Esto puede abrir nuevas oportunidades en salud, energía y agricultura, 
+				facilitando la investigación y desarrollo en estas áreas.</p>`,
+		}}
+	/>
 </ProjectLayout>

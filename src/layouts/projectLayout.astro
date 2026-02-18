@@ -5,10 +5,16 @@ import Footer from "../projectsComponents/Footer";
 interface Props {
 	title?: string;
 	logoSrc: string;
+	logoHeight?: string;
 	footerLogoSrc: string;
 }
 
-const { title = "CIDIT", logoSrc = "", footerLogoSrc = "" } = Astro.props;
+const {
+	title = "CIDIT",
+	logoSrc = "",
+	footerLogoSrc = "",
+	logoHeight = "",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -96,7 +102,7 @@ const { title = "CIDIT", logoSrc = "", footerLogoSrc = "" } = Astro.props;
 		</div>
 		<!-- Loader End -->
 
-		<Header {...{ title, logoSrc }} />
+		<Header {...{ title, logoSrc, logoHeight }} />
 
 		<main id="mxd-page-content" class="mxd-page-content">
 			<slot />

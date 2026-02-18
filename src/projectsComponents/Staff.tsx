@@ -1,6 +1,15 @@
+import { type ReactNode } from "react";
+import parse from "html-react-parser";
+
 import type { StaffType } from "../pages/proyectos/types.d.ts";
 
-export default function Staff({ staff }: { staff: StaffType[] }) {
+export default function Staff({
+	staff,
+	description,
+}: {
+	staff: StaffType[];
+	description: string;
+}) {
 	return (
 		<div className="mxd-section padding-default">
 			<div className="mxd-container grid-container">
@@ -20,14 +29,13 @@ export default function Staff({ staff }: { staff: StaffType[] }) {
 															</h2>
 														</div>
 													</div>
-													<div className="col-12">
+													<div className="col-12 mt-6!">
 														<div className="mxd-section-title__descr">
-															<p className="anim-uni-in-up">
-																Un equipo de experimentados investigadores en
-																biología molecular, computación y inteligencia
-																artificial, comprometidos en revolucionar la
-																predicción de complejos proteicos.
-															</p>
+															{description && (
+																<div className="anim-uni-in-up space-y-7! [&_*]:text-3xl! [&_*]:leading-normal!">
+																	{parse(description)}
+																</div>
+															)}
 														</div>
 													</div>
 												</div>
