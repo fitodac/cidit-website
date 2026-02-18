@@ -1,13 +1,18 @@
-export default function Footer() {
+type Props = {
+	title: string;
+	logoSrc: string;
+};
+
+export default function Footer({ title, logoSrc }: Props) {
 	return (
 		<footer id="mxd-footer" className="mxd-footer">
 			<div className="mxd-footer__text-wrap">
 				<div className="fullwidth-text__tl-trigger"></div>
 				<div className="mxd-footer__fullwidth-text personal anim-top-to-bottom">
 					<img
-						src="/projects/img/proteia/logo-black.svg"
-						alt="ProteIA"
-						className="w-full! h-auto! opacity-5 lg:h-81!"
+						src={logoSrc}
+						alt={title}
+						className="w-full! h-auto! opacity-5 lg:max-h-81!"
 					/>
 				</div>
 			</div>

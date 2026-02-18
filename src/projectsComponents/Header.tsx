@@ -1,4 +1,9 @@
-export default function Header() {
+type Props = {
+	title: string;
+	logoSrc: string;
+};
+
+export default function Header({ title, logoSrc }: Props) {
 	return (
 		<>
 			<nav className="mxd-nav__wrap" data-lenis-prevent="">
@@ -117,15 +122,13 @@ export default function Header() {
 
 			<header id="header" className="mxd-header">
 				<div className="mxd-header__logo loading__fade">
-					<a href="index-main.html" className="mxd-logo">
-						<img
-							src="/projects/img/proteia/logo.svg"
-							alt="ProteIA"
-							className="h-12!"
-						/>
+					<h1 className="mxd-logo">
+						{logoSrc.length && (
+							<img src={logoSrc} alt={title} className="h-12!" />
+						)}
 
-						<span className="sr-only">ProteIA</span>
-					</a>
+						<span className="sr-only">{title}</span>
+					</h1>
 				</div>
 
 				<div className="mxd-header__controls loading__fade">

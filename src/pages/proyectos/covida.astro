@@ -2,8 +2,169 @@
 import "../../styles/covida.css";
 
 import ProjectLayout from "../../layouts/projectLayout.astro";
+
+import Hero from "../../projectsComponents/covida/Hero.tsx";
+import Video from "../../projectsComponents/covida/Video.tsx";
+import Sponsors from "../../projectsComponents/covida/Sponsors.tsx";
+import InfoSection from "../../projectsComponents/covida/InfoSection.tsx";
+import Staff from "../../projectsComponents/Staff.tsx";
+import Brochure from "../../projectsComponents/covida/Brochure.tsx";
+
+import type { StaffType } from "./types.d.ts";
+
+const staff = [
+	{
+		name: "Teresa Gamarra",
+		position: "Directora",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Luca Cernuzzi",
+		position: "Investigador principal",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Alberto Pacanaro",
+		position: "Investigador principal",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Mateo Torres",
+		position: "Investigador asociado",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Diego Galeano",
+		position: "Investigador asociado",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Suzana Santos",
+		position: "Investigador asociado",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Rubén Jiménez",
+		position: "Investigador en formación",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Gloria Aguilar",
+		position: "Experta en farmacología y ensayos clínicos",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Martín Aguero",
+		position: "Experto en farmacología y ensayos clínicos",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Rafael Adorno",
+		position: "Soporte técnico para procesamiento de datos",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Aldo Galeano",
+		position: "Soporte técnico para procesamiento de datos",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "María del Mar Sánchez",
+		position: "Desarrollo de software",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+	{
+		name: "Patricia Candia",
+		position: "Administradora",
+		picture_src: "/projects/img/team/800x920_team-01.webp",
+		cv_src: "#",
+	},
+] as StaffType[];
 ---
 
-<ProjectLayout title="Covida">
-	<p>Covida</p>
+<ProjectLayout
+	title="Covida"
+	logoSrc="/projects/img/covida/logo.svg"
+	footerLogoSrc="/projects/img/covida/logo-black.svg"
+>
+	<Hero />
+
+	<Video client:load />
+
+	<InfoSection
+		{...{
+			title: "¿Cómo nace COVIDA?",
+			mediaLarge: { type: "video", src: "/projects/img/covida/research.mp4" },
+			mediaSmall: { type: "image", src: "/projects/img/covida/covid-dna.avif" },
+		}}
+	>
+		<p>
+			Esta investigación nace de la colaboración internacional entre la
+			Universidad Católica Nuestra Señora de la Asunción (UC) con Royal Holloway
+			de la Universidad de Londres, Inglaterra y actualmente es liderado por el
+			CIDIT, centro vinculado a la UC, y con la colaboración de la Fundación
+			Getulio Vargas (FGV) de Brasil.
+		</p>
+	</InfoSection>
+
+	<div class="h-56"></div>
+
+	<InfoSection
+		{...{
+			title: "¿De dónde venimos?",
+			orientation: "left",
+			mediaLarge: { type: "image", src: "/projects/img/covida/covid.avif" },
+			mediaSmall: { type: "video", src: "/projects/img/covida/pandemic.mp4" },
+		}}
+	>
+		<p>
+			El COVID-19 es una enfermedad altamente contagiosa que ha costado la vida
+			de más de 2 millones y medio de personas e impactado negativamente a la
+			economía, a la educación y a la sociedad en el mundo.
+		</p>
+		<p>
+			A pesar de que ya se tienen vacunas, no se cuenta con medicamentos
+			eficaces para el tratamiento de forma comercial, tampoco la certeza para
+			tratar a los pacientes contagiados o reducir la mortalidad de los que
+			están en estado grave.
+		</p>
+	</InfoSection>
+
+	<div class="h-56"></div>
+
+	<Sponsors />
+
+	<InfoSection
+		{...{
+			title: "¿En qué consiste la reposición de medicamentos?",
+			mediaLarge: { type: "video", src: "/projects/img/covida/vaccine.mp4" },
+			mediaSmall: { type: "image", src: "/projects/img/covida/pills.avif" },
+		}}
+	>
+		<p>
+			Desde CoVIDA planteamos esta estrategia efectiva, rápida y de bajo costo
+			basándonos en la posible reutilización de algunos entre los 2000
+			medicamentos comerciales seguros en humanos, usando la Inteligencia
+			Artificial (IA) para identificar los ya aprobados en 28 enfermedades
+			infecciosas similares al COVID-19.
+		</p>
+	</InfoSection>
+
+	<div class="h-56"></div>
+
+	<Staff {...{ staff }} />
+
+	<Brochure />
 </ProjectLayout>
