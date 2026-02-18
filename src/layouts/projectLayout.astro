@@ -1,0 +1,152 @@
+---
+import Header from "../projectsComponents/Header";
+import Footer from "../projectsComponents/Footer";
+
+interface Props {
+	title?: string;
+	baseLogoColor?: "white" | "black";
+	baseMenuLight?: boolean;
+}
+
+const {
+	title = "CIDIT",
+	baseMenuLight = true,
+	baseLogoColor = "white",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" color-scheme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
+
+		<!-- Meta Tags -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="mix_design" />
+
+		<!-- Viewport Meta-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+		/>
+
+		<!-- Template Favicon & Icons Start -->
+		<link rel="icon" href="/favicon.svg" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/favicon.svg" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- Template Favicon & Icons End -->
+
+		<!-- Facebook Metadata Start -->
+		<meta property="og:image:height" content="1200" />
+		<meta property="og:image:width" content="1200" />
+		<meta
+			property="og:title"
+			content={title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}
+		/>
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<!-- Facebook Metadata End -->
+
+		<!-- Template Styles Start -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/projects/css/loaders/loader.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/projects/css/plugins.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/projects/css/main.min.css" />
+		<!-- Template Styles End -->
+
+		<!-- Custom Browser Color Start -->
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#FAF7F6"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#161616"
+		/>
+		<meta name="msapplication-navbutton-color" content="#161616" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<!-- Custom Browser Color End -->
+	</head>
+
+	<body>
+		<!-- Loader Start -->
+		<div id="loader" class="loader">
+			<div class="loader__wrapper">
+				<div class="loader__content">
+					<div class="loader__count">
+						<span class="count__text">0</span>
+						<span class="count__percent">%</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Loader End -->
+
+		<Header />
+
+		<main id="mxd-page-content" class="mxd-page-content">
+			<slot />
+		</main>
+
+		<Footer />
+
+		<!-- Load Scripts Start -->
+		<script is:inline src="/projects/js/libs.min.js"></script>
+		<script is:inline src="/projects/js/app.min.js"></script>
+		<!-- <script is:inline>
+			const statsCounter1 = new countUp.CountUp(
+				"stats-counter-1",
+				40,
+				optionsPlus
+			);
+			const statsCounter2 = new countUp.CountUp(
+				"stats-counter-2",
+				80,
+				optionsPercent
+			);
+			const statsCounter3 = new countUp.CountUp(
+				"stats-counter-3",
+				3,
+				optionsPlus
+			);
+			const statsCounter4 = new countUp.CountUp(
+				"stats-counter-4",
+				50,
+				optionsPlus
+			);
+			statsCounter1.start();
+			statsCounter2.start();
+			statsCounter3.start();
+			statsCounter4.start();
+		</script> -->
+		<!-- Load Scripts End -->
+
+		<style type="text/css">
+			.mxd-logo__bg {
+				fill: var(--base-opp);
+			}
+			.mxd-logo__cat {
+				clip-path: url(#mxd-logo__id);
+				fill: var(--base);
+			}
+		</style>
+	</body>
+</html>

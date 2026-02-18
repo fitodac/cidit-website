@@ -1,7 +1,42 @@
 ---
-import MainLayout from "../../layouts/mainLayout.astro";
+import "../../styles/proteia.css";
+
+import ProjectLayout from "../../layouts/projectLayout.astro";
+import Hero from "../../projectsComponents/proteia/Hero.tsx";
+import About from "../../projectsComponents/proteia/About.tsx";
+import HowItWorks from "../../projectsComponents/proteia/HowItWorks.tsx";
+import Staff from "../../projectsComponents/proteia/Staff.tsx";
+
+// import Projects from "../../projectsComponents/proteia/Projects.tsx";
+// import ParallaxDivider from "../../projectsComponents/proteia/ParallaxDivider.tsx";
+// import Marquee from "../../projectsComponents/proteia/Marquee.tsx";
+// import Statistics from "../../projectsComponents/proteia/Statistics.tsx";
+// import Expertise from "../../projectsComponents/proteia/Expertise.tsx";
+// import Experience from "../../projectsComponents/proteia/Experience.tsx";
+// import TechStack from "../../projectsComponents/proteia/TechStack.tsx";
+// import Education from "../../projectsComponents/proteia/Education.tsx";
+// import Blog from "../../projectsComponents/proteia/Blog.tsx";
+// import Cta from "../../projectsComponents/proteia/Cta.tsx";
 ---
 
-<MainLayout title="Proteia">
-	<p>ProteIA</p>
-</MainLayout>
+<ProjectLayout title="Proteia">
+	<Hero />
+	<div class="h-15"></div>
+	<About />
+	<HowItWorks />
+	<Staff />
+	<!-- 
+	<Projects />
+	<ParallaxDivider />
+	<Marquee />
+	<Statistics />
+	<Expertise />
+	<ParallaxDivider />
+	<Experience />
+	<TechStack />
+	<Education />
+	<ParallaxDivider />
+	<Blog />
+	<Cta /> 
+	-->
+</ProjectLayout>

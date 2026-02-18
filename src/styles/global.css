@@ -38,6 +38,18 @@
 			opacity: 1;
 		}
 	}
+
+	@media (max-width: 767px) {
+		.port-showcase-slider-title span {
+			letter-spacing: 0.06em;
+			line-height: 1.15;
+		}
+
+		.port-showcase-slider-subtitle span {
+			letter-spacing: 0.04em;
+			line-height: 1.5;
+		}
+	}
 }
 
 .mfp-container {

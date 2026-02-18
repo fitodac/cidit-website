@@ -64,9 +64,38 @@ export default function ProjectsPageContent() {
 																	<span>{e.headline}</span>
 																</h4>
 															</a>
-															<span className="port-showcase-slider-subtitle">
-																<span>{e.subHeadline}</span>
-															</span>
+
+															<div className="flex flex-col gap-3">
+																<span className="port-showcase-slider-subtitle">
+																	<span>{e.subHeadline}</span>
+																</span>
+
+																<div className="">
+																	<a
+																		href={e.link}
+																		className="tp-btn-green btn-black-bg tp-btn-anim"
+																	>
+																		<div className="tp-btn-text">
+																			Ver proyecto
+																		</div>
+
+																		<span>
+																			<svg
+																				xmlns="http://www.w3.org/2000/svg"
+																				width="21"
+																				height="8"
+																				viewBox="0 0 21 8"
+																				fill="none"
+																			>
+																				<path
+																					d="M0 6.99626L19 7L10.208 1"
+																					stroke="currentColor"
+																				/>
+																			</svg>
+																		</span>
+																	</a>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
