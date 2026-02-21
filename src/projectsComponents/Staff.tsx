@@ -11,7 +11,7 @@ export default function Staff({
 	description: string;
 }) {
 	return (
-		<div className="mxd-section padding-default">
+		<div className="mxd-section pb-2!">
 			<div className="mxd-container grid-container">
 				<div className="mxd-block">
 					<div className="mxd-team-cards">
@@ -83,7 +83,7 @@ const TeamCard = ({
 		<div className="mxd-team-cards__item mxd-grid-item no-margin-desktop padding-bottom-desktop animate-card-3">
 			<div className="mxd-team-cards__media anim-uni-in-up">
 				<div className="mxd-team-cards__photo">
-					<img src={picture_src} alt={name} />
+					<img src={picture_src} alt={name} className="object-[50%_-3rem]" />
 				</div>
 				<div className="mxd-team-cards__socials">
 					<a

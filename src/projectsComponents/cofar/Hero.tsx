@@ -14,33 +14,35 @@ export default function Hero() {
 										<div />
 
 										<div className="mxd-services-stack__info width-60">
-											<div className="mxd-services-stack__title width-60">
+											<div className="mxd-services-stack__title">
 												<h3 className="opposite">¿Qué es CoFar?</h3>
 											</div>
 
 											<p className="t-small-mobile t-opposite">
-												Es un proyecto que utiliza modelos interpretables de
-												machine learning para predecir los efectos secundarios
-												de la combinación de distintos fármacos, apoyando la
-												toma de decisiones médicas.
+												Modelos Interpretables de Machine Learning para
+												Predicción de Efectos Secundarios de Terapias Combinadas
+												(CoFar) es un proyecto que utiliza modelos
+												interpretables de machine learning para predecir los
+												efectos secundarios de la combinación de distintos
+												fármacos, apoyando la toma de decisiones médicas.
 											</p>
 										</div>
+
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
 												src="/projects/img/services/800x800_ser-01.webp"
-												alt="Service/Feature Image"
+												alt="¿Qué es cofar?"
 											/>
 											<img
-												className="service-img service-img-m"
-												src="/projects/img/services/1000x1000_ser-01.webp"
-												alt="Service/Feature Image"
+												src="/projects/img/cofar/what-is-it.avif"
+												alt="¿Qué es cofar?"
+												className="service-img service-img-m w-full! mask-l-from-20% object-cover"
 											/>
 										</div>
 									</div>
 								</div>
 
-								{/* services stack single item */}
 								<div className="stack-item">
 									<div className="mxd-services-stack__inner justify-between bg-accent">
 										<div />
@@ -60,7 +62,7 @@ export default function Hero() {
 												<p className="t-small-mobile t-opposite">
 													Está diseñado para ser una herramienta de referencia
 													para profesionales de la salud, ayudándoles a
-													identificar riesgos antes de recetar combinaciones de
+													identiﬁcar riesgos antes de recetar combinaciones de
 													fármacos.
 												</p>
 											</div>
@@ -73,9 +75,9 @@ export default function Hero() {
 												alt="Service/Feature Image"
 											/>
 											<img
-												className="service-img service-img-m"
-												src="/projects/img/services/1000x1000_ser-02.webp"
+												src="/projects/img/cofar/what-we-do.avif"
 												alt="Service/Feature Image"
+												className="service-img service-img-m w-full! object-cover"
 											/>
 										</div>
 									</div>

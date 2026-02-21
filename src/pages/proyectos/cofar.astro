@@ -6,6 +6,7 @@ import ProjectLayout from "../../layouts/projectLayout.astro";
 import Hero from "../../projectsComponents/cofar/Hero.tsx";
 import HowItWorks from "../../projectsComponents/cofar/HowItWorks.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
+import Cards from "../../projectsComponents/cofar/Cards.tsx";
 
 import type { StaffType } from "./types.d.ts";
 import { pathHasLocale } from "astro:i18n";
@@ -16,7 +17,7 @@ const staff = [
 		position: "Representante legal e investigador principal",
 		description:
 			"Responsable de la ejecución del proyecto, gestionando contratos y comunicaciones formales con AONACYT, con posibilidades de delegación.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/luca-cernuzzi.avif",
 		cv_src: "#",
 	},
 	{
@@ -24,7 +25,7 @@ const staff = [
 		position: "Investigador asociado",
 		description:
 			"Lidera la investigación en biología computacional e inteligencia artificial.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/alberto-paccanaro.avif",
 		cv_src: "#",
 	},
 	{
@@ -32,7 +33,7 @@ const staff = [
 		position: "Investigador asociado",
 		description:
 			"Supervisa el desarrollo de modelos matemáticos y la caracterización de fármacos y sus efectos.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/ruben-jimenez.avif",
 		cv_src: "#",
 	},
 	{
@@ -40,7 +41,7 @@ const staff = [
 		position: "Investigador asociado",
 		description:
 			"Supervisa el modelo matemático en especial en redes neuronales profundas y el estudio del estado del arte.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/mateo-torres.avif",
 		cv_src: "#",
 	},
 	{
@@ -48,7 +49,7 @@ const staff = [
 		position: "Investigador en formación",
 		description:
 			"Implementa y evalúa modelos predictivos para combinaciones de fármacos.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/aldo-galeano.avif",
 		cv_src: "#",
 	},
 	{
@@ -56,7 +57,7 @@ const staff = [
 		position: "Investigador en formación",
 		description:
 			"Evalúa los modelos predictivos desarrollados y realiza comparaciones con métricas de machine learning.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/marcelo-baez.avif",
 		cv_src: "#",
 	},
 	{
@@ -64,7 +65,7 @@ const staff = [
 		position: "Investigador en formación",
 		description:
 			"Desarrolla herramientas y visualizaciones interactivas de datos para explotar información biológica compleja.",
-		picture_src: "/projects/img/team/800x920_team-01.webp",
+		picture_src: "/projects/img/staff/maria-del-mar.avif",
 		cv_src: "#",
 	},
 ] as StaffType[];
@@ -89,4 +90,5 @@ const staff = [
 				facilitando la investigación y desarrollo en estas áreas.</p>`,
 		}}
 	/>
+	<Cards />
 </ProjectLayout>

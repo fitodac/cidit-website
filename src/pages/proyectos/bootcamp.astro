@@ -2,12 +2,17 @@
 import "../../styles/bootcamp.css";
 
 import ProjectLayout from "../../layouts/projectLayout.astro";
+
+import Hero from "../../projectsComponents/bootcamp/Hero.tsx";
+import Intro from "../../projectsComponents/bootcamp/Intro.tsx";
 ---
 
 <ProjectLayout
 	title="Bootcamp"
-	logoSrc="/projects/img/proteia/logo.svg"
-	footerLogoSrc="/projects/img/proteia/logo-black.svg"
+	logoSrc="/projects/img/bootcamp/logo.svg"
+	logoHeight="h-20!"
+	footerLogoSrc="/projects/img/bootcamp/logo-black.svg"
 >
-	<p>Bootcamp</p>
+	<Hero />
+	<Intro />
 </ProjectLayout>

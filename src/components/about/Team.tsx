@@ -19,49 +19,49 @@ export default function Team() {
 							{...{
 								name: "Luca Cernuzzi",
 								position: "Presidente",
-								pictureUrl: "assets/img/digital-agency/team/team-12.jpg",
+								pictureUrl: "assets/img/staff/luca-cernuzzi.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Miguel Ángel Cardona",
 								position: "Secretario General",
-								pictureUrl: "assets/img/digital-agency/team/team-10.jpg",
+								pictureUrl: "assets/img/staff/miguel-angel-cardona.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Ana Gabriela Ayala Giménez",
 								position: "Tesorera",
-								pictureUrl: "assets/img/digital-agency/team/team-11.jpg",
+								pictureUrl: "assets/img/staff/ana-ayala.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Félix Soerensen",
 								position: "Vocal",
-								pictureUrl: "assets/img/digital-agency/team/team-4.jpg",
+								pictureUrl: "assets/img/staff/felix-sorensen.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Hugo Daniel Rodríguez Ayala",
 								position: "Síndico",
-								pictureUrl: "assets/img/digital-agency/team/team-5.jpg",
+								pictureUrl: "assets/img/staff/hugo-ayala.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Teresa Patricia Gamarra",
 								position: "Coordinación General",
-								pictureUrl: "assets/img/digital-agency/team/team-6.jpg",
+								pictureUrl: "assets/img/staff/teresa-gamarra.avif",
 							}}
 						/>
 						<TeamBox
 							{...{
 								name: "Patricia Candia",
 								position: "Administradora",
-								pictureUrl: "assets/img/digital-agency/team/team-7.jpg",
+								pictureUrl: "assets/img/staff/patricia-candia.avif",
 							}}
 						/>
 					</div>
@@ -82,10 +82,14 @@ const TeamBox = ({ name, position, pictureUrl }: TeamBoxProps) => {
 		<div className="col-xl-3 col-lg-4 col-md-6">
 			<div className="tp-team-item p-relative mb-30">
 				<div className="tp-team-thumb">
-					<img src={pictureUrl} alt="" />
+					<img
+						src={pictureUrl}
+						alt={`Foto de ${name}`}
+						className="h-110 w-full object-cover"
+					/>
 				</div>
 				<div className="tp-team-content">
-					<h4 className="tp-team-title">{name}</h4>
+					<h4 className="tp-team-title leading-tight!">{name}</h4>
 					<span>{position}</span>
 				</div>
 				<div className="tp-team-social">

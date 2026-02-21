@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+	--color-gn-primary: oklch(24% 0.0289 195);
+	--color-gn-primary-200: oklch(70% 0.15 195);
+	--color-gn-primary-300: oklch(70% 0.1 199);
+	--color-gn-primary-400: oklch(50% 0.1 197);
+	--color-gn-primary-500: var(--color-gn-primary);
+	--color-gn-primary-600: oklch(30% 0.1 190);
+}
+
+.mxd-header__controls > a {
+	border-color: #fff !important;
+	background-color: #fff !important;
+}
+
+.mxd-nav__hamburger .hamburger__base {
+}
+.mxd-nav__hamburger .hamburger__line {
+}

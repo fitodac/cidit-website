@@ -27,13 +27,11 @@ export default function HowItWorks() {
 							<div className="row g-0">
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
-										<div className="mxd-blog-preview__image blog-preview-image-1-- parallax-img-small">
-											<img
-												className="parallax-img-small"
-												src="/projects/img/blog/preview/1000x1250_prv-01.webp"
-												alt="Blog Preview Image"
-											/>
-										</div>
+										<img
+											src="/projects/img/cofar/data-entry.avif"
+											alt="Blog Preview Image"
+											className="parallax-img-small size-full! object-cover"
+										/>
 									</div>
 
 									<div className="mxd-blog-preview__data mt-6!">
@@ -51,13 +49,11 @@ export default function HowItWorks() {
 
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
-										<div className="mxd-blog-preview__image blog-preview-image-1-- parallax-img-small">
-											<img
-												className="parallax-img-small"
-												src="/projects/img/blog/preview/1000x1250_prv-01.webp"
-												alt="Blog Preview Image"
-											/>
-										</div>
+										<img
+											src="/projects/img/cofar/analysis.jpg"
+											alt="Blog Preview Image"
+											className="parallax-img-small size-full! object-cover"
+										/>
 									</div>
 
 									<div className="mxd-blog-preview__data mt-6!">
@@ -77,13 +73,11 @@ export default function HowItWorks() {
 
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
-										<div className="mxd-blog-preview__image blog-preview-image-1-- parallax-img-small">
-											<img
-												className="parallax-img-small"
-												src="/projects/img/blog/preview/1000x1250_prv-01.webp"
-												alt="Blog Preview Image"
-											/>
-										</div>
+										<img
+											src="/projects/img/cofar/recommendations.avif"
+											alt="Blog Preview Image"
+											className="parallax-img-small size-full! object-cover"
+										/>
 									</div>
 
 									<div className="mxd-blog-preview__data mt-6!">

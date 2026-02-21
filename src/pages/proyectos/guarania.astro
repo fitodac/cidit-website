@@ -2,12 +2,163 @@
 import "../../styles/guarania.css";
 
 import ProjectLayout from "../../layouts/projectLayout.astro";
+
+import Hero from "../../projectsComponents/guarania/Hero.tsx";
+import ProjectComponents from "../../projectsComponents/guarania/ProjectComponents.tsx";
+import BoxedContent from "../../projectsComponents/guarania/BoxedContent.tsx";
+import Staff from "../../projectsComponents/Staff.tsx";
+import Sponsors from "../../projectsComponents/guarania/Sponsors.tsx";
+import Reviews from "../../projectsComponents/guarania/Reviews.tsx";
+
+import type { StaffType } from "./types.d.ts";
+
+const staff = [
+	{
+		name: "Luca Cernuzzi",
+		position: "Investigador principal",
+		picture_src: "/projects/img/staff/luca-cernuzzi.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Jorge Saldivar",
+		position: "Investigador principal",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Marvin Aguero",
+		position: "Investigador principal",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Luis Chiruzzo",
+		position: "Investigador asociado",
+		description: "- UdelaR -",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Arnaldo Casco",
+		position: "Investigador asociado",
+		description: "- SPL -",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Mirtha Lugo",
+		position: "Investigador asociado",
+		description: "- UNI -",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Aldo Alvarez",
+		position: "Investigador asociado",
+		description: "- UNI -",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Alexis Baladón",
+		position: "Investigador en formación",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Andrea Báez",
+		position: "Investigador en formación",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Cecilia González",
+		position: "Investigador en formación",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Ramón Araujo",
+		position: "Investigador en formación",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Tomás López",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Rebeca Gamarra",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Fabricio Vázquez",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Vivian Caje",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Julia Fernández",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Gloria Aguilar",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Raquel Insfrán",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/blank.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Teresa Gamarra",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/teresa-gamarra.avif",
+		cv_src: "#",
+	},
+	{
+		name: "Patricia Candia",
+		position: "Equipo de diagnóstico",
+		picture_src: "/projects/img/staff/patricia-candia.avif",
+		cv_src: "#",
+	},
+] as StaffType[];
 ---
 
 <ProjectLayout
 	title="Guarania"
-	logoSrc="/projects/img/proteia/logo.svg"
-	footerLogoSrc="/projects/img/proteia/logo-black.svg"
+	logoSrc="/projects/img/guarania/logo.svg"
+	logoHeight="h-20!"
+	footerLogoSrc="/projects/img/guarania/logo-black.svg"
 >
-	<p>GuaranIA</p>
+	<Hero />
+	<ProjectComponents />
+	<BoxedContent />
+	<div class="h-71"></div>
+	<Staff
+		{...{
+			staff,
+			description: `<p>Un equipo de experimentados investigadores 
+										en biología molecular, computación y inteligencia 
+										artificial, comprometidos en revolucionar la 
+										predicción de complejos proteicos.</p>`,
+		}}
+	/>
+	<Sponsors />
+	<Reviews />
 </ProjectLayout>
