@@ -1,6 +1,6 @@
 export default function Cards() {
 	return (
-		<div className="mxd-section padding-grid-pre-mtext overflow-hidden mt-50!">
+		<div className="mxd-section padding-grid-pre-mtext overflow-hidden -mt-80!">
 			<div className="mxd-container grid-container">
 				{/* Block - Statistics Cards Start */}
 				<div className="mxd-block">
@@ -9,61 +9,65 @@ export default function Cards() {
 							<div className="row gx-0">
 								{/* item */}
 								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right">
-									<div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
-										<div className="mxd-counter w-130">
+									<div className="mxd-stats-cards__inner radius-m padding-4 bg-yellow-500">
+										<div className="w-120 flex flex-col gap-15 relative z-10">
+											<h3 className="text-5xl! leading-none!">
+												Finalidad del proyecto
+											</h3>
 											<p className="t-140 t-bright">
-												El proyecto CoFar utiliza modelos de Machine Learning
-												(IA) para predecir los efectos secundarios de terapias
-												combinadas, mejorando la seguridad en los tratamientos.
-												La plataforma funciona mediante Ingreso de Datos,
-												Análisis de Interacciones e Interpretación y
-												Recomendaciones.
+												Promover el desarrollo de capacidades digitales y
+												laborales en jóvenes, impulsando la empleabilidad y la
+												inclusión social mediante programas de formación
+												tecnológica, con enfoque territorial y acompañamiento
+												integral.
 											</p>
 										</div>
 
-										<div className="mxd-stats-cards__btngroup">
-											<a
-												className="btn btn-anim btn-default btn-outline slide-right-up"
-												href="works-simple.html"
-											>
-												<span className="btn-caption">
-													Descargar reporte técnico
-												</span>
-												<i className="ph-bold ph-arrow-up-right"></i>
-											</a>
-										</div>
-
-										<div className="mxd-stats-cards__image mxd-stats-cards-image-3">
-											<img
-												src="/projects/img/cofar/robot-hand.avif"
+										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
+											{/* <img
+												src="/projects/img/bootcamp/project-goal.avif"
 												alt="Illustration"
+												className="h-full! object-cover object-left mask-l-from-90% mask-l-to-99%"
+											/> */}
+											<video
+												src="/projects/img/bootcamp/project-goal.mp4"
+												poster="/projects/img/bootcamp/project-goal.avif"
+												loop
+												muted
+												autoPlay
+												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
 											/>
 										</div>
 									</div>
 								</div>
 								{/* item */}
 								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
-									<div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
-										<div className="mxd-counter">
+									<div className="mxd-stats-cards__inner radius-m padding-4 bg-[#f9b4bd]">
+										<div className="w-3/5 flex flex-col gap-15 relative z-10">
+											<h3 className="text-5xl! leading-none!">
+												¿Cuál es el enfoque con los beneficiarios?
+											</h3>
 											<p className="mxd-counter__descr t-140 t-bright">
-												Si eres un profesional de la salud o estás interesado en
-												colaboraciones para la identificación de riesgos, puedes
-												ponerte en contacto con nosotros.
+												Los beneficiarios son jóvenes que se encuentran en
+												situación de vulnerabilidad social, con interés en
+												adquirir habilidades digitales que les permitan mejorar
+												sus oportunidades laborales y de desarrollo personal.
 											</p>
 										</div>
-										<div className="mxd-stats-cards__btngroup">
-											<a
-												className="btn btn-anim btn-default btn-outline slide-right-up"
-												href="works-simple.html"
-											>
-												<span className="btn-caption">Quiero sumarme</span>
-												<i className="ph-bold ph-arrow-up-right"></i>
-											</a>
-										</div>
-										<div className="mxd-stats-cards__image mxd-stats-cards-image-4">
-											<img
-												src="/projects/img/illustrations/800x800_card-image-04.webp"
+
+										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
+											{/* <img
+												src="/projects/img/bootcamp/benefits.jpg"
 												alt="Illustration"
+												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
+											/> */}
+											<video
+												src="/projects/img/bootcamp/benefits.mp4"
+												poster="/projects/img/bootcamp/benefits.avif"
+												loop
+												muted
+												autoPlay
+												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
 											/>
 										</div>
 									</div>

@@ -5,9 +5,16 @@ export default function BoxedContent() {
 				{/* Block - CTA Start */}
 				<div className="mxd-block">
 					<div className="mxd-promo">
-						<div className="mxd-promo__inner anim-zoom-out-container">
+						<div className="mxd-promo__inner anim-zoom-out-container bg-gn-primary-500!">
 							{/* background */}
-							<div className="mxd-promo__bg"></div>
+							<div className="w-1/2 right-0 inset-y-0 absolute [&>div]:h-full!">
+								<img
+									src="/projects/img/guarania/boxed-content-gackground.avif"
+									alt="Imagen de fondo"
+									className="w-[150%]! max-w-screen! object-cover parallax-img-small mask-l-from-70%"
+								/>
+							</div>
+
 							{/* caption */}
 							<div className="mxd-promo__content lg:w-1/2! lg:my-31!">
 								<h3 className="anim-uni-in-up reveal-type text-white">
@@ -41,16 +48,12 @@ export default function BoxedContent() {
 									</p>
 								</div>
 							</div>
+
 							{/* parallax images */}
 							<div className="mxd-promo__images">
 								<img
-									className="promo-image promo-image-1"
-									src="/projects/img/illustrations/cta-img-01.webp"
-									alt="Image"
-								/>
-								<img
-									className="promo-image promo-image-2"
-									src="/projects/img/illustrations/cta-img-02.webp"
+									className="w-300 absolute -right-100 -bottom-50 mix-blend-multiply rotate-45 mxd-move"
+									src="/projects/img/guarania/iso-2.svg"
 									alt="Image"
 								/>
 							</div>

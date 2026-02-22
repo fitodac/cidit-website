@@ -5,7 +5,7 @@ export default function Brochure() {
 				<div className="mxd-block">
 					<div className="mxd-stats-cards">
 						<div className="container-fluid px-0">
-							<div className="mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
+							<div className="mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-auto!">
 								<div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 bg-[url(/projects/img/covida/brochure-bg.jpg)] bg-no-repeat bg-cover">
 									<div className="flex justify-end">
 										<div className="mxd-counter [&_*]:text-white! md:w-1/2 lg:w-1/3">
