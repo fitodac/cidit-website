@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { staticPath } from "../../utils/staticPath";
 
 export default function Reviews() {
 	return (
@@ -33,15 +34,17 @@ export default function Reviews() {
 													<ReviewCard
 														{...{
 															name: "Wilfrido Martínez",
-															picture_src:
-																"projects/img/testimonials/wilfrido.avif",
+															picture_src: staticPath(
+																"projects/img/testimonials/wilfrido.avif"
+															),
 														}}
 													/>
 													<ReviewCard
 														{...{
 															name: "Miguelina Martínez",
-															picture_src:
-																"projects/img/testimonials/miguelina.avif",
+															picture_src: staticPath(
+																"projects/img/testimonials/miguelina.avif"
+															),
 														}}
 													/>
 												</Fragment>

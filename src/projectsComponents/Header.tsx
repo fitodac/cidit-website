@@ -104,25 +104,25 @@ export default function Header({
 												loop
 												muted
 												poster={staticPath(
-													"/projects/video/540x310_video-01.webp"
+													"projects/video/540x310_video-01.webp"
 												)}
 											>
 												<source
 													type="video/mp4"
 													src={staticPath(
-														"/projects/video/540x310_video-01.mp4"
+														"projects/video/540x310_video-01.mp4"
 													)}
 												/>
 												<source
 													type="video/webm"
 													src={staticPath(
-														"/projects/video/540x310_video-01.webm"
+														"projects/video/540x310_video-01.webm"
 													)}
 												/>
 												<source
 													type="video/ogv"
 													src={staticPath(
-														"/projects/video/540x310_video-01.ogv"
+														"projects/video/540x310_video-01.ogv"
 													)}
 												/>
 											</video>
