@@ -4,15 +4,13 @@ export default function BoxedContent() {
 	return (
 		<div className="mxd-section overflow-hidden">
 			<div className="mxd-container">
-				{/* Block - CTA Start */}
 				<div className="mxd-block">
 					<div className="mxd-promo">
 						<div className="mxd-promo__inner anim-zoom-out-container bg-gn-primary-500!">
-							{/* background */}
 							<div className="w-1/2 right-0 inset-y-0 absolute [&>div]:h-full!">
 								<img
 									src={staticPath(
-										"/projects/img/guarania/boxed-content-gackground.avif",
+										"projects/img/guarania/boxed-content-gackground.avif"
 									)}
 									alt="Imagen de fondo"
 									className="w-[150%]! max-w-screen! object-cover parallax-img-small mask-l-from-70%"
@@ -53,18 +51,16 @@ export default function BoxedContent() {
 								</div>
 							</div>
 
-							{/* parallax images */}
 							<div className="mxd-promo__images">
 								<img
 									className="w-300 absolute -right-100 -bottom-50 mix-blend-multiply rotate-45 mxd-move"
-									src={staticPath("/projects/img/guarania/iso-2.svg")}
+									src={staticPath("projects/img/guarania/iso-2.svg")}
 									alt="Image"
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
-				{/* Block - CTA End */}
 			</div>
 		</div>
 	);

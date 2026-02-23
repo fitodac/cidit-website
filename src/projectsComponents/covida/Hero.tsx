@@ -29,7 +29,7 @@ export default function Hero() {
 							<div className="mxd-hero-02-marquee__image loading__item">
 								<img
 									className="mxd-move"
-									src={staticPath("/projects/img/covida/virus.png")}
+									src={staticPath("projects/img/covida/virus.png")}
 									alt="Hero Image"
 								/>
 							</div>

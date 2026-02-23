@@ -31,7 +31,7 @@ export default function Hero() {
 					<div className="mxd-hero-09__objects top-60!">
 						<div className="hero-09-objects__image loading__item">
 							<img
-								src={staticPath("/projects/img/bootcamp/hero.avif")}
+								src={staticPath("projects/img/bootcamp/hero.avif")}
 								alt="Hero Image"
 								className="mxd-move w-auto! h-200! max-w-screen -translate-x-1/4"
 							/>

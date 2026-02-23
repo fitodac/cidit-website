@@ -11,7 +11,7 @@ export default function Brochure() {
 								<div
 									className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 bg-no-repeat bg-cover"
 									style={{
-										backgroundImage: `url(${staticPath("/projects/img/covida/brochure-bg.jpg")})`,
+										backgroundImage: `url(${staticPath("projects/img/covida/brochure-bg.jpg")})`,
 									}}
 								>
 									<div className="flex justify-end">

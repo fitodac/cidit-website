@@ -43,7 +43,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src={staticPath("/projects/img/covida/fgv.svg")}
+												src={staticPath("projects/img/covida/fgv.svg")}
 												alt="Fundación Getulio Vargas"
 												className="w-auto h-25!"
 											/>
@@ -51,7 +51,9 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src={staticPath("/projects/img/covida/royal-holloway.webp")}
+												src={staticPath(
+													"projects/img/covida/royal-holloway.webp"
+												)}
 												alt="Royal Holloway University of London"
 												className="w-auto h-35!"
 											/>
@@ -59,7 +61,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src={staticPath("/projects/img/covida/cnacyt.png")}
+												src={staticPath("projects/img/covida/cnacyt.png")}
 												alt="CNACYT"
 												className="w-auto h-30!"
 											/>
@@ -67,7 +69,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src={staticPath("/projects/img/covida/prociencia.png")}
+												src={staticPath("projects/img/covida/prociencia.png")}
 												alt="Prociencia"
 												className="w-auto h-35!"
 											/>
@@ -75,7 +77,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src={staticPath("/projects/img/covida/feei.png")}
+												src={staticPath("projects/img/covida/feei.png")}
 												alt="FEEI"
 												className="w-auto h-35!"
 											/>

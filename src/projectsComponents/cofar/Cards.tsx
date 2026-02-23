@@ -37,7 +37,7 @@ export default function Cards() {
 
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-3">
 											<img
-												src={staticPath("/projects/img/cofar/robot-hand.avif")}
+												src={staticPath("projects/img/cofar/robot-hand.avif")}
 												alt="Illustration"
 											/>
 										</div>
@@ -65,7 +65,7 @@ export default function Cards() {
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-4">
 											<img
 												src={staticPath(
-													"/projects/img/illustrations/800x800_card-image-04.webp",
+													"projects/img/illustrations/800x800_card-image-04.webp"
 												)}
 												alt="Illustration"
 											/>

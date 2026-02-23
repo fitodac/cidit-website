@@ -14,7 +14,7 @@ export default function HowItWorks() {
 										<div className="mxd-projects-stack__image bg-black">
 											<img
 												src={staticPath(
-													"/projects/img/proteia/prediccion-del-interactoma.avif",
+													"projects/img/proteia/prediccion-del-interactoma.avif"
 												)}
 												alt="Ilustración sobre predicción del interactoma"
 												className="mask-l-from-20% mask-l-to-80%"
@@ -40,7 +40,7 @@ export default function HowItWorks() {
 										<div className="mxd-projects-stack__image bg-black">
 											<img
 												src={staticPath(
-													"/projects/img/proteia/identificacion-de-complejos.avif",
+													"projects/img/proteia/identificacion-de-complejos.avif"
 												)}
 												alt="Ilustración sobre identificación de complejos"
 												className="mask-l-from-20% mask-l-to-80%"
@@ -64,7 +64,9 @@ export default function HowItWorks() {
 									<div className="mxd-projects-stack__inner justify-between">
 										<div className="mxd-projects-stack__image bg-black">
 											<img
-												src={staticPath("/projects/img/proteia/analisis-funcional.avif")}
+												src={staticPath(
+													"projects/img/proteia/analisis-funcional.avif"
+												)}
 												alt="Ilustración sobre análisis funcional"
 												className="mask-l-from-20% mask-l-to-80%"
 											/>

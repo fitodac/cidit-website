@@ -10,7 +10,7 @@ export default function HeadlineSection() {
 							<div className="row g-0">
 								<div className="col-12 col-xl-4 mxd-grid-item no-margin">
 									<img
-										src={staticPath("/projects/img/bootcamp/shape-2.svg")}
+										src={staticPath("projects/img/bootcamp/shape-2.svg")}
 										alt="Shape"
 										className="mxd-move w-101! h-auto -top-50 -left-50 absolute xl:w-240! xl:-left-100 xl:-top-70"
 									/>

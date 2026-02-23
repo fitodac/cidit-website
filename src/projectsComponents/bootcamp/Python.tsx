@@ -41,19 +41,13 @@ export default function Python() {
 
 										<div className="parallax-img-small w-200! h-full! absolute right-20 bottom-0 z-10 [&>div]:flex! [&>div]:items-center!">
 											<img
-												src={staticPath("/projects/img/bootcamp/python-logo.avif")}
+												src={staticPath(
+													"projects/img/bootcamp/python-logo.avif"
+												)}
 												alt="Python logo"
 												className="w-full translate-y-1/2"
 											/>
 										</div>
-
-											{/* <video
-											src={staticPath("/projects/img/bootcamp/py-bg-1.mp4")}
-											autoPlay={true}
-											loop
-											muted
-											className="inset-0 absolute object-cover opacity-50"
-										/> */}
 									</div>
 								</div>
 
@@ -88,7 +82,7 @@ export default function Python() {
 										<div></div>
 
 										<img
-											src={staticPath("/projects/img/bootcamp/py-bg-2.avif")}
+											src={staticPath("projects/img/bootcamp/py-bg-2.avif")}
 											alt="Service/Feature Image"
 											className="w-auto! h-250! object-cover right-0 bottom-0 absolute mask-l-from-50%"
 										/>
@@ -129,14 +123,14 @@ export default function Python() {
 											<img
 												className="service-img service-img-s"
 												src={staticPath(
-													"/projects/img/services/800x800_ser-03.webp",
+													"projects/img/services/800x800_ser-03.webp"
 												)}
 												alt="Service/Feature Image"
 											/>
 											<img
 												className="service-img service-img-m"
 												src={staticPath(
-													"/projects/img/services/1000x1000_ser-03.webp",
+													"projects/img/services/1000x1000_ser-03.webp"
 												)}
 												alt="Service/Feature Image"
 											/>
@@ -180,7 +174,7 @@ export default function Python() {
 										</div>
 
 										<img
-											src={staticPath("/projects/img/bootcamp/py-bg-4.avif")}
+											src={staticPath("projects/img/bootcamp/py-bg-4.avif")}
 											alt="Service/Feature Image"
 											className="w-auto! h-270! object-cover -right-60 -top-30 absolute mix-blend-lighten drop-shadow-[0_0_20px_rgba(255,223,5,0.7)]"
 										/>

@@ -4,12 +4,10 @@ export default function ProjectComponents() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext overflow-hidden -mt-120!">
 			<div className="mxd-container grid-container">
-				{/* Block - Statistics Cards Start */}
 				<div className="mxd-block">
 					<div className="mxd-stats-cards">
 						<div className="container-fluid px-0">
 							<div className="row gx-0">
-								{/* item */}
 								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-140!">
 									<div className="mxd-stats-cards__inner align-end radius-m padding-4 bg-gn-primary-400!">
 										<div className="mxd-counter align-end">
@@ -28,13 +26,13 @@ export default function ProjectComponents() {
 											</a>
 										</div>
 										<img
-											src={staticPath("/projects/img/guarania/card-1-bg.jpg")}
+											src={staticPath("projects/img/guarania/card-1-bg.jpg")}
 											alt="Illustration"
 											className="absolute bottom-0 inset-x-0 object-cover h-4/5! mask-t-from-0"
 										/>
 									</div>
 								</div>
-								{/* item */}
+
 								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-140!">
 									<div className="mxd-stats-cards__inner align-end bg-base-tint radius-m padding-4">
 										<div className="mxd-stats-cards__btngroup"></div>
@@ -45,13 +43,13 @@ export default function ProjectComponents() {
 											</p>
 										</div>
 										<img
-											src={staticPath("/projects/img/guarania/card-2-bg.avif")}
+											src={staticPath("projects/img/guarania/card-2-bg.avif")}
 											alt="Illustration"
 											className="w-200! h-auto -left-40 top-1/2 absolute -mt-50!"
 										/>
 									</div>
 								</div>
-								{/* item */}
+
 								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-140!">
 									<div className="mxd-stats-cards__inner bg-[#7bafd1] radius-m padding-4">
 										<div className="mxd-counter">
@@ -63,14 +61,14 @@ export default function ProjectComponents() {
 
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-3 w-2/3! h-full!">
 											<img
-												src={staticPath("/projects/img/guarania/women.avif")}
+												src={staticPath("projects/img/guarania/women.avif")}
 												alt="Illustration"
 												className="w-full h-full! object-contain object-bottom-right"
 											/>
 										</div>
 									</div>
 								</div>
-								{/* item */}
+
 								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-140!">
 									<div className="mxd-stats-cards__inner radius-m padding-4 bg-gn-primary-400!">
 										<div className="mxd-counter">
@@ -92,7 +90,7 @@ export default function ProjectComponents() {
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-4">
 											<img
 												src={staticPath(
-													"/projects/img/illustrations/800x800_card-image-04.webp",
+													"projects/img/illustrations/800x800_card-image-04.webp"
 												)}
 												alt="Illustration"
 											/>
@@ -103,7 +101,6 @@ export default function ProjectComponents() {
 						</div>
 					</div>
 				</div>
-				{/* Block - Statistics Cards End */}
 			</div>
 		</div>
 	);

@@ -4,15 +4,12 @@ export default function Reviews() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext">
 			<div className="mxd-container no-padding-container">
-				{/* Block - Testimonials Slider #01 with Section Title Start */}
 				<div className="mxd-block">
 					<div className="container-fluid px-0">
 						<div className="row gx-0">
 							<div className="col-12 col-xl-5">
-								{/* Additional Container Start */}
 								<div className="mxd-container grid-container">
 									<div className="mxd-block">
-										{/* Section Title Start */}
 										<div className="mxd-section-title no-margin-desktop">
 											<div className="container-fluid p-0">
 												<div className="row g-0">
@@ -24,17 +21,12 @@ export default function Reviews() {
 												</div>
 											</div>
 										</div>
-										{/* Section Title Start */}
 									</div>
 								</div>
-								{/* Additional Container End */}
 							</div>
 							<div className="col-12 col-xl-7">
-								{/* Testimonials Slider Start */}
 								<div className="testimonials-slider overflow-hidden anim-uni-in-up">
-									{/* slider main container */}
 									<div className="swiper-testimonials">
-										{/* additional required wrapper */}
 										<div className="swiper-wrapper">
 											{Array.from({ length: 6 }).map((e, idx) => (
 												<Fragment key={idx}>
@@ -42,20 +34,20 @@ export default function Reviews() {
 														{...{
 															name: "Wilfrido Martínez",
 															picture_src:
-																"/projects/img/testimonials/wilfrido.avif",
+																"projects/img/testimonials/wilfrido.avif",
 														}}
 													/>
 													<ReviewCard
 														{...{
 															name: "Miguelina Martínez",
 															picture_src:
-																"/projects/img/testimonials/miguelina.avif",
+																"projects/img/testimonials/miguelina.avif",
 														}}
 													/>
 												</Fragment>
 											))}
 										</div>
-										{/* navigation buttons */}
+
 										<div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2">
 											<a
 												className="btn btn-round btn-round-small btn-outline slide-left anim-no-delay"
@@ -77,12 +69,10 @@ export default function Reviews() {
 									</div>
 									<div className="testimonials-slider__shadow"></div>
 								</div>
-								{/* Testimonials Slider End */}
 							</div>
 						</div>
 					</div>
 				</div>
-				{/* Block - Testimonials Slider #01 with Section Title Start */}
 			</div>
 		</div>
 	);

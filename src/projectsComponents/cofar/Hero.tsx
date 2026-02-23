@@ -4,13 +4,11 @@ export default function Hero() {
 	return (
 		<div className="mxd-section padding-stacked-section">
 			<div className="mxd-container grid-container">
-				{/* Block - Services/Features Stacking Cards Start */}
 				<div className="mxd-block mxd-grid-item no-margin">
 					<div className="content__block">
 						<div className="stack-wrapper in-content-stack">
 							<div className="stack-offset"></div>
 							<div className="services-stack">
-								{/* services stack single item */}
 								<div className="stack-item">
 									<div className="mxd-services-stack__inner justify-between bg-base-opp">
 										<div />
@@ -33,11 +31,13 @@ export default function Hero() {
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
-												src={staticPath("/projects/img/services/800x800_ser-01.webp")}
+												src={staticPath(
+													"projects/img/services/800x800_ser-01.webp"
+												)}
 												alt="¿Qué es cofar?"
 											/>
 											<img
-												src={staticPath("/projects/img/cofar/what-is-it.avif")}
+												src={staticPath("projects/img/cofar/what-is-it.avif")}
 												alt="¿Qué es cofar?"
 												className="service-img service-img-m w-full! mask-l-from-20% object-cover"
 											/>
@@ -73,11 +73,13 @@ export default function Hero() {
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
-												src={staticPath("/projects/img/services/800x800_ser-02.webp")}
+												src={staticPath(
+													"projects/img/services/800x800_ser-02.webp"
+												)}
 												alt="Service/Feature Image"
 											/>
 											<img
-												src={staticPath("/projects/img/cofar/what-we-do.avif")}
+												src={staticPath("projects/img/cofar/what-we-do.avif")}
 												alt="Service/Feature Image"
 												className="service-img service-img-m w-full! object-cover"
 											/>
@@ -88,7 +90,6 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-				{/* Block - Services/Features Stacking Cards End */}
 			</div>
 		</div>
 	);

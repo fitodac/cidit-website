@@ -30,7 +30,7 @@ export default function HowItWorks() {
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
 										<img
-											src={staticPath("/projects/img/cofar/data-entry.avif")}
+											src={staticPath("projects/img/cofar/data-entry.avif")}
 											alt="Blog Preview Image"
 											className="parallax-img-small size-full! object-cover"
 										/>
@@ -52,7 +52,7 @@ export default function HowItWorks() {
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
 										<img
-											src={staticPath("/projects/img/cofar/analysis.jpg")}
+											src={staticPath("projects/img/cofar/analysis.jpg")}
 											alt="Blog Preview Image"
 											className="parallax-img-small size-full! object-cover"
 										/>
@@ -76,7 +76,9 @@ export default function HowItWorks() {
 								<div className="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
 									<div className="h-140 relative rounded-[5rem] overflow-hidden">
 										<img
-											src={staticPath("/projects/img/cofar/recommendations.avif")}
+											src={staticPath(
+												"projects/img/cofar/recommendations.avif"
+											)}
 											alt="Blog Preview Image"
 											className="parallax-img-small size-full! object-cover"
 										/>

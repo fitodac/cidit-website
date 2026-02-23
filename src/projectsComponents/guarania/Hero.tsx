@@ -5,21 +5,17 @@ export default function Hero() {
 	return (
 		<div className="mxd-section mxd-section-inner-headline padding-s-text-pre-block bg-gn-primary-600! relative overflow-hidden">
 			<img
-				src={staticPath("/projects/img/guarania/iso-2.svg")}
+				src={staticPath("projects/img/guarania/iso-2.svg")}
 				alt="Iso"
 				className="w-auto h-230! top-1/2 -right-145 absolute -translate-y-1/3 opacity-15 rotate-30"
 			/>
 
 			<div className="mxd-container grid-container">
-				{/* Block - Inner Page Headline Start */}
 				<div className="mxd-block loading-wrap">
 					<div className="container-fluid px-0">
 						<div className="row gx-0">
-							{/* Inner Headline Name Start */}
 							<div className="col-12 col-xl-2 mxd-grid-item no-margin" />
-							{/* Inner Headline Name Start */}
 
-							{/* Inner Headline Content Start */}
 							<div className="col-12 col-xl-8 mxd-grid-item no-margin">
 								<div className="mxd-block__content">
 									<div className="mxd-block__inner-headline">
@@ -27,7 +23,7 @@ export default function Hero() {
 											className={cn(
 												"inner-headline__title headline-img-before headline-img-02 loading__item text-white!",
 												"before:hidden! before:rounded-full! lg:before:w-80! lg:before:h-40! lg:before:inline-flex!",
-												'before:bg-[url("/projects/img/guarania/tupi-guarani.jpg")]!'
+												'before:bg-[url("projects/img/guarania/tupi-guarani.jpg")]!'
 											)}
 										>
 											Integrando el idioma guaraní en el ámbito digital
@@ -42,11 +38,9 @@ export default function Hero() {
 									</div>
 								</div>
 							</div>
-							{/* Inner Headline Content End */}
 						</div>
 					</div>
 				</div>
-				{/* Block - Inner Page Headline End */}
 			</div>
 
 			<div className="h-141" />

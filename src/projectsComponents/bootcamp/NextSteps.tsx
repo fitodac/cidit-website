@@ -18,7 +18,7 @@ export default function NextSteps() {
 										role="listitem"
 									>
 										<img
-											src={staticPath("/projects/img/bootcamp/ns-1.avif")}
+											src={staticPath("projects/img/bootcamp/ns-1.avif")}
 											alt="Image"
 											className="w-3/5! h-auto object-cover"
 										/>
@@ -28,7 +28,7 @@ export default function NextSteps() {
 										role="listitem"
 									>
 										<img
-											src={staticPath("/projects/img/bootcamp/ns-2.avif")}
+											src={staticPath("projects/img/bootcamp/ns-2.avif")}
 											alt="Image"
 											className="w-3/5! h-auto object-cover"
 										/>
@@ -38,7 +38,7 @@ export default function NextSteps() {
 										role="listitem"
 									>
 										<img
-											src={staticPath("/projects/img/bootcamp/ns-3.avif")}
+											src={staticPath("projects/img/bootcamp/ns-3.avif")}
 											alt="Image"
 											className="w-3/5! h-auto object-cover"
 										/>
@@ -48,7 +48,7 @@ export default function NextSteps() {
 										role="listitem"
 									>
 										<img
-											src={staticPath("/projects/img/bootcamp/ns-4.avif")}
+											src={staticPath("projects/img/bootcamp/ns-4.avif")}
 											alt="Image"
 											className="w-3/5! h-auto object-cover"
 										/>
@@ -58,7 +58,7 @@ export default function NextSteps() {
 										role="listitem"
 									>
 										<img
-											src={staticPath("/projects/img/bootcamp/ns-5.avif")}
+											src={staticPath("projects/img/bootcamp/ns-5.avif")}
 											alt="Image"
 											className="w-3/5! h-auto object-cover"
 										/>
@@ -72,7 +72,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"/projects/img/illustrations/800x800_pinned-image-01.webp",
+												"projects/img/illustrations/800x800_pinned-image-01.webp"
 											),
 											title: "Itapúa",
 											starting: "Junio 2023, con el taller de inducción",
@@ -89,7 +89,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"/projects/img/illustrations/800x800_pinned-image-02.webp",
+												"projects/img/illustrations/800x800_pinned-image-02.webp"
 											),
 											title: "Alto Paraná",
 											starting: "Septiembre 2023, con el taller de inducción",
@@ -106,7 +106,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"/projects/img/illustrations/800x800_pinned-image-03.webp",
+												"projects/img/illustrations/800x800_pinned-image-03.webp"
 											),
 											title: "Caaguazú",
 											starting: "Enero 2024, con el taller de inducción",
@@ -123,7 +123,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"/projects/img/illustrations/800x800_pinned-image-04.webp",
+												"projects/img/illustrations/800x800_pinned-image-04.webp"
 											),
 											title: "Central",
 											starting: "Abril 2024, con el taller de inducción",
@@ -140,7 +140,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"/projects/img/illustrations/800x800_pinned-image-04.webp",
+												"projects/img/illustrations/800x800_pinned-image-04.webp"
 											),
 											title: "Asunción",
 											starting: "Septiembre 2024, con el taller de inducción",
