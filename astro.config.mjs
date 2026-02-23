@@ -8,6 +8,7 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-	site: "https://fitodac.github.io",
-	base: process.env.NODE_ENV === "production" ? "/cidit-website/" : "/",
+	site: "https://cidit.website.io",
+	// base: "/",
+	// base: process.env.NODE_ENV === "production" ? "/cidit-website/" : "/",
 });
