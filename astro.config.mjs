@@ -1,4 +1,3 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
@@ -10,5 +9,5 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	site: "https://fitodac.github.io",
-	base: "/",
+	base: process.env.NODE_ENV === "production" ? "/cidit-website/" : "/",
 });
