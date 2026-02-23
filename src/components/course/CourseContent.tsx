@@ -64,7 +64,7 @@ export default function CourseContent({ title }: { title: string }) {
 									<div className="sidebar-widget-author d-flex align-items-start">
 										<div className="sidebar-widget-author-img">
 											<img
-												src="/assets/img/inner-image/blog/details/avatar-1.jpg"
+												src="assets/img/inner-image/blog/details/avatar-1.jpg"
 												alt=""
 											/>
 										</div>

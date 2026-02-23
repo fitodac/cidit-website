@@ -1,13 +1,13 @@
 const reviews = [
 	{
-		picture: "/assets/img/reviews/portrait-3.avif",
+		picture: "assets/img/reviews/portrait-3.avif",
 		name: "Diego Rubén González",
 		position: "Ingeniero",
 		review:
 			"Me llevé una visión estratégica muy sólida para gestionar contratos y proyectos viales; el curso fue claro, ordenado y realmente útil para aplicar en obra.",
 	},
 	{
-		picture: "/assets/img/reviews/portrait-2.avif",
+		picture: "assets/img/reviews/portrait-2.avif",
 		name: "Israel Cabrera",
 		position: null,
 		review:

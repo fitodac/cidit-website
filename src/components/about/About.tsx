@@ -154,7 +154,7 @@ export default function About() {
 							<div className="sa-about-left tp_fade_anim" data-delay=".6">
 								<img
 									data-speed="1.1"
-									src="/assets/img/inner-image/service/thumb-2.jpg"
+									src="assets/img/inner-image/service/thumb-2.jpg"
 									alt=""
 									className="w-full"
 								/>

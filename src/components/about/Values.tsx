@@ -32,7 +32,7 @@ export default function Values() {
 							{...{
 								title: "Responsabilidad",
 								content: `<p>Nuestras acciones se rigen bajo la obligación del cumplimiento de nuestros compromisos pactados con nuestros usuarios y clientes.</p>`,
-								icon: "/assets/img/about/icon-1.svg",
+								icon: "assets/img/about/icon-1.svg",
 							}}
 						/>
 
@@ -40,7 +40,7 @@ export default function Values() {
 							{...{
 								title: "Trabajo Colaborativo",
 								content: `<p>Abrimos espacios de colaboración con profesionales nacionales e internacionales de distintas disciplinas en la búsqueda de objetivos comunes para generar soluciones con creatividad e innovación.</p>`,
-								icon: "/assets/img/about/icon-2.svg",
+								icon: "assets/img/about/icon-2.svg",
 							}}
 						/>
 
@@ -48,7 +48,7 @@ export default function Values() {
 							{...{
 								title: "Excelencia",
 								content: `<p>Nos esforzamos en alcanzar los más altos estándares de rendimiento y calidad.</p>`,
-								icon: "/assets/img/about/icon-3.svg",
+								icon: "assets/img/about/icon-3.svg",
 							}}
 						/>
 
@@ -56,7 +56,7 @@ export default function Values() {
 							{...{
 								title: "Compromiso social",
 								content: `<p>Participación activa y comprometida en la búsqueda del bien para la mejora del entorno y la calidad de vida de las personas.</p>`,
-								icon: "/assets/img/about/icon-4.svg",
+								icon: "assets/img/about/icon-4.svg",
 							}}
 						/>
 
@@ -64,7 +64,7 @@ export default function Values() {
 							{...{
 								title: "Ética",
 								content: `<p>Nos moviliza el compromiso de cumplir prácticas honestas y responsables en todos los aspectos de nuestra vida organizativa.</p>`,
-								icon: "/assets/img/about/icon-5.svg",
+								icon: "assets/img/about/icon-5.svg",
 							}}
 						/>
 					</div>

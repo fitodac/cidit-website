@@ -21,7 +21,7 @@ export default function Projects_old() {
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="/proyectos/guarania">
 							<img
-								src="/assets/img/home/projects/guarania.webp"
+								src="assets/img/home/projects/guarania.webp"
 								alt="GuaranIA"
 							/>
 						</a>
@@ -34,7 +34,7 @@ export default function Projects_old() {
 				>
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="/proyectos/proteia">
-							<img src="/assets/img/home/projects/proteia.webp" alt="Proteia" />
+							<img src="assets/img/home/projects/proteia.webp" alt="Proteia" />
 						</a>
 					</div>
 				</div>
@@ -45,7 +45,7 @@ export default function Projects_old() {
 				>
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="/proyectos/cofar">
-							<img src="/assets/img/home/projects/cofar.webp" alt="" />
+							<img src="assets/img/home/projects/cofar.webp" alt="" />
 						</a>
 					</div>
 				</div>
@@ -56,7 +56,7 @@ export default function Projects_old() {
 				>
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="/proyectos/bootcamp">
-							<img src="/assets/img/home/projects/bootcamp.webp" alt="" />
+							<img src="assets/img/home/projects/bootcamp.webp" alt="" />
 						</a>
 					</div>
 				</div>
@@ -67,7 +67,7 @@ export default function Projects_old() {
 				>
 					<div className="sa-work-portfolio-thumb">
 						<a className="d-block cursor-hide" href="/proyectos/covida">
-							<img src="/assets/img/home/projects/covida.webp" alt="" />
+							<img src="assets/img/home/projects/covida.webp" alt="" />
 						</a>
 					</div>
 				</div>

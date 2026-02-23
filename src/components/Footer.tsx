@@ -155,7 +155,7 @@ export default function Footer() {
 									data-ease="bounce"
 								>
 									<img
-										src="/assets/img/logo-white.svg"
+										src="assets/img/logo-white.svg"
 										alt="CIDIT logo"
 										className="w-2/3"
 									/>

@@ -24,7 +24,7 @@ export default function Header({
 							<a href="/">
 								<img
 									data-width="150"
-									src={`/assets/img/logo-${baseLogoColor}.svg`}
+									src={`assets/img/logo-${baseLogoColor}.svg`}
 									alt=""
 									className="main-logo"
 								/>

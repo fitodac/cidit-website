@@ -3,7 +3,7 @@ export default function PageHeader() {
 		<div className="tp-breadcrumb-s10-style z-1 black-bg relative overflow-hidden">
 			<div data-speed=".4" className="inset-x-0 top-0 absolute">
 				<img
-					src="/assets/img/48e9ffa018291b1d20245ce3c339461d.avif"
+					src="assets/img/48e9ffa018291b1d20245ce3c339461d.avif"
 					alt="hero background"
 					className="w-full opacity-50 object-cover"
 				/>

@@ -17,8 +17,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "02",
 						images: [
-							"/assets/img/courses/gestion-contratos-obra-publica-fidic.avif",
-							"/assets/img/courses/gestion-contratos-obra-publica-fidic-2.avif",
+							"assets/img/courses/gestion-contratos-obra-publica-fidic.avif",
+							"assets/img/courses/gestion-contratos-obra-publica-fidic-2.avif",
 						],
 						professors: ["Ing. Mauricio Guglielmi"],
 						link: "/cursos/gestion-de-contratos-de-obra-publica-con-experiencia-fidici",
@@ -31,8 +31,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "03",
 						images: [
-							"/assets/img/courses/curso-costo-4w-2026.avif",
-							"/assets/img/courses/curso-costo-4w-2026-2.avif",
+							"assets/img/courses/curso-costo-4w-2026.avif",
+							"assets/img/courses/curso-costo-4w-2026-2.avif",
 						],
 						professors: ["Ing. Carlos Aguade"],
 						link: "/cursos/curso-costo-4w-2026",
@@ -46,8 +46,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "04",
 						images: [
-							"/assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino.avif",
-							"/assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino-2.avif",
+							"assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino.avif",
+							"assets/img/courses/estabilizacion-subrasantes-subbases-bases-camino-2.avif",
 						],
 						professors: [
 							"Dr. Ing. Gerardo Botasso",
@@ -63,8 +63,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "05",
 						images: [
-							"/assets/img/courses/tecnologia-hormigon-aplicada.avif",
-							"/assets/img/courses/tecnologia-hormigon-aplicada-2.avif",
+							"assets/img/courses/tecnologia-hormigon-aplicada.avif",
+							"assets/img/courses/tecnologia-hormigon-aplicada-2.avif",
 						],
 						professors: ["CDH Ing. Maximiliano Segerer y equipo"],
 						link: "/cursos/tecnologias-de-hormigon-aplicada",
@@ -77,8 +77,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "06",
 						images: [
-							"/assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans.avif",
-							"/assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans-2.avif",
+							"assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans.avif",
+							"assets/img/courses/planificacion-administracion-red-vial-concesiones-crema-gmans-2.avif",
 						],
 						professors: [
 							"Dr. Ing. Gerardo Botasso",
@@ -94,8 +94,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "08",
 						images: [
-							"/assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes.avif",
-							"/assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes-2.avif",
+							"assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes.avif",
+							"assets/img/courses/inspeccion-evaluacion-gerenciamiento-puentes-2.avif",
 						],
 						professors: [
 							"Ing. Pedro Manuel Lozada",
@@ -111,8 +111,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "09",
 						images: [
-							"/assets/img/courses/control-obras-viales.avif",
-							"/assets/img/courses/control-obras-viales-2.avif",
+							"assets/img/courses/control-obras-viales.avif",
+							"assets/img/courses/control-obras-viales-2.avif",
 						],
 						professors: ["Dr. Ing. Gerardo Botasso"],
 						link: "/cursos/control-de-obras-viales",
@@ -125,8 +125,8 @@ export default function CoursesPageContent() {
 						bgColor: "gray",
 						monthNumber: "10",
 						images: [
-							"/assets/img/courses/perfil-4w-2026.avif",
-							"/assets/img/courses/perfil-4w-2026-2.avif",
+							"assets/img/courses/perfil-4w-2026.avif",
+							"assets/img/courses/perfil-4w-2026-2.avif",
 						],
 						professors: ["Ing. Carlos Aguade"],
 						link: "/cursos/perfil-4w-2026",
@@ -139,8 +139,8 @@ export default function CoursesPageContent() {
 						bgColor: "black",
 						monthNumber: "11",
 						images: [
-							"/assets/img/courses/mantenimiento-edilicio-hospitales.avif",
-							"/assets/img/courses/mantenimiento-edilicio-hospitales-2.avif",
+							"assets/img/courses/mantenimiento-edilicio-hospitales.avif",
+							"assets/img/courses/mantenimiento-edilicio-hospitales-2.avif",
 						],
 						professors: ["Arq. Jorge Raúl Carrasquet", "Arq. Jorge Manuel"],
 						link: "/cursos/mantenimiento-de-hospitales",

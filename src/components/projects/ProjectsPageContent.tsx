@@ -3,33 +3,33 @@ const projects = [
 		headline: "GuaraIA",
 		subHeadline: "Integrando el idioma guaraní en el ámbito digital",
 		link: "/proyectos/guarania",
-		image: "/assets/img/projects/guarania.webp",
+		image: "assets/img/projects/guarania.webp",
 	},
 	{
 		headline: "ProteIA",
 		subHeadline:
 			"Inteligencia artificial para la identificación de complejos proteicos",
 		link: "/proyectos/proteia",
-		image: "/assets/img/projects/proteia.webp",
+		image: "assets/img/projects/proteia.webp",
 	},
 	{
 		headline: "Cofar",
 		subHeadline:
 			"Modelos interpretables de Machine Learning para la predicción de efectos secundarios en terapias combinadas",
 		link: "/proyectos/cofar",
-		image: "/assets/img/projects/cofar.webp",
+		image: "assets/img/projects/cofar.webp",
 	},
 	{
 		headline: "Bootcamp",
 		subHeadline: "Creando oportunidades globales para jóvenes de 18 a 29 años",
 		link: "/proyectos/bootcamp",
-		image: "/assets/img/projects/bootcamp.webp",
+		image: "assets/img/projects/bootcamp.webp",
 	},
 	{
 		headline: "Covida",
 		subHeadline: "Inteligencia artificial en favor de la humanidad",
 		link: "/proyectos/covida",
-		image: "/assets/img/projects/covida.webp",
+		image: "assets/img/projects/covida.webp",
 	},
 ];
 
@@ -41,7 +41,7 @@ export default function ProjectsPageContent() {
 					<div
 						className="port-showcase-slider-wrap tp-slider-parallax fix"
 						id="showcase-slider-holder"
-						data-pattern-img="/assets/img/webgl/1.webp"
+						data-pattern-img="assets/img/webgl/1.webp"
 					>
 						<div
 							className="swiper-container parallax-slider-active-2 p-relative"

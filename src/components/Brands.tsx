@@ -1,55 +1,55 @@
 const brands = [
 	{
 		name: "Tecnoedil",
-		logo: "/assets/img/partners/tecnoedil.webp",
+		logo: "assets/img/partners/tecnoedil.webp",
 	},
 	{
 		name: "Typsa",
-		logo: "/assets/img/partners/typsa.webp",
+		logo: "assets/img/partners/typsa.webp",
 	},
 	{
 		name: "Acaray",
-		logo: "/assets/img/partners/acaray.webp",
+		logo: "assets/img/partners/acaray.webp",
 	},
 	{
 		name: "Concret Mix",
-		logo: "/assets/img/partners/concret-mix.webp",
+		logo: "assets/img/partners/concret-mix.webp",
 	},
 	{
 		name: "Tocsa",
-		logo: "/assets/img/partners/tocsa.webp",
+		logo: "assets/img/partners/tocsa.webp",
 	},
 	{
 		name: "Ocho A",
-		logo: "/assets/img/partners/ochoa.webp",
+		logo: "assets/img/partners/ochoa.webp",
 	},
 	{
 		name: "Capaco",
-		logo: "/assets/img/partners/capaco.webp",
+		logo: "assets/img/partners/capaco.webp",
 	},
 	{
 		name: "Cavialpa",
-		logo: "/assets/img/partners/cavialpa.webp",
+		logo: "assets/img/partners/cavialpa.webp",
 	},
 	{
 		name: "Conacyt",
-		logo: "/assets/img/partners/conacyt.webp",
+		logo: "assets/img/partners/conacyt.webp",
 	},
 	{
 		name: "Heisecke",
-		logo: "/assets/img/partners/heisecke.webp",
+		logo: "assets/img/partners/heisecke.webp",
 	},
 	{
 		name: "Roggio e hijos",
-		logo: "/assets/img/partners/roggio.webp",
+		logo: "assets/img/partners/roggio.webp",
 	},
 	{
 		name: "Universidad de la Plata",
-		logo: "/assets/img/partners/universidad-de-la-plata.webp",
+		logo: "assets/img/partners/universidad-de-la-plata.webp",
 	},
 	{
 		name: "Innoasturias",
-		logo: "/assets/img/partners/innouasturias.webp",
+		logo: "assets/img/partners/innouasturias.webp",
 	},
 ];
 
