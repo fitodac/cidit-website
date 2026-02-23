@@ -42,6 +42,7 @@ export default function Header({
 							>
 								<nav className="tp-mobile-menu-active">
 									<ul>
+										<li>{import.meta.env.BASE_URL}</li>
 										<li>
 											{pathname === "/" ? (
 												<span>Inicio</span>
