@@ -2,87 +2,116 @@ import { staticPath } from "../../utils/staticPath";
 
 export default function Hero() {
 	return (
-		<div className="mxd-section padding-stacked-section">
-			<div className="mxd-container grid-container">
-				<div className="mxd-block mxd-grid-item no-margin">
-					<div className="content__block">
-						<div className="stack-wrapper in-content-stack">
-							<div className="stack-offset"></div>
-							<div className="services-stack">
-								<div className="stack-item">
-									<div className="mxd-services-stack__inner justify-between bg-base-opp">
-										<div />
-
-										<div className="mxd-services-stack__info width-60">
-											<div className="mxd-services-stack__title">
-												<h3 className="opposite">¿Qué es CoFar?</h3>
-											</div>
-
-											<p className="t-small-mobile t-opposite">
-												Modelos Interpretables de Machine Learning para
-												Predicción de Efectos Secundarios de Terapias Combinadas
-												(CoFar) es un proyecto que utiliza modelos
-												interpretables de machine learning para predecir los
-												efectos secundarios de la combinación de distintos
-												fármacos, apoyando la toma de decisiones médicas.
-											</p>
-										</div>
-
-										<div className="services-stack__image">
-											<img
-												className="service-img service-img-s"
-												src={staticPath(
-													"projects/img/services/800x800_ser-01.webp"
-												)}
-												alt="¿Qué es cofar?"
-											/>
-											<img
-												src={staticPath("projects/img/cofar/what-is-it.avif")}
-												alt="¿Qué es cofar?"
-												className="service-img service-img-m w-full! mask-l-from-20% object-cover"
-											/>
-										</div>
+		<>
+			<div className="mxd-section">
+				<div className="mxd-hero-08">
+					<div className="mxd-hero-08__wrap loading-wrap">
+						<div className="mxd-hero-08__center">
+							<div className="mxd-hero-08__headline">
+								<div className="mxd-container">
+									<div className="hero-08-headline__image">
+										<img
+											className="mxd-rotate-slow"
+											src={staticPath("projects/img/hero/16_hero-img.webp")}
+											alt="Hero Image"
+										/>
+									</div>
+									<div className="hero-08-slide-out-scroll loading__item">
+										<h1 className="text-[#25c11a]!">
+											Predicción Inteligente de Riesgos Farmacológicos
+										</h1>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div className="stack-item">
-									<div className="mxd-services-stack__inner justify-between bg-accent">
-										<div />
+						<div className="mxd-hero-08__tl-trigger"></div>
+					</div>
+				</div>
+			</div>
 
-										<div className="flex justify-end">
+			<div className="mxd-section padding-stacked-section">
+				<div className="mxd-container grid-container">
+					<div className="mxd-block mxd-grid-item no-margin">
+						<div className="content__block">
+							<div className="stack-wrapper in-content-stack">
+								<div className="stack-offset"></div>
+								<div className="services-stack">
+									<div className="stack-item">
+										<div className="mxd-services-stack__inner justify-between bg-base-opp">
+											<div />
+
 											<div className="mxd-services-stack__info width-60">
 												<div className="mxd-services-stack__title">
-													<h3 className="opposite">¿Qué hacemos?</h3>
+													<h3 className="opposite">¿Qué es CoFar?</h3>
 												</div>
 
 												<p className="t-small-mobile t-opposite">
-													CoFar proporciona indicios sobre posibles
-													interacciones adversas entre medicamentos, mejorando
-													la seguridad en los tratamientos médicos.
-												</p>
-
-												<p className="t-small-mobile t-opposite">
-													Está diseñado para ser una herramienta de referencia
-													para profesionales de la salud, ayudándoles a
-													identiﬁcar riesgos antes de recetar combinaciones de
-													fármacos.
+													Modelos Interpretables de Machine Learning para
+													Predicción de Efectos Secundarios de Terapias
+													Combinadas (CoFar) es un proyecto que utiliza modelos
+													interpretables de machine learning para predecir los
+													efectos secundarios de la combinación de distintos
+													fármacos, apoyando la toma de decisiones médicas.
 												</p>
 											</div>
-										</div>
 
-										<div className="services-stack__image">
-											<img
-												className="service-img service-img-s"
-												src={staticPath(
-													"projects/img/services/800x800_ser-02.webp"
-												)}
-												alt="Service/Feature Image"
-											/>
-											<img
-												src={staticPath("projects/img/cofar/what-we-do.avif")}
-												alt="Service/Feature Image"
-												className="service-img service-img-m w-full! object-cover"
-											/>
+											<div className="services-stack__image">
+												<img
+													className="service-img service-img-s"
+													src={staticPath(
+														"projects/img/services/800x800_ser-01.webp"
+													)}
+													alt="¿Qué es cofar?"
+												/>
+												<img
+													src={staticPath("projects/img/cofar/what-is-it.avif")}
+													alt="¿Qué es cofar?"
+													className="service-img service-img-m w-full! mask-l-from-20% object-cover"
+												/>
+											</div>
+										</div>
+									</div>
+
+									<div className="stack-item">
+										<div className="mxd-services-stack__inner justify-between bg-accent">
+											<div />
+
+											<div className="flex justify-end">
+												<div className="mxd-services-stack__info width-60">
+													<div className="mxd-services-stack__title">
+														<h3 className="opposite">¿Qué hacemos?</h3>
+													</div>
+
+													<p className="t-small-mobile t-opposite">
+														CoFar proporciona indicios sobre posibles
+														interacciones adversas entre medicamentos, mejorando
+														la seguridad en los tratamientos médicos.
+													</p>
+
+													<p className="t-small-mobile t-opposite">
+														Está diseñado para ser una herramienta de referencia
+														para profesionales de la salud, ayudándoles a
+														identiﬁcar riesgos antes de recetar combinaciones de
+														fármacos.
+													</p>
+												</div>
+											</div>
+
+											<div className="services-stack__image">
+												<img
+													className="service-img service-img-s"
+													src={staticPath(
+														"projects/img/services/800x800_ser-02.webp"
+													)}
+													alt="Service/Feature Image"
+												/>
+												<img
+													src={staticPath("projects/img/cofar/what-we-do.avif")}
+													alt="Service/Feature Image"
+													className="service-img service-img-m w-full! object-cover"
+												/>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -91,6 +120,6 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }

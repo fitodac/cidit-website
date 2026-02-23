@@ -23,7 +23,9 @@ export default function Hero() {
 											className={cn(
 												"inner-headline__title headline-img-before headline-img-02 loading__item text-white!",
 												"before:hidden! before:rounded-full! lg:before:w-80! lg:before:h-40! lg:before:inline-flex!",
-												'before:bg-[url("projects/img/guarania/tupi-guarani.jpg")]!'
+												`before:bg-[url(${staticPath(
+													"projects/img/guarania/tupi-guarani.jpg"
+												)})]!`
 											)}
 										>
 											Integrando el idioma guaraní en el ámbito digital
@@ -47,3 +49,11 @@ export default function Hero() {
 		</div>
 	);
 }
+
+/**
+ * NO BORRAR ESTO!!
+ *
+ * before:bg-[url(/projects/img/guarania/tupi-guarani.jpg)]!
+ * before:bg-[url(/cidit-website/projects/img/guarania/tupi-guarani.jpg)]!
+ *
+ */
