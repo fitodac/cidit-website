@@ -6,6 +6,7 @@ import Hero from "../../projectsComponents/proteia/Hero.tsx";
 import About from "../../projectsComponents/proteia/About.tsx";
 import HowItWorks from "../../projectsComponents/proteia/HowItWorks.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
+import { staticPath } from "../../utils/staticPath";
 
 import type { StaffType } from "./types.d.ts";
 
@@ -71,9 +72,9 @@ const staff = [
 
 <ProjectLayout
 	title="Proteia"
-	logoSrc="/projects/img/proteia/logo.svg"
+	logoSrc={staticPath("/projects/img/proteia/logo.svg")}
 	logoHeight="h-12!"
-	footerLogoSrc="/projects/img/proteia/logo-black.svg"
+	footerLogoSrc={staticPath("/projects/img/proteia/logo-black.svg")}
 >
 	<Hero />
 	<div class="h-15"></div>

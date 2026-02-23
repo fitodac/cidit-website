@@ -8,6 +8,8 @@ import HowItWorks from "../../projectsComponents/cofar/HowItWorks.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
 import Cards from "../../projectsComponents/cofar/Cards.tsx";
 
+import { staticPath } from "../../utils/staticPath";
+
 import type { StaffType } from "./types.d.ts";
 
 const staff = [
@@ -72,9 +74,9 @@ const staff = [
 
 <ProjectLayout
 	title="Cofar"
-	logoSrc="/projects/img/cofar/logo.svg"
+	logoSrc={staticPath("/projects/img/cofar/logo.svg")}
 	logoHeight="h-20!"
-	footerLogoSrc="/projects/img/cofar/logo-black.svg"
+	footerLogoSrc={staticPath("/projects/img/cofar/logo-black.svg")}
 >
 	<div class="h-5"></div>
 	<Hero />

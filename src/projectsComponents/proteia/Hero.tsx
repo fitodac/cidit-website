@@ -8,14 +8,7 @@ export default function Hero() {
 					<div className="mxd-hero-06__top">
 						<div className="mxd-hero-06__content">
 							<div className="mxd-hero-06__video">
-								<video
-									className="video"
-									preload="auto"
-									autoPlay
-									loop
-									muted
-									poster={staticPath("projects/video/1920x1080_video-03.webp")}
-								>
+								<video className="video" preload="auto" autoPlay loop muted>
 									<source
 										type="video/mp4"
 										src={staticPath("projects/img/proteia/proteia-hero.mp4")}

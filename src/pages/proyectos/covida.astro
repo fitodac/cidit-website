@@ -10,6 +10,8 @@ import InfoSection from "../../projectsComponents/covida/InfoSection.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
 import Brochure from "../../projectsComponents/covida/Brochure.tsx";
 
+import { staticPath } from "../../utils/staticPath";
+
 import type { StaffType } from "./types.d.ts";
 
 const staff = [
@@ -96,9 +98,9 @@ const staff = [
 
 <ProjectLayout
 	title="Covida"
-	logoSrc="/projects/img/covida/logo.svg"
+	logoSrc={staticPath("/projects/img/covida/logo.svg")}
 	logoHeight="h-12!"
-	footerLogoSrc="/projects/img/covida/logo-black.svg"
+	footerLogoSrc={staticPath("/projects/img/covida/logo-black.svg")}
 >
 	<Hero />
 

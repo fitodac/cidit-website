@@ -14,13 +14,15 @@ import Company from "../../projectsComponents/bootcamp/Company.tsx";
 import Features from "../../projectsComponents/bootcamp/Features.tsx";
 import StudyPlan from "../../projectsComponents/bootcamp/StudyPlan.tsx";
 import Python from "../../projectsComponents/bootcamp/Python.tsx";
+
+import { staticPath } from "../../utils/staticPath";
 ---
 
 <ProjectLayout
 	title="Bootcamp"
-	logoSrc="/projects/img/bootcamp/logo.svg"
+	logoSrc={staticPath("/projects/img/bootcamp/logo.svg")}
 	logoHeight="h-20!"
-	footerLogoSrc="/projects/img/bootcamp/logo-black.svg"
+	footerLogoSrc={staticPath("/projects/img/bootcamp/logo-black.svg")}
 >
 	<Hero />
 	<Intro />
