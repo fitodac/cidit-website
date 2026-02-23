@@ -9,6 +9,5 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	site: "https://cidit.website.io",
-	// base: "/",
-	// base: process.env.NODE_ENV === "production" ? "/cidit-website/" : "/",
+	base: process.env.NODE_ENV === "production" ? "/cidit-website" : "/",
 });
