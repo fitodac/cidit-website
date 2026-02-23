@@ -109,8 +109,14 @@ const staff = [
 	<InfoSection
 		{...{
 			title: "¿Cómo nace COVIDA?",
-			mediaLarge: { type: "video", src: "/projects/img/covida/research.mp4" },
-			mediaSmall: { type: "image", src: "/projects/img/covida/covid-dna.avif" },
+			mediaLarge: {
+				type: "video",
+				src: staticPath("/projects/img/covida/research.mp4"),
+			},
+			mediaSmall: {
+				type: "image",
+				src: staticPath("/projects/img/covida/covid-dna.avif"),
+			},
 		}}
 	>
 		<p>
@@ -128,8 +134,14 @@ const staff = [
 		{...{
 			title: "¿De dónde venimos?",
 			orientation: "left",
-			mediaLarge: { type: "image", src: "/projects/img/covida/covid.avif" },
-			mediaSmall: { type: "video", src: "/projects/img/covida/pandemic.mp4" },
+			mediaLarge: {
+				type: "image",
+				src: staticPath("/projects/img/covida/covid.avif"),
+			},
+			mediaSmall: {
+				type: "video",
+				src: staticPath("/projects/img/covida/pandemic.mp4"),
+			},
 		}}
 	>
 		<p>
@@ -152,8 +164,14 @@ const staff = [
 	<InfoSection
 		{...{
 			title: "¿En qué consiste la reposición de medicamentos?",
-			mediaLarge: { type: "video", src: "/projects/img/covida/vaccine.mp4" },
-			mediaSmall: { type: "image", src: "/projects/img/covida/pills.avif" },
+			mediaLarge: {
+				type: "video",
+				src: staticPath("/projects/img/covida/vaccine.mp4"),
+			},
+			mediaSmall: {
+				type: "image",
+				src: staticPath("/projects/img/covida/pills.avif"),
+			},
 		}}
 	>
 		<p>
