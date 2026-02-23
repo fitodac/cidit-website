@@ -1,8 +1,10 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Features() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext overflow-hidden">
 			{/* <img
-				src="/projects/img/bootcamp/shape-3.svg"
+				src={staticPath("/projects/img/bootcamp/shape-3.svg")}
 				alt="Shape"
 				className="w-360! h-auto! absolute top-20 -right-150 opacity-50"
 			/> */}
@@ -39,7 +41,7 @@ export default function Features() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/feature-1.avif"
+											src={staticPath("/projects/img/bootcamp/feature-1.avif")}
 											alt="Illustration"
 											className="parallax-img-small w-190! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>
@@ -57,7 +59,7 @@ export default function Features() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/feature-2.avif"
+											src={staticPath("/projects/img/bootcamp/feature-2.avif")}
 											alt="Illustration"
 											className="parallax-img-small w-130! h-full! right-0 bottom-0 absolute object-top-left"
 										/>
@@ -76,7 +78,7 @@ export default function Features() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/feature-3.avif"
+											src={staticPath("/projects/img/bootcamp/feature-3.avif")}
 											alt="Illustration"
 											className="parallax-img-small- w-100! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>
@@ -94,7 +96,7 @@ export default function Features() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/feature-4.avif"
+											src={staticPath("/projects/img/bootcamp/feature-4.avif")}
 											alt="Illustration"
 											className="parallax-img-small- w-80! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>
@@ -112,7 +114,7 @@ export default function Features() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/feature-5.avif"
+											src={staticPath("/projects/img/bootcamp/feature-5.avif")}
 											alt="Illustration"
 											className="parallax-img-small- w-100! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>

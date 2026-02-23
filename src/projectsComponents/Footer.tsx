@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 type Props = {
 	title: string;
 	logoSrc: string;
@@ -24,7 +26,7 @@ export default function Footer({ title, logoSrc }: Props) {
 							<ul className="footer-nav gap-16! md:flex-row! md:justify-center">
 								<li className="footer-nav__item anim-uni-in-up">
 									<a
-										href="/proyectos/guarania"
+										href={staticPath("/proyectos/guarania")}
 										className="footer-nav__link btn-anim"
 									>
 										<span className="btn-caption">GuaranIA</span>
@@ -32,7 +34,7 @@ export default function Footer({ title, logoSrc }: Props) {
 								</li>
 								<li className="footer-nav__item anim-uni-in-up">
 									<a
-										href="/proyectos/proteia"
+										href={staticPath("/proyectos/proteia")}
 										className="footer-nav__link btn-anim"
 									>
 										<span className="btn-caption">ProteIA</span>
@@ -40,7 +42,7 @@ export default function Footer({ title, logoSrc }: Props) {
 								</li>
 								<li className="footer-nav__item anim-uni-in-up">
 									<a
-										href="/proyectos/cofar"
+										href={staticPath("/proyectos/cofar")}
 										className="footer-nav__link btn-anim"
 									>
 										<span className="btn-caption">Cofar</span>
@@ -48,7 +50,7 @@ export default function Footer({ title, logoSrc }: Props) {
 								</li>
 								<li className="footer-nav__item anim-uni-in-up">
 									<a
-										href="/proyectos/bootcamp"
+										href={staticPath("/proyectos/bootcamp")}
 										className="footer-nav__link btn-anim"
 									>
 										<span className="btn-caption">Bootcamp</span>
@@ -56,7 +58,7 @@ export default function Footer({ title, logoSrc }: Props) {
 								</li>
 								<li className="footer-nav__item anim-uni-in-up">
 									<a
-										href="/proyectos/covida"
+										href={staticPath("/proyectos/covida")}
 										className="footer-nav__link btn-anim"
 									>
 										<span className="btn-caption">Covida</span>
@@ -69,7 +71,7 @@ export default function Footer({ title, logoSrc }: Props) {
 							<div></div>
 							<a
 								className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-								href="/"
+								href={staticPath("/")}
 							>
 								<span className="btn-caption">CIDIT</span>
 								<i className="ph ph-arrow-right"></i>

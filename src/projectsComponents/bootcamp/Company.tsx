@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Company() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext">
@@ -6,7 +8,7 @@ export default function Company() {
 					<div className="mxd-section-title pre-grid">
 						<div className="container-fluid p-0">
 							<img
-								src="/projects/img/bootcamp/shape-2.svg"
+								src={staticPath("/projects/img/bootcamp/shape-2.svg")}
 								alt="Shape"
 								className="mxd-move w-101! h-auto -top-50 -left-50 absolute xl:w-240! xl:-left-100 xl:-top-70"
 							/>
@@ -43,7 +45,7 @@ export default function Company() {
 										</p>
 
 										<img
-											src="/projects/img/bootcamp/shape-1.svg"
+											src={staticPath("/projects/img/bootcamp/shape-1.svg")}
 											alt="Illustration"
 											className="w-1/2 -right-70 -bottom-40 absolute -rotate-22"
 										/>
@@ -72,7 +74,7 @@ export default function Company() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/company-dev.avif"
+											src={staticPath("/projects/img/bootcamp/company-dev.avif")}
 											alt="Illustration"
 											className="parallax-img-small w-151! h-full! right-0 bottom-0 absolute object-cover"
 										/>

@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function DJCode() {
 	return (
 		<div className="mxd-section overflow-hidden">
@@ -6,7 +8,7 @@ export default function DJCode() {
 					<div className="mxd-promo">
 						<div className="mxd-promo__inner anim-zoom-out-container bg-purple-950!">
 							<img
-								src="/projects/img/bootcamp/djcode.avif"
+								src={staticPath("/projects/img/bootcamp/djcode.avif")}
 								alt="Ilustración DJ Code"
 								className="parallax-img-small w-350! h-full! absolute right-0 object-cover mask-l-from-60% -mask-l-to-50% "
 							/>
@@ -34,12 +36,12 @@ export default function DJCode() {
 							{/* <div className="mxd-promo__images">
 								<img
 									className="promo-image promo-image-1"
-									src="/projects/img/illustrations/cta-img-01.webp"
+									src={staticPath("/projects/img/illustrations/cta-img-01.webp")}
 									alt="Image"
 								/>
 								<img
 									className="promo-image promo-image-2"
-									src="/projects/img/illustrations/cta-img-02.webp"
+									src={staticPath("/projects/img/illustrations/cta-img-02.webp")}
 									alt="Image"
 								/>
 							</div> */}

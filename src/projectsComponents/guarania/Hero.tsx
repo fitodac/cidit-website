@@ -1,10 +1,11 @@
+import { staticPath } from "../../utils/staticPath";
 import { cn } from "../../utils/cn.ts";
 
 export default function Hero() {
 	return (
 		<div className="mxd-section mxd-section-inner-headline padding-s-text-pre-block bg-gn-primary-600! relative overflow-hidden">
 			<img
-				src="/projects/img/guarania/iso-2.svg"
+				src={staticPath("/projects/img/guarania/iso-2.svg")}
 				alt="Iso"
 				className="w-auto h-230! top-1/2 -right-145 absolute -translate-y-1/3 opacity-15 rotate-30"
 			/>

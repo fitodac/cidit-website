@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 type Props = {
 	title: string;
 	logoSrc: string;
@@ -35,7 +37,7 @@ export default function Header({
 											<li className="main-menu__item">
 												<a
 													className="main-menu__link btn btn-anim"
-													href="/proyectos/guarania"
+													href={staticPath("/proyectos/guarania")}
 												>
 													<span className="btn-caption">GuaranIA</span>
 												</a>
@@ -43,7 +45,7 @@ export default function Header({
 											<li className="main-menu__item">
 												<a
 													className="main-menu__link btn btn-anim"
-													href="/proyectos/proteia"
+													href={staticPath("/proyectos/proteia")}
 												>
 													<span className="btn-caption">ProteIA</span>
 												</a>
@@ -51,7 +53,7 @@ export default function Header({
 											<li className="main-menu__item">
 												<a
 													className="main-menu__link btn btn-anim"
-													href="/proyectos/cofar"
+													href={staticPath("/proyectos/cofar")}
 												>
 													<span className="btn-caption">Cofar</span>
 												</a>
@@ -59,7 +61,7 @@ export default function Header({
 											<li className="main-menu__item">
 												<a
 													className="main-menu__link btn btn-anim"
-													href="/proyectos/bootcamp"
+													href={staticPath("/proyectos/bootcamp")}
 												>
 													<span className="btn-caption">Bootcamp</span>
 												</a>
@@ -67,7 +69,7 @@ export default function Header({
 											<li className="main-menu__item">
 												<a
 													className="main-menu__link btn btn-anim"
-													href="/proyectos/covida"
+													href={staticPath("/proyectos/covida")}
 												>
 													<span className="btn-caption">Covida</span>
 												</a>
@@ -83,7 +85,7 @@ export default function Header({
 										<div className="menu-promo__caption menu-fade-in px-6!">
 											<div className="flex justify-end!">
 												<img
-													src="/assets/img/logo-white.svg"
+													src={staticPath("/assets/img/logo-white.svg")}
 													alt="Cidit"
 													className="w-auto! h-10!"
 												/>
@@ -101,19 +103,27 @@ export default function Header({
 												autoPlay
 												loop
 												muted
-												poster="/projects/video/540x310_video-01.webp"
+												poster={staticPath(
+													"/projects/video/540x310_video-01.webp"
+												)}
 											>
 												<source
 													type="video/mp4"
-													src="/projects/video/540x310_video-01.mp4"
+													src={staticPath(
+														"/projects/video/540x310_video-01.mp4"
+													)}
 												/>
 												<source
 													type="video/webm"
-													src="/projects/video/540x310_video-01.webm"
+													src={staticPath(
+														"/projects/video/540x310_video-01.webm"
+													)}
 												/>
 												<source
 													type="video/ogv"
-													src="/projects/video/540x310_video-01.ogv"
+													src={staticPath(
+														"/projects/video/540x310_video-01.ogv"
+													)}
 												/>
 											</video>
 										</div>
@@ -139,11 +149,11 @@ export default function Header({
 				<div className="mxd-header__controls loading__fade">
 					<a
 						className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up w-70!"
-						href="/"
+						href={staticPath("/")}
 						aria-label="Cidit"
 					>
 						<img
-							src="/assets/img/logo-black.svg"
+							src={staticPath("/assets/img/logo-black.svg")}
 							alt="Cidit"
 							className="w-36! h-8!"
 						/>

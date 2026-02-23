@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Sponsors() {
 	return (
 		<section className="py-50! flex! justify-center">
@@ -7,7 +9,7 @@ export default function Sponsors() {
 				<div className="flex flex-col gap-14 justify-center mt-20! md:flex-row">
 					<div className="">
 						<img
-							src="/projects/img/guarania/bid.avif"
+							src={staticPath("/projects/img/guarania/bid.avif")}
 							alt="BID"
 							className="w-auto h-20! object-contain"
 						/>
@@ -17,7 +19,7 @@ export default function Sponsors() {
 
 					<div className="">
 						<img
-							src="/projects/img/guarania/bid-lab.gif"
+							src={staticPath("/projects/img/guarania/bid-lab.gif")}
 							alt="BID LAB"
 							className="w-auto h-20! object-contain mix-blend-darken"
 						/>

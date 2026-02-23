@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Brochure() {
 	return (
 		<div className="mxd-section overflow-hidden padding-pre-title">
@@ -6,7 +8,12 @@ export default function Brochure() {
 					<div className="mxd-stats-cards">
 						<div className="container-fluid px-0">
 							<div className="mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-auto!">
-								<div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 bg-[url(/projects/img/covida/brochure-bg.jpg)] bg-no-repeat bg-cover">
+								<div
+									className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 bg-no-repeat bg-cover"
+									style={{
+										backgroundImage: `url(${staticPath("/projects/img/covida/brochure-bg.jpg")})`,
+									}}
+								>
 									<div className="flex justify-end">
 										<div className="mxd-counter [&_*]:text-white! md:w-1/2 lg:w-1/3">
 											<h3 className="text-6xl!">
@@ -24,7 +31,7 @@ export default function Brochure() {
 											</p>
 											<div className="mt-5">
 												<a
-													href="/contacto"
+													href={staticPath("/contacto")}
 													className="text-bright text-2xl! leading-9! inline-flex hover:underline!"
 												>
 													Si está interesad@ en el Protocolo Ensayo Clínico

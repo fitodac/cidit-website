@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function HowItWorks() {
 	return (
 		<div className="mxd-section padding-pre-grid pb-10! mt-20!">
@@ -30,13 +32,13 @@ export default function HowItWorks() {
 									<div className="mxd-project-item__media masonry-media relative">
 										{/* <div className="mxd-project-item__preview masonry-preview preview-image-2 parallax-img-small"></div> */}
 										<img
-											src="/projects/img/bootcamp/hiw-1.avif"
+											src={staticPath("/projects/img/bootcamp/hiw-1.avif")}
 											alt="Ilustración de etapa previa"
 											className="mxd-project-item__preview masonry-preview parallax-img-small"
 										/>
 
 										<img
-											src="/projects/img/bootcamp/one.svg"
+											src={staticPath("/projects/img/bootcamp/one.svg")}
 											alt="1"
 											className="mxd-move w-auto! h-91! right-15 -bottom-8 absolute drop-shadow-[0_0_10px_rgba(0,0,0,0.2)]"
 										/>
@@ -84,13 +86,13 @@ export default function HowItWorks() {
 										{/* <div className="mxd-project-item__preview masonry-preview preview-image-1 parallax-img-small"></div> */}
 
 										<img
-											src="/projects/img/bootcamp/hiw-2.avif"
+											src={staticPath("/projects/img/bootcamp/hiw-2.avif")}
 											alt="Ilustración de desarrollo de la experiencia"
 											className="mxd-project-item__preview masonry-preview parallax-img-small object-bottom-right object-cover h-230!"
 										/>
 
 										<img
-											src="/projects/img/bootcamp/two.svg"
+											src={staticPath("/projects/img/bootcamp/two.svg")}
 											alt="2"
 											className="mxd-move w-auto! h-91! right-15 -bottom-8 absolute drop-shadow-[0_0_10px_rgba(0,0,0,0.2)]"
 										/>
@@ -140,13 +142,13 @@ export default function HowItWorks() {
 										{/* <div className="mxd-project-item__preview masonry-preview preview-image-3 parallax-img-small"></div> */}
 
 										<img
-											src="/projects/img/bootcamp/hiw-3.avif"
+											src={staticPath("/projects/img/bootcamp/hiw-3.avif")}
 											alt="Ilustración de inclusión laboral"
 											className="mxd-project-item__preview masonry-preview parallax-img-small object-bottom-right object-cover"
 										/>
 
 										<img
-											src="/projects/img/bootcamp/three.svg"
+											src={staticPath("/projects/img/bootcamp/three.svg")}
 											alt="3"
 											className="mxd-move w-auto! h-91! right-15 -bottom-8 absolute drop-shadow-[0_0_10px_rgba(0,0,0,0.2)]"
 										/>
@@ -182,7 +184,7 @@ export default function HowItWorks() {
 								<div className="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item anim-uni-in-up">
 									<div className="mxd-project-item__media masonry-media">
 										<img
-											src="/projects/img/bootcamp/hiw-4.avif"
+											src={staticPath("/projects/img/bootcamp/hiw-4.avif")}
 											alt="Ilustración adicional"
 											className="mxd-project-item__preview masonry-preview parallax-img-small object-cover"
 										/>

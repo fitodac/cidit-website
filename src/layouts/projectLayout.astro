@@ -1,4 +1,5 @@
 ---
+import { staticPath } from "../utils/staticPath";
 import Header from "../projectsComponents/Header";
 import Footer from "../projectsComponents/Footer";
 
@@ -36,10 +37,14 @@ const {
 		/>
 
 		<!-- Template Favicon & Icons Start -->
-		<link rel="icon" href="/favicon.svg" sizes="any" />
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="/favicon.svg" />
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="icon" href={staticPath("/favicon.svg")} sizes="any" />
+		<link
+			rel="icon"
+			href={staticPath("/favicon.svg")}
+			type="image/svg+xml"
+		/>
+		<link rel="apple-touch-icon" href={staticPath("/favicon.svg")} />
+		<link rel="manifest" href={staticPath("/site.webmanifest")} />
 		<!-- Template Favicon & Icons End -->
 
 		<!-- Facebook Metadata Start -->
@@ -58,19 +63,19 @@ const {
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="/projects/css/loaders/loader.min.css"
+			href={staticPath("/projects/css/loaders/loader.min.css")}
 			as="style"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="/projects/css/plugins.min.css"
+			href={staticPath("/projects/css/plugins.min.css")}
 			as="style"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="/projects/css/main.min.css"
+			href={staticPath("/projects/css/main.min.css")}
 			as="style"
 		/>
 		<!-- Template Styles End -->
@@ -118,8 +123,11 @@ const {
 		<Footer {...{ title, logoSrc: footerLogoSrc }} />
 
 		<!-- Load Scripts Start -->
-		<script is:inline src="/projects/js/libs.min.js"></script>
-		<script is:inline src="/projects/js/app.min.js"></script>
+		<script
+			is:inline
+			src={staticPath("/projects/js/libs.min.js")}
+		></script>
+		<script is:inline src={staticPath("/projects/js/app.min.js")}></script>
 		<!-- <script is:inline>
 			const statsCounter1 = new countUp.CountUp(
 				"stats-counter-1",

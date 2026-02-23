@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Hero() {
 	return (
 		<div className="mxd-section padding-stacked-section">
@@ -31,11 +33,11 @@ export default function Hero() {
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
-												src="/projects/img/services/800x800_ser-01.webp"
+												src={staticPath("/projects/img/services/800x800_ser-01.webp")}
 												alt="¿Qué es cofar?"
 											/>
 											<img
-												src="/projects/img/cofar/what-is-it.avif"
+												src={staticPath("/projects/img/cofar/what-is-it.avif")}
 												alt="¿Qué es cofar?"
 												className="service-img service-img-m w-full! mask-l-from-20% object-cover"
 											/>
@@ -71,11 +73,11 @@ export default function Hero() {
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
-												src="/projects/img/services/800x800_ser-02.webp"
+												src={staticPath("/projects/img/services/800x800_ser-02.webp")}
 												alt="Service/Feature Image"
 											/>
 											<img
-												src="/projects/img/cofar/what-we-do.avif"
+												src={staticPath("/projects/img/cofar/what-we-do.avif")}
 												alt="Service/Feature Image"
 												className="service-img service-img-m w-full! object-cover"
 											/>

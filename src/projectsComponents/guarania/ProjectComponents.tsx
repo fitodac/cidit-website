@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function ProjectComponents() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext overflow-hidden -mt-120!">
@@ -26,7 +28,7 @@ export default function ProjectComponents() {
 											</a>
 										</div>
 										<img
-											src="/projects/img/guarania/card-1-bg.jpg"
+											src={staticPath("/projects/img/guarania/card-1-bg.jpg")}
 											alt="Illustration"
 											className="absolute bottom-0 inset-x-0 object-cover h-4/5! mask-t-from-0"
 										/>
@@ -43,7 +45,7 @@ export default function ProjectComponents() {
 											</p>
 										</div>
 										<img
-											src="/projects/img/guarania/card-2-bg.avif"
+											src={staticPath("/projects/img/guarania/card-2-bg.avif")}
 											alt="Illustration"
 											className="w-200! h-auto -left-40 top-1/2 absolute -mt-50!"
 										/>
@@ -61,7 +63,7 @@ export default function ProjectComponents() {
 
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-3 w-2/3! h-full!">
 											<img
-												src="/projects/img/guarania/women.avif"
+												src={staticPath("/projects/img/guarania/women.avif")}
 												alt="Illustration"
 												className="w-full h-full! object-contain object-bottom-right"
 											/>
@@ -89,7 +91,9 @@ export default function ProjectComponents() {
 
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-4">
 											<img
-												src="/projects/img/illustrations/800x800_card-image-04.webp"
+												src={staticPath(
+													"/projects/img/illustrations/800x800_card-image-04.webp",
+												)}
 												alt="Illustration"
 											/>
 										</div>

@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Cards() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext overflow-hidden mt-50!">
@@ -24,7 +26,7 @@ export default function Cards() {
 										<div className="mxd-stats-cards__btngroup">
 											<a
 												className="btn btn-anim btn-default btn-outline slide-right-up"
-												href="works-simple.html"
+												href={staticPath("/proyectos/cofar")}
 											>
 												<span className="btn-caption">
 													Descargar reporte técnico
@@ -35,7 +37,7 @@ export default function Cards() {
 
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-3">
 											<img
-												src="/projects/img/cofar/robot-hand.avif"
+												src={staticPath("/projects/img/cofar/robot-hand.avif")}
 												alt="Illustration"
 											/>
 										</div>
@@ -54,7 +56,7 @@ export default function Cards() {
 										<div className="mxd-stats-cards__btngroup">
 											<a
 												className="btn btn-anim btn-default btn-outline slide-right-up"
-												href="works-simple.html"
+												href={staticPath("/proyectos/cofar")}
 											>
 												<span className="btn-caption">Quiero sumarme</span>
 												<i className="ph-bold ph-arrow-up-right"></i>
@@ -62,7 +64,9 @@ export default function Cards() {
 										</div>
 										<div className="mxd-stats-cards__image mxd-stats-cards-image-4">
 											<img
-												src="/projects/img/illustrations/800x800_card-image-04.webp"
+												src={staticPath(
+													"/projects/img/illustrations/800x800_card-image-04.webp",
+												)}
 												alt="Illustration"
 											/>
 										</div>

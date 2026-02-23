@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Python() {
 	return (
 		<div className="mxd-section padding-stacked-section">
@@ -39,14 +41,14 @@ export default function Python() {
 
 										<div className="parallax-img-small w-200! h-full! absolute right-20 bottom-0 z-10 [&>div]:flex! [&>div]:items-center!">
 											<img
-												src="/projects/img/bootcamp/python-logo.avif"
+												src={staticPath("/projects/img/bootcamp/python-logo.avif")}
 												alt="Python logo"
 												className="w-full translate-y-1/2"
 											/>
 										</div>
 
-										{/* <video
-											src="/projects/img/bootcamp/py-bg-1.mp4"
+											{/* <video
+											src={staticPath("/projects/img/bootcamp/py-bg-1.mp4")}
 											autoPlay={true}
 											loop
 											muted
@@ -86,7 +88,7 @@ export default function Python() {
 										<div></div>
 
 										<img
-											src="/projects/img/bootcamp/py-bg-2.avif"
+											src={staticPath("/projects/img/bootcamp/py-bg-2.avif")}
 											alt="Service/Feature Image"
 											className="w-auto! h-250! object-cover right-0 bottom-0 absolute mask-l-from-50%"
 										/>
@@ -126,12 +128,16 @@ export default function Python() {
 										<div className="services-stack__image">
 											<img
 												className="service-img service-img-s"
-												src="/projects/img/services/800x800_ser-03.webp"
+												src={staticPath(
+													"/projects/img/services/800x800_ser-03.webp",
+												)}
 												alt="Service/Feature Image"
 											/>
 											<img
 												className="service-img service-img-m"
-												src="/projects/img/services/1000x1000_ser-03.webp"
+												src={staticPath(
+													"/projects/img/services/1000x1000_ser-03.webp",
+												)}
 												alt="Service/Feature Image"
 											/>
 										</div>
@@ -174,7 +180,7 @@ export default function Python() {
 										</div>
 
 										<img
-											src="/projects/img/bootcamp/py-bg-4.avif"
+											src={staticPath("/projects/img/bootcamp/py-bg-4.avif")}
 											alt="Service/Feature Image"
 											className="w-auto! h-270! object-cover -right-60 -top-30 absolute mix-blend-lighten drop-shadow-[0_0_20px_rgba(255,223,5,0.7)]"
 										/>

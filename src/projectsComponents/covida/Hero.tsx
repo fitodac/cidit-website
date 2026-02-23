@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Hero() {
 	return (
 		<div className="mxd-section">
@@ -27,7 +29,7 @@ export default function Hero() {
 							<div className="mxd-hero-02-marquee__image loading__item">
 								<img
 									className="mxd-move"
-									src="/projects/img/covida/virus.png"
+									src={staticPath("/projects/img/covida/virus.png")}
 									alt="Hero Image"
 								/>
 							</div>

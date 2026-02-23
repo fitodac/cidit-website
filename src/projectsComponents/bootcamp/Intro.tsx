@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Cards() {
 	return (
 		<div className="mxd-section padding-grid-pre-mtext overflow-hidden -mt-80!">
@@ -25,13 +27,13 @@ export default function Cards() {
 
 										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
 											{/* <img
-												src="/projects/img/bootcamp/project-goal.avif"
+												src={staticPath("/projects/img/bootcamp/project-goal.avif")}
 												alt="Illustration"
 												className="h-full! object-cover object-left mask-l-from-90% mask-l-to-99%"
 											/> */}
 											<video
-												src="/projects/img/bootcamp/project-goal.mp4"
-												poster="/projects/img/bootcamp/project-goal.avif"
+												src={staticPath("/projects/img/bootcamp/project-goal.mp4")}
+												poster={staticPath("/projects/img/bootcamp/project-goal.avif")}
 												loop
 												muted
 												autoPlay
@@ -57,13 +59,13 @@ export default function Cards() {
 
 										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
 											{/* <img
-												src="/projects/img/bootcamp/benefits.jpg"
+												src={staticPath("/projects/img/bootcamp/benefits.jpg")}
 												alt="Illustration"
 												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
 											/> */}
 											<video
-												src="/projects/img/bootcamp/benefits.mp4"
-												poster="/projects/img/bootcamp/benefits.avif"
+												src={staticPath("/projects/img/bootcamp/benefits.mp4")}
+												poster={staticPath("/projects/img/bootcamp/benefits.avif")}
 												loop
 												muted
 												autoPlay

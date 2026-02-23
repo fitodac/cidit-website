@@ -1,4 +1,5 @@
 ---
+import { staticPath } from "../utils/staticPath";
 import "../styles/global.css";
 
 import Header from "../components/Header.tsx";
@@ -28,22 +29,60 @@ const {
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Favicon and Touch Icons -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/favicon.svg" color="#5bbad5" />
+		<link rel="icon" type="image/svg+xml" href={staticPath("/favicon.svg")} />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href={staticPath("/favicon.svg")}
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href={staticPath("/favicon.svg")}
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href={staticPath("/favicon.svg")}
+		/>
+		<link rel="manifest" href={staticPath("/site.webmanifest")} />
+		<link rel="mask-icon" href={staticPath("/favicon.svg")} color="#5bbad5" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 
 		<!-- CSS here -->
-		<link rel="stylesheet" href="assets/css/bootstrap.css" as="style" />
-		<link rel="stylesheet" href="assets/css/swiper-bundle.css" as="style" />
-		<link rel="stylesheet" href="assets/css/magnific-popup.css" as="style" />
-		<link rel="stylesheet" href="assets/css/font-awesome-pro.css" as="style" />
-		<link rel="stylesheet" href="assets/css/spacing.css" as="style" />
-		<link rel="stylesheet" href="assets/css/main.css" as="style" />
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/bootstrap.css")}
+			as="style"
+		/>
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/swiper-bundle.css")}
+			as="style"
+		/>
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/magnific-popup.css")}
+			as="style"
+		/>
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/font-awesome-pro.css")}
+			as="style"
+		/>
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/spacing.css")}
+			as="style"
+		/>
+		<link
+			rel="stylesheet"
+			href={staticPath("assets/css/main.css")}
+			as="style"
+		/>
 		<!-- CSS here -->
 	</head>
 
@@ -103,20 +142,23 @@ const {
 		</div>
 
 		<!-- JS here -->
-		<script is:inline src="assets/js/vendor/jquery.js"></script>
-		<script is:inline src="assets/js/bootstrap-bundle.js"></script>
-		<script is:inline src="assets/js/swiper-bundle.js"></script>
-		<script is:inline src="assets/js/plugin.js"></script>
-		<script is:inline src="assets/js/three.js"></script>
-		<script is:inline src="assets/js/webgl.js"></script>
-		<script is:inline src="assets/js/hover-effect.umd.js"></script>
-		<script is:inline src="assets/js/magnific-popup.js"></script>
-		<script is:inline src="assets/js/purecounter.js"></script>
-		<script is:inline src="assets/js/imagesloaded-pkgd.js"></script>
-		<script is:inline src="assets/js/ajax-form.js"></script>
-		<script is:inline src="assets/js/slider-active.js"></script>
-		<script is:inline src="assets/js/main.js"></script>
-		<script is:inline src="assets/js/tp-cursor.js"></script>
+		<script is:inline src={staticPath("assets/js/vendor/jquery.js")}></script>
+		<script is:inline src={staticPath("assets/js/bootstrap-bundle.js")}
+		></script>
+		<script is:inline src={staticPath("assets/js/swiper-bundle.js")}></script>
+		<script is:inline src={staticPath("assets/js/plugin.js")}></script>
+		<script is:inline src={staticPath("assets/js/three.js")}></script>
+		<script is:inline src={staticPath("assets/js/webgl.js")}></script>
+		<script is:inline src={staticPath("assets/js/hover-effect.umd.js")}
+		></script>
+		<script is:inline src={staticPath("assets/js/magnific-popup.js")}></script>
+		<script is:inline src={staticPath("assets/js/purecounter.js")}></script>
+		<script is:inline src={staticPath("assets/js/imagesloaded-pkgd.js")}
+		></script>
+		<script is:inline src={staticPath("assets/js/ajax-form.js")}></script>
+		<script is:inline src={staticPath("assets/js/slider-active.js")}></script>
+		<script is:inline src={staticPath("assets/js/main.js")}></script>
+		<script is:inline src={staticPath("assets/js/tp-cursor.js")}></script>
 		<!-- JS here -->
 	</body>
 </html>

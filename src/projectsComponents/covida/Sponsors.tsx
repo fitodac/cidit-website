@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Sponsors() {
 	return (
 		<div id="projects" className="mxd-section padding-hero-06 padding-default">
@@ -33,7 +35,7 @@ export default function Sponsors() {
 									<div className="mxd-pinned-projects__scroll-inner mxd-grid-item no-margin">
 										<div className="mxd-project-item">
 											<img
-												src="/assets/img/logo-black.svg"
+												src={staticPath("/assets/img/logo-black.svg")}
 												alt="CIDIT"
 												className="w-auto h-25!"
 											/>
@@ -41,7 +43,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src="/projects/img/covida/fgv.svg"
+												src={staticPath("/projects/img/covida/fgv.svg")}
 												alt="Fundación Getulio Vargas"
 												className="w-auto h-25!"
 											/>
@@ -49,7 +51,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src="/projects/img/covida/royal-holloway.webp"
+												src={staticPath("/projects/img/covida/royal-holloway.webp")}
 												alt="Royal Holloway University of London"
 												className="w-auto h-35!"
 											/>
@@ -57,7 +59,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src="/projects/img/covida/cnacyt.png"
+												src={staticPath("/projects/img/covida/cnacyt.png")}
 												alt="CNACYT"
 												className="w-auto h-30!"
 											/>
@@ -65,7 +67,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src="/projects/img/covida/prociencia.png"
+												src={staticPath("/projects/img/covida/prociencia.png")}
 												alt="Prociencia"
 												className="w-auto h-35!"
 											/>
@@ -73,7 +75,7 @@ export default function Sponsors() {
 
 										<div className="mxd-project-item">
 											<img
-												src="/projects/img/covida/feei.png"
+												src={staticPath("/projects/img/covida/feei.png")}
 												alt="FEEI"
 												className="w-auto h-35!"
 											/>
