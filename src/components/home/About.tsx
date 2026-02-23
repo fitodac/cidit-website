@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function About() {
 	return (
 		<div className="tp-about-me-ab-ptb p-relative pt-220 pb-100">
@@ -40,7 +42,7 @@ export default function About() {
 						<div className="tp-about-me-ab-thumb">
 							<img
 								data-speed="1.7"
-								src="assets/img/shape.png"
+								src={staticPath("assets/img/shape.png")}
 								alt="shape"
 								className="w-220! max-w-screen! object-cover -top-100 -left-100 absolute rotate-90 opacity-50"
 							/>

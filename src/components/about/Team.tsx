@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function Team() {
 	return (
 		<div className="tp-team-ptb pt-160 pb-130">
@@ -83,7 +85,7 @@ const TeamBox = ({ name, position, pictureUrl }: TeamBoxProps) => {
 			<div className="tp-team-item p-relative mb-30">
 				<div className="tp-team-thumb">
 					<img
-						src={pictureUrl}
+						src={staticPath(pictureUrl)}
 						alt={`Foto de ${name}`}
 						className="h-110 w-full object-cover"
 					/>

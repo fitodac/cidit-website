@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 export default function About() {
 	return (
 		<>
@@ -70,14 +72,14 @@ export default function About() {
 								<div className="sa-about-left-shape">
 									<img
 										data-speed=".9"
-										src="assets/img/startup-agancy/about/about-shape-2.png"
+										src={staticPath("assets/img/startup-agancy/about/about-shape-2.png")}
 										alt=""
 									/>
 								</div>
 								<div className="sa-about-left-thumb">
 									<img
 										data-speed="1.1"
-										src="assets/img/startup-agancy/about/about-thumb-1.jpg"
+										src={staticPath("assets/img/startup-agancy/about/about-thumb-1.jpg")}
 										alt=""
 									/>
 								</div>
@@ -119,7 +121,7 @@ export default function About() {
 									<img
 										className="tp-anim-img"
 										data-animate="true"
-										src="assets/img/startup-agancy/about/about-thumb-2.jpg"
+										src={staticPath("assets/img/startup-agancy/about/about-thumb-2.jpg")}
 										alt=""
 									/>
 								</div>
@@ -154,7 +156,7 @@ export default function About() {
 							<div className="sa-about-left tp_fade_anim" data-delay=".6">
 								<img
 									data-speed="1.1"
-									src="assets/img/inner-image/service/thumb-2.jpg"
+									src={staticPath("assets/img/inner-image/service/thumb-2.jpg")}
 									alt=""
 									className="w-full"
 								/>

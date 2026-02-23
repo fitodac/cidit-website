@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import parse from "html-react-parser";
+import { staticPath } from "../utils/staticPath";
 
 import type { StaffType } from "../pages/proyectos/types.d.ts";
 
@@ -83,7 +84,11 @@ const TeamCard = ({
 		<div className="mxd-team-cards__item mxd-grid-item no-margin-desktop padding-bottom-desktop animate-card-3">
 			<div className="mxd-team-cards__media anim-uni-in-up">
 				<div className="mxd-team-cards__photo">
-					<img src={picture_src} alt={name} className="object-[50%_-3rem]" />
+					<img
+						src={staticPath(picture_src)}
+						alt={name}
+						className="object-[50%_-3rem]"
+					/>
 				</div>
 				<div className="mxd-team-cards__socials">
 					<a

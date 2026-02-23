@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 export default function Partners() {
 	return (
 		<section
@@ -158,7 +160,7 @@ const PartnerBox = ({ name, logo }: PartnerBoxType) => {
 			<div className="tp-benefit-item tp-benefit-borber-bottom h-48!">
 				<div className="tp-benefit-item-icon pb-30">
 					<span>
-						<img src={logo} alt={name} />
+						<img src={staticPath(logo)} alt={name} />
 					</span>
 				</div>
 				<h4 className="tp-benefit-item-title">{name}</h4>

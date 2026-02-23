@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 export default function Footer() {
 	return (
 		<footer className="tp-footer-7-area pt-110" data-bg-color="#010103">
@@ -15,14 +17,14 @@ export default function Footer() {
 								<div className="tp-footer-widget-menu">
 									<ul>
 										<li>
-											<a className="tp-hover-line-white border-up" href="/">
+											<a className="tp-hover-line-white border-up" href={staticPath("/")}>
 												Inicio
 											</a>
 										</li>
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/cursos"
+												href={staticPath("/cursos")}
 											>
 												Cursos
 											</a>
@@ -30,7 +32,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos"
+												href={staticPath("/proyectos")}
 											>
 												Proyectos
 											</a>
@@ -38,7 +40,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/publicaciones"
+												href={staticPath("/publicaciones")}
 											>
 												Publicaciones
 											</a>
@@ -46,7 +48,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/nosotros"
+												href={staticPath("/nosotros")}
 											>
 												Nosotros
 											</a>
@@ -54,7 +56,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/contacto"
+												href={staticPath("/contacto")}
 											>
 												Contacto
 											</a>
@@ -76,7 +78,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos/guarania"
+												href={staticPath("/proyectos/guarania")}
 											>
 												GuaranIA
 											</a>
@@ -84,7 +86,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos/proteia"
+												href={staticPath("/proyectos/proteia")}
 											>
 												ProteIA
 											</a>
@@ -92,7 +94,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos/cofar"
+												href={staticPath("/proyectos/cofar")}
 											>
 												Cofar
 											</a>
@@ -100,7 +102,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos/bootcamp"
+												href={staticPath("/proyectos/bootcamp")}
 											>
 												Bootcamp
 											</a>
@@ -108,7 +110,7 @@ export default function Footer() {
 										<li>
 											<a
 												className="tp-hover-line-white border-up"
-												href="/proyectos/covida"
+												href={staticPath("/proyectos/covida")}
 											>
 												Covida
 											</a>
@@ -155,7 +157,7 @@ export default function Footer() {
 									data-ease="bounce"
 								>
 									<img
-										src="assets/img/logo-white.svg"
+										src={staticPath("assets/img/logo-white.svg")}
 										alt="CIDIT logo"
 										className="w-2/3"
 									/>
@@ -168,7 +170,7 @@ export default function Footer() {
 									data-fade-from="bottom"
 									data-ease="bounce"
 								>
-									<a className="tp-btn-circle shadow-circle" href="/contacto">
+									<a className="tp-btn-circle shadow-circle" href={staticPath("/contacto")}>
 										<span>
 											<svg
 												width="16"

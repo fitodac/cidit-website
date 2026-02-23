@@ -1,3 +1,5 @@
+import { staticPath } from "../../utils/staticPath";
+
 const projects = [
 	{
 		headline: "GuaraIA",
@@ -41,7 +43,7 @@ export default function ProjectsPageContent() {
 					<div
 						className="port-showcase-slider-wrap tp-slider-parallax fix"
 						id="showcase-slider-holder"
-						data-pattern-img="assets/img/webgl/1.webp"
+						data-pattern-img={staticPath("assets/img/webgl/1.webp")}
 					>
 						<div
 							className="swiper-container parallax-slider-active-2 p-relative"
@@ -59,7 +61,7 @@ export default function ProjectsPageContent() {
 												<div className="col-xl-8">
 													<div className="port-showcase-slider-item">
 														<div className="port-showcase-slider-content">
-															<a href={e.link}>
+															<a href={staticPath(e.link)}>
 																<h4 className="port-showcase-slider-title">
 																	<span>{e.headline}</span>
 																</h4>
@@ -72,7 +74,7 @@ export default function ProjectsPageContent() {
 
 																<div className="">
 																	<a
-																		href={e.link}
+																		href={staticPath(e.link)}
 																		className="tp-btn-green btn-black-bg tp-btn-anim"
 																	>
 																		<div className="tp-btn-text">
@@ -156,7 +158,7 @@ export default function ProjectsPageContent() {
 					<div className="slider-img" data-slide={idx} key={idx}>
 						<img
 							className="slide-img h-full! object-cover!"
-							src={e.image}
+							src={staticPath(e.image)}
 							alt={e.headline}
 						/>
 					</div>

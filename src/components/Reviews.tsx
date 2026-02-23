@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 const reviews = [
 	{
 		picture: "assets/img/reviews/portrait-3.avif",
@@ -38,7 +40,7 @@ export default function Reviews() {
 											<div className="col-lg-4">
 												<div className="ma-testimonial-thumb">
 													<img
-														src={e.picture}
+														src={staticPath(e.picture)}
 														alt={e.name}
 														className="object-cover aspect-square rounded-full"
 													/>

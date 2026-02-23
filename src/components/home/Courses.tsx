@@ -1,6 +1,7 @@
 import parse from "html-react-parser";
 import { useState, type HTMLAttributes } from "react";
 import { cn } from "../../utils/cn";
+import { staticPath } from "../../utils/staticPath";
 
 export default function Courses() {
 	const [hover, setHover] = useState<number>(0);
@@ -218,13 +219,13 @@ const Card = ({
 				<div className="bnc-service-item-content">
 					<div className="bnc-service-item-wrap">
 						<img
-							src={coverSrc}
+							src={staticPath(coverSrc)}
 							alt="course image"
 							className="border-b- border-white mask-b-from-30% mask-b-to-100% w-[calc(100%+86px)] max-w-screen! h-71 -mb-30! -left-[43px] -top-[61px] will-change-[height] relative transition-all duration-700 object-cover group-hover:h-30"
 						/>
 
 						<h4 className="bnc-service-item-title relative z-10">
-							<a className="tp-line-black" href={link}>
+							<a className="tp-line-black" href={staticPath(link)}>
 								{parse(title)}
 							</a>
 						</h4>
@@ -242,7 +243,7 @@ const Card = ({
 						<div className="bnc-service-item-btn">
 							<a
 								className="tp-btn-green bdr-5 fw-700 ff-bricolage bg-none-style tp-btn-anim"
-								href={link}
+								href={staticPath(link)}
 							>
 								<div className="tp-btn-text">Más info</div>
 								<span>

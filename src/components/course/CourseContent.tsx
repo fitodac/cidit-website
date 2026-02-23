@@ -1,4 +1,5 @@
 import InscriptionForm from "./InscriptionForm";
+import { staticPath } from "../../utils/staticPath";
 
 export default function CourseContent({ title }: { title: string }) {
 	return (
@@ -64,7 +65,7 @@ export default function CourseContent({ title }: { title: string }) {
 									<div className="sidebar-widget-author d-flex align-items-start">
 										<div className="sidebar-widget-author-img">
 											<img
-												src="assets/img/inner-image/blog/details/avatar-1.jpg"
+												src={staticPath("assets/img/inner-image/blog/details/avatar-1.jpg")}
 												alt=""
 											/>
 										</div>

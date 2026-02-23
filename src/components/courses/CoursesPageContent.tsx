@@ -4,6 +4,7 @@ import PageHeaderAnimated from "../PageHeaderAnimated";
 import Reviews from "../Reviews";
 
 import { useMemo } from "react";
+import { staticPath } from "../../utils/staticPath";
 
 export default function CoursesPageContent() {
 	return (
@@ -218,7 +219,9 @@ const Course = ({
 												>
 													<div className="postbox-details-author-img mr-15">
 														<img
-															src="assets/img/inner-image/blog/standard/blog-av-1.jpg"
+															src={staticPath(
+																"assets/img/inner-image/blog/standard/blog-av-1.jpg"
+															)}
 															alt=""
 														/>
 													</div>
@@ -249,7 +252,7 @@ const Course = ({
 
 							<a
 								className="tp-btn-green bdr-5 fw-700 ff-bricolage bg-none-style tp-btn-anim"
-								href={link}
+								href={staticPath(link)}
 							>
 								<div className="tp-btn-text">Más info</div>
 								<span>
@@ -277,7 +280,7 @@ const Course = ({
 					<div className="col-lg-8 mb-30">
 						<div className="service-3-process-thumb">
 							<img
-								src={image}
+								src={staticPath(image)}
 								alt="Main course image"
 								className="w-full h-80! object-cover"
 							/>
@@ -286,7 +289,7 @@ const Course = ({
 					<div className="col-lg-4 mb-30">
 						<div className="service-3-process-thumb">
 							<img
-								src={imageSm}
+								src={staticPath(imageSm)}
 								alt="Secondary course image"
 								className="w-full h-80! object-cover"
 							/>

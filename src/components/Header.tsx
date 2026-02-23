@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { cn } from "../utils/cn";
+import { staticPath } from "../utils/staticPath";
 
 type Props = {
 	baseLogoColor: "white" | "black";
@@ -21,10 +22,10 @@ export default function Header({
 				<div className="flex justify-between gap-10 md:gap-20 md:justify-center">
 					<div className="flex items-center">
 						<div className="tp-header-logo">
-							<a href="/">
+							<a href={staticPath("/")}>
 								<img
 									data-width="150"
-									src={`assets/img/logo-${baseLogoColor}.svg`}
+									src={staticPath(`assets/img/logo-${baseLogoColor}.svg`)}
 									alt=""
 									className="main-logo"
 								/>
@@ -42,47 +43,46 @@ export default function Header({
 							>
 								<nav className="tp-mobile-menu-active">
 									<ul>
-										<li>{import.meta.env.BASE_URL}</li>
 										<li>
 											{pathname === "/" ? (
 												<span>Inicio</span>
 											) : (
-												<a href="/">Inicio</a>
+												<a href={staticPath("/")}>Inicio</a>
 											)}
 										</li>
 										<li>
 											{pathname === "/cursos" ? (
 												<span>Cursos</span>
 											) : (
-												<a href="/cursos">Cursos</a>
+												<a href={staticPath("/cursos")}>Cursos</a>
 											)}
 										</li>
 										<li>
 											{pathname === "/proyectos" ? (
 												<span>Proyectos</span>
 											) : (
-												<a href="/proyectos">Proyectos</a>
+												<a href={staticPath("/proyectos")}>Proyectos</a>
 											)}
 										</li>
 										<li>
 											{pathname === "/publicaciones" ? (
 												<span>Publicaciones</span>
 											) : (
-												<a href="/publicaciones">Publicaciones</a>
+												<a href={staticPath("/publicaciones")}>Publicaciones</a>
 											)}
 										</li>
 										<li>
 											{pathname === "/nosotros" ? (
 												<span>Nosotros</span>
 											) : (
-												<a href="/nosotros">Nosotros</a>
+												<a href={staticPath("/nosotros")}>Nosotros</a>
 											)}
 										</li>
 										<li>
 											{pathname === "/contacto" ? (
 												<span>Contacto</span>
 											) : (
-												<a href="/contacto">Contacto</a>
+												<a href={staticPath("/contacto")}>Contacto</a>
 											)}
 										</li>
 									</ul>

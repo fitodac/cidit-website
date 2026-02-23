@@ -1,3 +1,5 @@
+import { staticPath } from "../utils/staticPath";
+
 const brands = [
 	{
 		name: "Tecnoedil",
@@ -66,7 +68,7 @@ export default function Brands() {
 							>
 								<div className="ds-brand-item size-full grid place-items-center">
 									<img
-										src={brand.logo}
+										src={staticPath(brand.logo)}
 										alt={brand.name}
 										className="w-auto h-17"
 									/>
@@ -80,7 +82,7 @@ export default function Brands() {
 							>
 								<div className="ds-brand-item size-full grid place-items-center">
 									<img
-										src={brand.logo}
+										src={staticPath(brand.logo)}
 										alt={brand.name}
 										className="w-auto h-17"
 									/>

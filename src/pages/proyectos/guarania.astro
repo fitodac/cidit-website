@@ -9,6 +9,7 @@ import BoxedContent from "../../projectsComponents/guarania/BoxedContent.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
 import Sponsors from "../../projectsComponents/guarania/Sponsors.tsx";
 import Reviews from "../../projectsComponents/guarania/Reviews.tsx";
+import { staticPath } from "../../utils/staticPath";
 
 import type { StaffType } from "./types.d.ts";
 
@@ -142,9 +143,9 @@ const staff = [
 
 <ProjectLayout
 	title="Guarania"
-	logoSrc="/projects/img/guarania/logo.svg"
+	logoSrc={staticPath("projects/img/guarania/logo.svg")}
 	logoHeight="h-20!"
-	footerLogoSrc="/projects/img/guarania/logo-black.svg"
+	footerLogoSrc={staticPath("projects/img/guarania/logo-black.svg")}
 >
 	<Hero />
 	<ProjectComponents />
