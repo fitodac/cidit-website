@@ -8,7 +8,7 @@ export default function ProjectComponents() {
 						<div className="container-fluid px-0">
 							<div className="row gx-0">
 								{/* item */}
-								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right">
+								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-140!">
 									<div className="mxd-stats-cards__inner align-end radius-m padding-4 bg-gn-primary-400!">
 										<div className="mxd-counter align-end">
 											<p className="mxd-counter__descr opposite text-white text-4xl! leading-snug!">
@@ -33,7 +33,7 @@ export default function ProjectComponents() {
 									</div>
 								</div>
 								{/* item */}
-								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
+								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-140!">
 									<div className="mxd-stats-cards__inner align-end bg-base-tint radius-m padding-4">
 										<div className="mxd-stats-cards__btngroup"></div>
 										<div className="mxd-counter align-end">
@@ -50,7 +50,7 @@ export default function ProjectComponents() {
 									</div>
 								</div>
 								{/* item */}
-								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right">
+								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-140!">
 									<div className="mxd-stats-cards__inner bg-[#7bafd1] radius-m padding-4">
 										<div className="mxd-counter">
 											<p className="mxd-counter__descr text-white text-4xl! leading-snug!">
@@ -63,13 +63,13 @@ export default function ProjectComponents() {
 											<img
 												src="/projects/img/guarania/women.avif"
 												alt="Illustration"
-												className="w-full h-full! object-cover object-left"
+												className="w-full h-full! object-contain object-bottom-right"
 											/>
 										</div>
 									</div>
 								</div>
 								{/* item */}
-								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left">
+								<div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left h-140!">
 									<div className="mxd-stats-cards__inner radius-m padding-4 bg-gn-primary-400!">
 										<div className="mxd-counter">
 											<p className="mxd-counter__descr text-white text-4xl! leading-snug!">
