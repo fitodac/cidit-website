@@ -1,8 +1,9 @@
 ---
-import { db, Gallery, Picture, eq } from "astro:db";
+import { db, Gallery, Picture, Video, eq } from "astro:db";
 import "../../../../styles/projects/guarania.css";
 
 import ProjectLayout from "../../../../layouts/projectLayout.astro";
+import VideoGallery from "../../../../projectsComponents/guarania/VideoGallery.tsx";
 
 import { staticPath } from "../../../../utils/staticPath";
 
@@ -19,6 +20,11 @@ const pictures = await db
 	.select()
 	.from(Picture)
 	.where(eq(Picture.galleryId, gallery.id));
+
+const videos = await db
+	.select()
+	.from(Video)
+	.where(eq(Video.galleryId, gallery.id));
 ---
 
 <ProjectLayout
@@ -27,43 +33,60 @@ const pictures = await db
 	logoHeight="h-20!"
 	footerLogoSrc={staticPath("projects/img/guarania/logo-black.svg")}
 >
-	<div
-		class="mxd-section mxd-section-inner-headline grid-headline padding-default"
-	>
-		<div class="mxd-container grid-l-container">
-			<!-- Block - Projects Masonry #01 with Section Title Start -->
-			<div class="mxd-block loading-wrap">
-				<div class="mxd-projects-masonry loading__item">
-					<div class="container-fluid p-0">
-						<!-- Portfolio Gallery Start -->
-						<div
-							class="row g-0 mxd-projects-masonry__gallery"
-							data-masonry='{"percentPosition": true }'
-						>
-							<!-- portfolio gallery title -->
-							<div
-								class="col-12 col-xl-6 mxd-projects-masonry__title headline-title"
-							>
-								<div class="mxd-block__inner-headline">
-									<h2
-										class="inner-headline__title text-7xl!"
-										set:html={gallery.title}
-									/>
+	<div class="pt-20! pb-30! flex justify-center lg:pt-70!">
+		<div class="mxd-container">
+			<h2 class="inner-headline__title text-8xl!" set:html={gallery.title} />
 
-									<div class="mt-10!">
-										<a
-											class="btn btn-anim btn-default btn-small btn-opposite slide-right-up px-10!"
-											href={staticPath("/proyectos/guarania")}
-										>
-											<i class="ph ph-arrow-left"></i>
-											<span class="btn-caption font-semibold">Volver</span>
-										</a>
-									</div>
-								</div>
-							</div>
-							{
-								pictures.length &&
-									pictures.map((picture) => (
+			<div class="mt-20!">
+				<a
+					class="btn btn-anim btn-default btn-small btn-opposite slide-right-up px-10!"
+					href={staticPath("/proyectos/guarania")}
+				>
+					<i class="ph ph-arrow-left"></i>
+					<span class="btn-caption font-semibold">Volver</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	{
+		videos.length && (
+			<div class="mxd-section mxd-section-inner-headline grid-headline pt-0! pb-14!">
+				<div class="mxd-container">
+					<h3 class="text-6xl!">Videos</h3>
+				</div>
+
+				<div class="mxd-container grid-l-container mt-20!">
+					<div class="mxd-block loading-wrap">
+						<div class="mxd-projects-masonry loading__item">
+							<VideoGallery
+								client:only="react"
+								videos={videos}
+								galleryName={gallery.name}
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		)
+	}
+
+	{
+		pictures.length && (
+			<div class="mxd-section mxd-section-inner-headline grid-headline padding-default py-0!">
+				<div class="mxd-container loading-wrap">
+					<h3 class="text-6xl!">Galería</h3>
+				</div>
+
+				<div class="mxd-container grid-l-container mt-20!">
+					<div class="mxd-block loading-wrap">
+						<div class="mxd-projects-masonry loading__item">
+							<div class="container-fluid p-0">
+								<div
+									class="row g-0 mxd-projects-masonry__gallery"
+									data-masonry='{"percentPosition": true }'
+								>
+									{pictures.map((picture) => (
 										<div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
 											<div class="mxd-project-item__preview masonry-preview h-auto!">
 												<img
@@ -75,14 +98,25 @@ const pictures = await db
 												/>
 											</div>
 										</div>
-									))
-							}
+									))}
+								</div>
+							</div>
 						</div>
-						<!-- Portfolio Gallery End -->
 					</div>
 				</div>
 			</div>
-			<!-- Block - Projects Masonry #01 with Section Title Start -->
+		)
+	}
+
+	<div class="pt-30! flex justify-center">
+		<div class="mxd-container">
+			<a
+				class="btn btn-anim btn-default btn-small btn-opposite slide-right-up px-10!"
+				href={staticPath("/proyectos/guarania")}
+			>
+				<i class="ph ph-arrow-left"></i>
+				<span class="btn-caption font-semibold">Volver</span>
+			</a>
 		</div>
 	</div>
 </ProjectLayout>

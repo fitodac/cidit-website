@@ -7,7 +7,6 @@ export default async function seedPictures() {
 		{ galleryId: 6, path: "1c9a7e5d.mp4" },
 		{ galleryId: 6, path: "5a7d2c1e.mp4" },
 		{ galleryId: 6, path: "6a2f4b8c.mp4" },
-		{ galleryId: 6, path: "9e4b6f3a.mp4" },
 		{ galleryId: 6, path: "b3f8c5a6.mp4" },
 
 		{ galleryId: 7, path: "1c9e4b7a.mp4" },
