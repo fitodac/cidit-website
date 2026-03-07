@@ -4,7 +4,7 @@ const projects = [
 	{
 		headline: "DJ Code",
 		subHeadline: "Creando oportunidades globales para jóvenes de 18 a 29 años",
-		link: "/proyectos/djcode",
+		link: "/proyectos/bootcamp",
 		image: "assets/img/projects/bootcamp.webp",
 	},
 	{

@@ -21,6 +21,34 @@ export default function Partners() {
 					<div className="row gx-0">
 						<PartnerBox
 							{...{
+								name: "Bid Lab",
+								logo: "assets/img/partners/bid-lab.webp",
+							}}
+						/>
+
+						<PartnerBox
+							{...{
+								name: "Sec. de Políticas Linüísticas",
+								logo: "assets/img/partners/politicas-linguisticas.webp",
+							}}
+						/>
+
+						<PartnerBox
+							{...{
+								name: "FGV",
+								logo: "assets/img/partners/fgv.webp",
+							}}
+						/>
+
+						<PartnerBox
+							{...{
+								name: "Univ. de la Rep. Uruguay",
+								logo: "assets/img/partners/udelar.webp",
+							}}
+						/>
+
+						<PartnerBox
+							{...{
 								name: "Univ. Nac. Tecnológica de La Plata",
 								logo: "assets/img/partners/universidad-de-la-plata.webp",
 							}}
@@ -144,11 +172,15 @@ const PartnerBox = ({ name, logo }: PartnerBoxType) => {
 			<div className="tp-benefit-item tp-benefit-borber-bottom h-48!">
 				<div className="tp-benefit-item-icon pb-30 flex justify-center">
 					<span>
-						<img src={staticPath(logo)} alt={name} className="w-auto h-20" />
+						<img
+							src={staticPath(logo)}
+							alt={name}
+							className="w-auto h-20 object-contain"
+						/>
 					</span>
 				</div>
 
-				<h4 className="tp-benefit-item-title text-center">{name}</h4>
+				<h4 className="tp-benefit-item-title text-center mt-4!">{name}</h4>
 			</div>
 		</div>
 	);

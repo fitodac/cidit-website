@@ -13,16 +13,6 @@ export default function About() {
 						</div>
 						<div className="col-xl-8">
 							<div className="ma-about-title-box [&_p]:text-lg!">
-								{/* 
-							<h4
-                className="tp-section-title fs-52 tl-unbounded fw-500 text-capitalize mb-30 tp-text-revel tp_fade_anim"
-                data-delay=".4"
-              >
-                world is constantly <br />
-                evolving, we are at the <br />
-                forefront of shaping.
-              </h4> 
-							*/}
 								<div className="tp_fade_anim space-y-10!" data-delay=".5">
 									<p>
 										El CIDIT nace en el año 2014, cómo el primer Centro
@@ -72,14 +62,16 @@ export default function About() {
 								<div className="sa-about-left-shape">
 									<img
 										data-speed=".9"
-										src={staticPath("assets/img/startup-agancy/about/about-shape-2.png")}
+										src={staticPath(
+											"assets/img/startup-agancy/about/about-shape-2.png"
+										)}
 										alt=""
 									/>
 								</div>
 								<div className="sa-about-left-thumb">
 									<img
 										data-speed="1.1"
-										src={staticPath("assets/img/startup-agancy/about/about-thumb-1.jpg")}
+										src={staticPath("assets/img/about/9e8a3c1d.avif")}
 										alt=""
 									/>
 								</div>
@@ -87,7 +79,7 @@ export default function About() {
 						</div>
 
 						<div className="col-lg-7">
-							<div className="sa-about-right d-flex justify-content-between">
+							<div className="sa-about-right d-flex justify-content-between gap-10!">
 								<div className="sa-about-right-text flex-1">
 									<h3 className="tp-section-title fs-42 tl-unbounded fw-500 tp-text-revel pb-5!">
 										Qué hacemos
@@ -117,11 +109,12 @@ export default function About() {
 										</p>
 									</div>
 								</div>
-								<div className="tp-clip-anim lg:w-96!" data-speed="1.1">
+
+								<div className="tp-clip-anim lg:w-120!" data-speed="1.1">
 									<img
 										className="tp-anim-img"
 										data-animate="true"
-										src={staticPath("assets/img/startup-agancy/about/about-thumb-2.jpg")}
+										src={staticPath("assets/img/about/2d4f7b6a.avif")}
 										alt=""
 									/>
 								</div>
@@ -156,7 +149,7 @@ export default function About() {
 							<div className="sa-about-left tp_fade_anim" data-delay=".6">
 								<img
 									data-speed="1.1"
-									src={staticPath("assets/img/inner-image/service/thumb-2.jpg")}
+									src={staticPath("assets/img/about/d8a2c1e5.jpeg")}
 									alt=""
 									className="w-full"
 								/>

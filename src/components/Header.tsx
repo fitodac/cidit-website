@@ -43,7 +43,7 @@ const navbar = [
 	},
 	{
 		label: "DJ Code – Formación en Tecnología",
-		href: "/proyectos/djcode",
+		href: "/proyectos/bootcamp",
 	},
 	{
 		label: "Proyectos de investigación",

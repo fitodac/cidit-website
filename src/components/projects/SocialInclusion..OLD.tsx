@@ -80,7 +80,7 @@ export default function SocialInnovation() {
 				data-cursor="Ver<br>Proyecto"
 			>
 				<div className="sa-banner-wrapper p-relative">
-					<a href={staticPath("projects/djcode")} className="cursor-hide">
+					<a href={staticPath("projects/bootcamp")} className="cursor-hide">
 						<img
 							data-speed=".8"
 							src="assets/img/projects/djcode.webp"
@@ -153,7 +153,7 @@ export default function SocialInnovation() {
 									>
 										<a
 											className="tp-btn-green btn-h-60 tp-btn-anim"
-											href={staticPath("projects/djcode")}
+											href={staticPath("projects/bootcamp")}
 										>
 											<div className="tp-btn-text">Ver proyecto</div>
 											<span>
@@ -178,7 +178,10 @@ export default function SocialInnovation() {
 									className="service-details-thumb tp-clip-anim mb-30 text-lg-end not-hide-cursor"
 									data-cursor="Ver<br>Proyecto"
 								>
-									<a href="proyectos/djcode" className="d-block cursor-hide">
+									<a
+										href={staticPath("projects/bootcamp")}
+										className="d-block cursor-hide"
+									>
 										<img
 											className="w-100 tp-anim-img"
 											data-animate="true"
