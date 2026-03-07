@@ -113,35 +113,19 @@ export default function Partners() {
 				</div>
 
 				<div className="mt-11! flex justify-center">
-					<div className="w-full max-w-5xl grid [&_p]:text-sm! [&_p]:text-balance! lg:gap-20 lg:grid-cols-2">
-						<div className="">
-							<p>
-								Para el logro de este mandato el CIDIT se debe valer de las
-								competencias de profesionales; docentes, investigadores de la
-								UC, así como de grupos y agencias especializadas en temas afines
-								nacional e internacional. Actualmente está asociada con el
-								Centro de Investigaciones Viales de la Universidad Nacional
-								Tecnológica de La Plata (Argentina) para los temas viales y con
-								el Centro Asturiano de Innovación – INNOVASTURIAS (España) para
-								los temas de innovación.
-							</p>
-						</div>
-
-						<div className="">
-							<p>
-								En cuanto a los actores con quien el CIDIT esta vinculado para
-								actividades conjuntas es con la Cámara Paraguaya para la
-								Construcción (CAPACO) y con la Cámara Vial Paraguaya (CAVIALPA).
-							</p>
-							<p>
-								Para el intercambio de oferta y demanda algunas de las empresas
-								con las que nos vinculamos son; CONSTRUCTORAS; HEISECKE, BENITO
-								ROGGIO; TECNOEDIL, CONCRET MIX, TOCSA, OCHO A, CONSTRUCTORA
-								ACARAY entre otros, en otros ámbitos de la gestión también
-								proporcionamos apoyo a consorcios como TYPSA y en el sector
-								publico al CONACYT.
-							</p>
-						</div>
+					<div className="w-full max-w-6xl [&_p]:text-sm! [&_p]:text-balance!">
+						<p>
+							Para cumplir nuestro mandato, el CIDIT integra las competencias de
+							profesionales, docentes e investigadores de trayectoria nacional e
+							internacional. Fomentamos alianzas estratégicas con universidades
+							y agencias especializadas para el desarrollo de proyectos de
+							investigación y formación de capacidades. Colaboramos
+							estrechamente con el sector privado en iniciativas de interés
+							nacional, impulsando la innovación social a través de tecnologías
+							como la IA. Estas acciones cuentan con el respaldo del CONACYT y
+							del BID Lab, el laboratorio de innovación del Grupo BID dedicado a
+							mejorar vidas en América Latina y el Caribe.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -160,11 +144,7 @@ const PartnerBox = ({ name, logo }: PartnerBoxType) => {
 			<div className="tp-benefit-item tp-benefit-borber-bottom h-48!">
 				<div className="tp-benefit-item-icon pb-30 flex justify-center">
 					<span>
-						<img
-							src={staticPath(logo)}
-							alt={name}
-							className="w-auto h-20"
-						/>
+						<img src={staticPath(logo)} alt={name} className="w-auto h-20" />
 					</span>
 				</div>
 
