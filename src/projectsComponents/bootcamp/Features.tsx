@@ -46,25 +46,25 @@ export default function Features() {
 								<div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-150!">
 									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4">
 										<div className="mxd-counter w-130">
-											<p className="t-140 t-bright text-balance">
+											<p className="t-140 t-bright text-balance text-white!">
 												Nuestro capital humano está compuesto por jóvenes
 												comprometidos y versátiles a distintos contextos.
 											</p>
 										</div>
 
 										<img
-											src={staticPath("projects/img/bootcamp/feature-2.avif")}
+											src={staticPath("projects/img/bootcamp/c1e9a7d3.avif")}
 											alt="Illustration"
-											className="parallax-img-small w-130! h-full! right-0 bottom-0 absolute object-top-left"
+											className="parallax-img-small w-full! h-full! right-0 bottom-0 absolute object-cover"
 										/>
 									</div>
 								</div>
 
 								{/* item */}
 								<div className="col-12 col-xl-4 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-200!">
-									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4">
-										<div className="mxd-counter w-90">
-											<p className="t-140 t-bright text-balance">
+									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4 items-end">
+										<div className="w-80">
+											<p className="text-4xl! leading-tight! text-balance!">
 												Contamos con mentores jóvenes (egresados de nuestras
 												experiencias) que acompañan, asesoran y ayudan a los
 												bootcampers en su experiencia.
@@ -72,27 +72,27 @@ export default function Features() {
 										</div>
 
 										<img
-											src={staticPath("projects/img/bootcamp/feature-3.avif")}
+											src={staticPath("projects/img/bootcamp/5d4a8f2c.avif")}
 											alt="Illustration"
-											className="parallax-img-small- w-100! h-full! right-0 bottom-0 absolute object-cover object-top-left"
+											className="parallax-img-small- w-100! h-full! -left-10 bottom-0 top-10 absolute object-cover object-top-left"
 										/>
 									</div>
 								</div>
 
 								{/* item */}
 								<div className="col-12 col-xl-4 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-200!">
-									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4">
-										<div className="mxd-counter w-101">
-											<p className="t-140 t-bright text-balance">
+									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4 justify-end!">
+										<div className="w-80">
+											<p className="text-4xl! leading-tight! text-balance!">
 												Tenemos un equipo de seguimiento por cada experiencia
 												bootcamp para evitar y disminuír la deserción.
 											</p>
 										</div>
 
 										<img
-											src={staticPath("projects/img/bootcamp/feature-4.avif")}
+											src={staticPath("projects/img/bootcamp/a9c3e1b7.avif")}
 											alt="Illustration"
-											className="parallax-img-small- w-80! h-full! right-0 bottom-0 absolute object-cover object-top-left"
+											className="parallax-img-small- w-110! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>
 									</div>
 								</div>
@@ -100,15 +100,15 @@ export default function Features() {
 								{/* item */}
 								<div className="col-12 col-xl-4 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right h-200!">
 									<div className="mxd-stats-cards__inner bg-base-tint radius-l padding-4">
-										<div className="mxd-counter w-101">
-											<p className="t-140 t-bright text-balance">
+										<div className="w-101">
+											<p className="text-4xl! leading-tight! text-balance!">
 												Visibilizamos a los egresados y los vinculamos con
 												potenciales empleadores.
 											</p>
 										</div>
 
 										<img
-											src={staticPath("projects/img/bootcamp/feature-5.avif")}
+											src={staticPath("projects/img/bootcamp/6f2d7c4a.avif")}
 											alt="Illustration"
 											className="parallax-img-small- w-100! h-full! right-0 bottom-0 absolute object-cover object-top-left"
 										/>

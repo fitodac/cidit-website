@@ -1,4 +1,5 @@
 import { staticPath } from "../../utils/staticPath";
+import { cn } from "../../utils/cn";
 
 export default function Company() {
 	return (
@@ -73,11 +74,16 @@ export default function Company() {
 											</p>
 										</div>
 
-										<img
-											src={staticPath("projects/img/bootcamp/company-dev.avif")}
-											alt="Illustration"
-											className="parallax-img-small w-151! h-full! right-0 bottom-0 absolute object-cover"
-										/>
+										<div className="parallax-img-small h-full right-0 bottom-0 absolute">
+											<img
+												src={staticPath("projects/img/bootcamp/8b2d6a4f.avif")}
+												alt="Illustration"
+												className={cn(
+													"size-full! object-cover mask-l-from-70%",
+													"[&>img]:w-full!"
+												)}
+											/>
+										</div>
 									</div>
 								</div>
 							</div>
