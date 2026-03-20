@@ -7,8 +7,8 @@ export default function Projects_old() {
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="sa-work-title-box text-center mb-70">
-							<h4 className="tp-section-title tp-split-title text-gray-300! lg:text-[10rem]! xl:text-[12rem]!">
-								Proyectos
+							<h4 className="tp-section-title tp-split-title text-gray-300! lg:text-6xl! xl:text-8xl!">
+								Investigación, Desarrollo e innovación
 							</h4>
 						</div>
 					</div>

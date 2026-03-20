@@ -46,7 +46,7 @@ const navbar = [
 		href: "/proyectos/bootcamp",
 	},
 	{
-		label: "Proyectos de investigación",
+		label: "Investigación, Desarrollo e innovación",
 		href: "/proyectos",
 	},
 	{

@@ -3728,7 +3728,7 @@ body.tp-magic-cursor #magic-cursor {
 	}
 }
 .tp-header-menu > nav > ul > li {
-	margin: 0 13px;
+	margin: 0 20px;
 	list-style-type: none;
 	display: inline-block;
 }
@@ -3742,9 +3742,11 @@ body.tp-magic-cursor #magic-cursor {
 	padding: 36px 0;
 	font-weight: 700;
 	font-size: 16px;
-	display: inline-block;
+	display: inline-flex;
+	align-items: start;
 	color: white;
 	font-family: var(--tp-ff-bricolage);
+	max-width: 200px;
 }
 .tp-header-menu > nav > ul > li > span {
 	color: rgb(255, 255, 255, 0.5);

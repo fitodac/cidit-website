@@ -166,7 +166,7 @@ export default async function seedGallery() {
 			name: "EDU005",
 			title:
 				"Alto Paraná - <span>Colegio Nacional Moisés Santiago Bertoni</span>",
-			cover_src: "8c9eafb0.jpg",
+			cover_src: "b0c1d2e3.jpeg",
 			categoryId: 3,
 		},
 		{
