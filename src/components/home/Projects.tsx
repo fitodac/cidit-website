@@ -2,7 +2,7 @@ import { staticPath } from "../../utils/staticPath";
 
 export default function Projects_old() {
 	return (
-		<div className="sa-work-ptb pt-150 mb-200">
+		<div className="sa-work-ptb pt-10 lg:pt-150 mb-10 lg:mb-200">
 			<div className="container container-1510">
 				<div className="row">
 					<div className="col-lg-12">
