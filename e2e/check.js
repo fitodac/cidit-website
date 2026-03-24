@@ -12,7 +12,8 @@ import { chromium } from 'playwright';
 
   const pagesToCheck = [
     { name: 'Index', url: 'http://localhost:4321/' },
-    { name: 'Cursos', url: 'http://localhost:4321/cursos' }
+    { name: 'Cursos', url: 'http://localhost:4321/cursos' },
+    { name: 'Proyectos', url: 'http://localhost:4321/proyectos' }
   ];
 
   let hasErrors = false;

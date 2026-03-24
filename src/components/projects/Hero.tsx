@@ -3,18 +3,18 @@ import { staticPath } from "../../utils/staticPath";
 export default function Hero() {
 	return (
 		<div
-			className="hr-hero-bg include-bg z-index-1 hero-section"
+			className="hr-hero-bg include-bg z-index-1 hero-section bg-center"
 			data-background={staticPath("assets/img/projects/hero-bg.avif")}
 		>
 			<div className="hr-hero-main d-flex flex-column justify-content-between h-100">
-				<div className="hr-hero-content pl-160">
+				<div className="hr-hero-content px-4 lg:pl-160 pt-30 lg:pt-0">
 					<div className="row gx-0">
 						<div className="col-xl-10">
 							<div className="row align-items-end">
 								<div className="col-lg-9">
 									<div className="hr-hero-title-box">
-										<h4 className="hr-hero-title tp-split-title leading-none!">
-											Proyectos <br />
+										<h4 className="hr-hero-title tp-split-title text-lg lg:text-[10rem]! leading-tight lg:leading-none!">
+											Proyectos <br className="hidden lg:inline" />
 											de Investigación
 										</h4>
 									</div>
@@ -26,7 +26,7 @@ export default function Hero() {
 
 				<div className="row gx-0">
 					<div className="col-xl-7">
-						<div className="hr-feature-wrap pl-100">
+						<div className="hr-feature-wrap hidden lg:block px-4 lg:pl-100 pb-20 lg:pb-0">
 							<div className="row gx-0">
 								<div className="col-md-6">
 									<div className="hr-feature-item d-flex align-items-start">

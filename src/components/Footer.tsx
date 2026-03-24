@@ -11,19 +11,16 @@ export default function Footer() {
 								className="tp-footer-widget mb-40 tp-footer-3-col-2 tp_fade_anim"
 								data-delay=".4"
 							>
-								<h4 className="tp-footer-widget-title ff-unbounded fs-20 fw-500 mb-30">
-									quick links
-								</h4>
 								<div className="tp-footer-widget-menu">
 									<ul>
 										<li>
-											<a className="tp-hover-line-white border-up" href={staticPath("/")}>
+											<a className="tp-hover-line-white border-up text-sm lg:text-base" href={staticPath("/")}>
 												Inicio
 											</a>
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/cursos")}
 											>
 												Cursos
@@ -31,7 +28,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos")}
 											>
 												Proyectos
@@ -39,7 +36,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/publicaciones")}
 											>
 												Publicaciones
@@ -47,7 +44,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/nosotros")}
 											>
 												Nosotros
@@ -55,7 +52,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/contacto")}
 											>
 												Contacto
@@ -70,14 +67,14 @@ export default function Footer() {
 								className="tp-footer-widget mb-40 tp-footer-3-col-3 tp_fade_anim"
 								data-delay=".5"
 							>
-								<h4 className="tp-footer-widget-title ff-unbounded fs-20 fw-500 mb-30">
+								<h4 className="tp-footer-widget-title ff-unbounded text-lg lg:fs-20 fw-500 mb-30">
 									Proyectos
 								</h4>
 								<div className="tp-footer-widget-menu">
 									<ul>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos/guarania")}
 											>
 												GuaranIA
@@ -85,7 +82,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos/proteia")}
 											>
 												ProteIA
@@ -93,7 +90,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos/cofar")}
 											>
 												Cofar
@@ -101,7 +98,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos/bootcamp")}
 											>
 												Bootcamp
@@ -109,7 +106,7 @@ export default function Footer() {
 										</li>
 										<li>
 											<a
-												className="tp-hover-line-white border-up"
+												className="tp-hover-line-white border-up text-sm lg:text-base"
 												href={staticPath("/proyectos/covida")}
 											>
 												Covida
@@ -124,7 +121,7 @@ export default function Footer() {
 
 						<div className="col-lg-3 col-md-6 tp_fade_anim" data-delay=".6">
 							<div className="tp-footer-widget mb-40 tp-footer-3-col-4">
-								<h4 className="tp-footer-widget-title ff-unbounded fs-20 fw-500 mb-40">
+								<h4 className="tp-footer-widget-title ff-unbounded text-lg lg:fs-20 fw-500 mb-40">
 									Suscríbete a nuestro newsletter
 								</h4>
 								<div className="tp-footer-widget-input p-relative">
@@ -159,10 +156,11 @@ export default function Footer() {
 									<img
 										src={staticPath("assets/img/logo-white.svg")}
 										alt="CIDIT logo"
-										className="w-2/3"
+										className="w-40 lg:w-2/3"
 									/>
 								</div>
 							</div>
+							
 							<div className="col-md-4">
 								<div
 									className="ds-footer-btn z-index-1 text-md-end mb-40 tp_fade_anim"
