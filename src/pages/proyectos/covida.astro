@@ -11,6 +11,7 @@ import Staff from "../../projectsComponents/Staff.tsx";
 import Brochure from "../../projectsComponents/covida/Brochure.tsx";
 
 import { staticPath } from "../../utils/staticPath";
+import { getSEO } from "../../data/seoData";
 
 import type { StaffType } from "./types.d.ts";
 
@@ -94,10 +95,15 @@ const staff = [
 		cv_src: "#",
 	},
 ] as StaffType[];
+
+const seo = getSEO("covida");
 ---
 
 <ProjectLayout
-	title="Covida"
+	title={seo.title}
+	description={seo.description}
+	ogImage="/og/covida.png"
+	ogType={seo.ogType}
 	logoSrc={staticPath("/projects/img/covida/logo.svg")}
 	logoHeight="h-12!"
 	footerLogoSrc={staticPath("/projects/img/covida/logo-black.svg")}

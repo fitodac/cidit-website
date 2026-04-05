@@ -17,10 +17,16 @@ import Python from "../../projectsComponents/bootcamp/Python.tsx";
 import Courses from "../../projectsComponents/bootcamp/Courses.tsx";
 
 import { staticPath } from "../../utils/staticPath";
+import { getSEO } from "../../data/seoData";
+
+const seo = getSEO("bootcamp");
 ---
 
 <ProjectLayout
-	title="Bootcamp"
+	title={seo.title}
+	description={seo.description}
+	ogImage="/og/bootcamp.png"
+	ogType={seo.ogType}
 	logoSrc={staticPath("/projects/img/bootcamp/logo.svg")}
 	logoHeight="h-20!"
 	footerLogoSrc={staticPath("/projects/img/bootcamp/logo-black.svg")}

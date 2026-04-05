@@ -7,6 +7,7 @@ import About from "../../projectsComponents/proteia/About.tsx";
 import HowItWorks from "../../projectsComponents/proteia/HowItWorks.tsx";
 import Staff from "../../projectsComponents/Staff.tsx";
 import { staticPath } from "../../utils/staticPath";
+import { getSEO } from "../../data/seoData";
 
 import type { StaffType } from "./types.d.ts";
 
@@ -68,10 +69,15 @@ const staff = [
 		cv_src: "#",
 	},
 ] as StaffType[];
+
+const seo = getSEO("proteia");
 ---
 
 <ProjectLayout
-	title="Proteia"
+	title={seo.title}
+	description={seo.description}
+	ogImage="/og/proteia.png"
+	ogType={seo.ogType}
 	logoSrc={staticPath("/projects/img/proteia/logo.svg")}
 	logoHeight="h-12!"
 	footerLogoSrc={staticPath("/projects/img/proteia/logo-black.svg")}
