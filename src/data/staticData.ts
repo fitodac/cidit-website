@@ -1,6 +1,5 @@
 const staticData = {
-	phone: "0981 966 144",
-	email: "info@cidit.com",
+	email: "info@ciditpy.org",
 	facebook: "https://www.facebook.com/CIDITpy",
 	x: "https://x.com/ciditpy",
 	instagram: "https://www.instagram.com/ciditpy/",
