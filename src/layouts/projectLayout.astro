@@ -2,9 +2,13 @@
 import { staticPath } from "../utils/staticPath";
 import Header from "../projectsComponents/Header";
 import Footer from "../projectsComponents/Footer";
+import SEO from "../components/SEO.astro";
 
 interface Props {
 	title?: string;
+	description?: string;
+	ogImage?: string;
+	ogType?: string;
 	logoSrc: string;
 	logoHeight?: string;
 	footerLogoSrc: string;
@@ -12,6 +16,9 @@ interface Props {
 
 const {
 	title = "CIDIT",
+	description = "",
+	ogImage,
+	ogType,
 	logoSrc = "",
 	footerLogoSrc = "",
 	logoHeight = "",
@@ -22,12 +29,12 @@ const {
 <html lang="es" color-scheme="light">
 	<head>
 		<meta charset="UTF-8" />
-		<title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
-
-		<!-- Meta Tags -->
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="mix_design" />
+		<SEO
+			title={title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}
+			description={description}
+			ogImage={ogImage}
+			ogType={ogType}
+		/>
 
 		<!-- Viewport Meta-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,18 +53,6 @@ const {
 		<link rel="apple-touch-icon" href={staticPath("/favicon.svg")} />
 		<link rel="manifest" href={staticPath("/site.webmanifest")} />
 		<!-- Template Favicon & Icons End -->
-
-		<!-- Facebook Metadata Start -->
-		<meta property="og:image:height" content="1200" />
-		<meta property="og:image:width" content="1200" />
-		<meta
-			property="og:title"
-			content={title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}
-		/>
-		<meta property="og:description" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:image" content="" />
-		<!-- Facebook Metadata End -->
 
 		<!-- Template Styles Start -->
 		<link
