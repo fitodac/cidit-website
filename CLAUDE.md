@@ -62,7 +62,5 @@ npm run preview   # Preview production build
 ## Known TODOs
 
 - Replace placeholder OG images in `public/assets/img/og/` with designer-created branded versions
-- Add `@astrojs/sitemap` for sitemap.xml generation
-- Add `robots.txt`
 - Consider JSON-LD structured data (Organization, Course, ResearchProject schemas)
 - The `types.d.ts` in `src/pages/proyectos/` triggers a build warning (Astro treats it as a route) — harmless but could be moved to `src/types/`
