@@ -1,5 +1,8 @@
+notes.txt
+
 # build output
 dist/
+
 # generated types
 .astro/
 
