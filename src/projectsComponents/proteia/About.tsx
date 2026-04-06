@@ -6,7 +6,7 @@ export default function About() {
 					<div className="container-fluid px-0">
 						<div className="row gx-0">
 							<div className="col-12 col-xl-5 mxd-grid-item no-margin">
-								<div className="mxd-block__name">
+								<div className="mxd-block__name text-5xl! xl:text-[10rem]!">
 									<h2 className="reveal-type anim-uni-in-up">¿Qué hacemos?</h2>
 								</div>
 							</div>

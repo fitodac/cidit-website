@@ -22,10 +22,10 @@ export default function HowItWorks() {
 										</div>
 
 										<div className="mxd-projects-stack__title no-margin flex flex-col gap-10 xl:w-1/3">
-											<h2 className="text-8xl! leading-none! permanent-light">
+											<h2 className="leading-none! permanent-light text-5xl! md:text-7xl! lg:text-8xl!">
 												Predicción del Interactoma
 											</h2>
-											<p className="text-white text-4xl! leading-normal! text-balanced">
+											<p className="text-white leading-normal! text-balanced text-3xl! sm:text-4xl!">
 												A partir de información de organismos modelo, inferimos
 												las interacciones proteína-proteína en nuevos
 												organismos, salud, energía y agricultura, facilitando la
@@ -48,10 +48,10 @@ export default function HowItWorks() {
 										</div>
 
 										<div className="mxd-projects-stack__title no-margin flex flex-col gap-10 xl:w-1/3">
-											<h2 className="text-8xl! leading-none! permanent-light">
+											<h2 className="leading-none! permanent-light text-5xl! md:text-7xl! lg:text-8xl!">
 												Identificación de complejos
 											</h2>
-											<p className="text-white text-4xl! leading-normal! text-balanced">
+											<p className="text-white leading-normal! text-balanced text-3xl! sm:text-4xl!">
 												Utilizamos algoritmos avanzados para agrupar las
 												proteínas en complejos, revelando sus funciones
 												potenciales.
@@ -73,10 +73,10 @@ export default function HowItWorks() {
 										</div>
 
 										<div className="mxd-projects-stack__title no-margin flex flex-col gap-10 xl:w-1/3">
-											<h2 className="text-8xl! leading-none! permanent-light">
+											<h2 className="leading-none! permanent-light text-5xl! md:text-7xl! lg:text-8xl!">
 												Análisis funcional
 											</h2>
-											<p className="text-white text-4xl! leading-normal! text-balanced">
+											<p className="text-white leading-normal! text-balanced text-3xl! sm:text-4xl!">
 												Validamos los complejos detectados con S2F,
 												proporcionando un contexto biológico que puede ser
 												crucial para futuras investigaciones.

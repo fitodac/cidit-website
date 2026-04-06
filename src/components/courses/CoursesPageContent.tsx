@@ -196,7 +196,7 @@ const Course = ({
 	return (
 		<div
 			className={cn(
-				"inner-service-3-item inner-service-3-panel pt-120 pb-130",
+				"inner-service-3-item inner-service-3-panel pt-30 lg:pt-120 pb-40 lg:pb-130",
 				bgColor === "gray" ? "grey-bg-2" : "bg-black"
 			)}
 		>
@@ -209,9 +209,9 @@ const Course = ({
 								<div className="">
 									<h2>{parse(title)}</h2>
 									<p className="text-gray-400! pt-10">{monthName} 2026</p>
-
+									<div className="h-6"></div>
 									{professors && (
-										<div className="flex gap-10">
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 											{professors.map((e) => (
 												<div
 													className="postbox-author-box flex gap-2 items-center mt-8!"
@@ -242,7 +242,7 @@ const Course = ({
 					</div>
 
 					<div className="">
-						<div className="service-3-process-content ml-90 mb-30">
+						<div className="service-3-process-content lg:ml-90 mb-30 px-4 lg:px-0">
 							<p className="font-light! mb-30">
 								El objetivo del curso es formarte en el análisis, administración
 								y ejecución de contratos públicos bajo el modelo FIDIC,
@@ -275,23 +275,23 @@ const Course = ({
 				</div>
 			</div>
 
-			<div className="container container-1510 pt-8!">
+			<div className="container container-1510 pt-8! px-4 lg:px-0">
 				<div className="row">
-					<div className="col-lg-8 mb-30">
+					<div className="col-lg-8 mb-6 lg:mb-30">
 						<div className="service-3-process-thumb">
 							<img
 								src={staticPath(image)}
 								alt="Main course image"
-								className="w-full h-80! object-cover"
+								className="w-full h-60 lg:h-80! object-cover"
 							/>
 						</div>
 					</div>
-					<div className="col-lg-4 mb-30">
+					<div className="col-lg-4 mb-6 lg:mb-30">
 						<div className="service-3-process-thumb">
 							<img
 								src={staticPath(imageSm)}
 								alt="Secondary course image"
-								className="w-full h-80! object-cover"
+								className="w-full h-60 lg:h-80! object-cover"
 							/>
 						</div>
 					</div>

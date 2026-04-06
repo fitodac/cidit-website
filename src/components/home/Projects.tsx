@@ -2,12 +2,12 @@ import { staticPath } from "../../utils/staticPath";
 
 export default function Projects_old() {
 	return (
-		<div className="sa-work-ptb pt-150 mb-200">
+		<div className="sa-work-ptb pt-10 lg:pt-150 mb-10 lg:mb-200">
 			<div className="container container-1510">
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="sa-work-title-box text-center mb-70">
-							<h4 className="tp-section-title tp-split-title text-gray-300! lg:text-6xl! xl:text-8xl!">
+							<h4 className="tp-section-title tp-split-title text-gray-300! text-5xl lg:text-6xl! xl:text-8xl!">
 								Investigación, Desarrollo e innovación
 							</h4>
 						</div>

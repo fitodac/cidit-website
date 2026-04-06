@@ -4,7 +4,6 @@ export default function NextSteps() {
 	return (
 		<div className="mxd-section padding-pinned-img-pre-mtext">
 			<div className="mxd-container">
-				{/* Block - Services Pinned Image Start */}
 				<div className="mxd-block">
 					<div className="mxd-pinned">
 						<div className="mxd-pinned__visual page-padding">
@@ -14,53 +13,57 @@ export default function NextSteps() {
 									role="list"
 								>
 									<div
-										className="mxd-pinned__img-item bg-[#44e4a7]"
+										className="mxd-pinned__img-item overflow-hidden"
 										role="listitem"
 									>
 										<img
-											src={staticPath("projects/img/bootcamp/ns-1.avif")}
+											src={staticPath("projects/img/bootcamp/gJ5hV3nM.avif")}
 											alt="Image"
-											className="w-3/5! h-auto object-cover"
+											className="size-full! object-cover"
 										/>
 									</div>
+
 									<div
-										className="mxd-pinned__img-item bg-[#ffed85]"
+										className="mxd-pinned__img-item overflow-hidden"
 										role="listitem"
 									>
 										<img
-											src={staticPath("projects/img/bootcamp/ns-2.avif")}
+											src={staticPath("projects/img/bootcamp/tB7kP9fX.avif")}
 											alt="Image"
-											className="w-3/5! h-auto object-cover"
+											className="size-full! object-cover"
 										/>
 									</div>
+
 									<div
-										className="mxd-pinned__img-item bg-[#F388F6]"
+										className="mxd-pinned__img-item overflow-hidden"
 										role="listitem"
 									>
 										<img
-											src={staticPath("projects/img/bootcamp/ns-3.avif")}
+											src={staticPath("projects/img/bootcamp/R2dG4zS1.avif")}
 											alt="Image"
-											className="w-3/5! h-auto object-cover"
+											className="size-full! object-cover"
 										/>
 									</div>
+
 									<div
-										className="mxd-pinned__img-item bg-[#FDA26B]"
+										className="mxd-pinned__img-item overflow-hidden"
 										role="listitem"
 									>
 										<img
-											src={staticPath("projects/img/bootcamp/ns-4.avif")}
+											src={staticPath("projects/img/bootcamp/wQ6vN8mK.avif")}
 											alt="Image"
-											className="w-3/5! h-auto object-cover"
+											className="size-full! object-cover"
 										/>
 									</div>
+
 									<div
-										className="mxd-pinned__img-item bg-[#82C9FF]"
+										className="mxd-pinned__img-item overflow-hidden"
 										role="listitem"
 									>
 										<img
-											src={staticPath("projects/img/bootcamp/ns-5.avif")}
+											src={staticPath("projects/img/bootcamp/Y3jL5pT9.avif")}
 											alt="Image"
-											className="w-3/5! h-auto object-cover"
+											className="size-full! object-cover"
 										/>
 									</div>
 								</div>
@@ -72,7 +75,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"projects/img/illustrations/800x800_pinned-image-01.webp"
+												"projects/img/bootcamp/gJ5hV3nM.avif"
 											),
 											title: "Itapúa",
 											starting: "Junio 2023, con el taller de inducción",
@@ -89,7 +92,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"projects/img/illustrations/800x800_pinned-image-02.webp"
+												"projects/img/bootcamp/tB7kP9fX.avif"
 											),
 											title: "Alto Paraná",
 											starting: "Septiembre 2023, con el taller de inducción",
@@ -106,7 +109,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"projects/img/illustrations/800x800_pinned-image-03.webp"
+												"projects/img/bootcamp/R2dG4zS1.avif"
 											),
 											title: "Caaguazú",
 											starting: "Enero 2024, con el taller de inducción",
@@ -123,7 +126,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"projects/img/illustrations/800x800_pinned-image-04.webp"
+												"projects/img/bootcamp/wQ6vN8mK.avif"
 											),
 											title: "Central",
 											starting: "Abril 2024, con el taller de inducción",
@@ -140,7 +143,7 @@ export default function NextSteps() {
 									<Pinned
 										{...{
 											imageSrc: staticPath(
-												"projects/img/illustrations/800x800_pinned-image-04.webp"
+												"projects/img/bootcamp/Y3jL5pT9.avif"
 											),
 											title: "Asunción",
 											starting: "Septiembre 2024, con el taller de inducción",
@@ -158,7 +161,6 @@ export default function NextSteps() {
 						</div>
 					</div>
 				</div>
-				{/* Block - Services Pinned Image End */}
 			</div>
 		</div>
 	);
@@ -193,9 +195,10 @@ const Pinned = ({
 }: PinnedType) => {
 	return (
 		<div className="mxd-pinned__text-item" role="listitem">
-			<div className="mxd-pinned__img-mobile anim-uni-in-up">
+			<div className="w-141 mb-20! overflow-hidden rounded-[3rem] anim-uni-in-up lg:hidden!">
 				<img src={imageSrc} alt={`Imagen ilustrativa del curso en ${title}`} />
 			</div>
+
 			<h2 className="mxd-pinned__title h2-small anim-uni-in-up">{title}</h2>
 
 			<div className="space-y-5! [&>p]:flex [&>p]:gap-7">

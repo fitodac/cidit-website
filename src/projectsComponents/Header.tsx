@@ -135,7 +135,7 @@ export default function Header({
 				</div>
 			</nav>
 
-			<header id="header" className="mxd-header">
+			<header id="header" className="mxd-header items-center! h-33!">
 				<div className="mxd-header__logo loading__fade">
 					<h1 className="mxd-logo">
 						{logoSrc.length && (
@@ -146,16 +146,16 @@ export default function Header({
 					</h1>
 				</div>
 
-				<div className="mxd-header__controls loading__fade">
+				<div className="mxd-header__controls loading__fade gap-10">
 					<a
-						className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up w-70!"
+						className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up w-auto! px-6! h-16! rounded-full! gap-2! inline-flex! md:px-6!"
 						href={staticPath("/")}
 						aria-label="Cidit"
 					>
 						<img
 							src={staticPath("/assets/img/logo-black.svg")}
 							alt="Cidit"
-							className="w-36! h-8!"
+							className="w-auto! h-6! md:h-7!"
 						/>
 
 						<span className="sr-only">Cidit</span>

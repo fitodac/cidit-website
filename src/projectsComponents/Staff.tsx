@@ -87,7 +87,7 @@ const TeamCard = ({
 					<img
 						src={staticPath(picture_src)}
 						alt={name}
-						className="object-[50%_-3rem]"
+						className="object-cover xl:object-[50%_-3rem]"
 					/>
 				</div>
 				<div className="mxd-team-cards__socials">

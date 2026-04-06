@@ -23,7 +23,7 @@ export default function Hero() {
 								data-delay=".3"
 							>
 								<h2 className="ma-hero-title">
-									<span className="text-[7rem] leading-none! block">
+									<span className="text-[3rem] sm:text-[4rem] lg:text-[7rem] leading-none! block">
 										Innovación tecnológica que transforma Paraguay
 									</span>
 								</h2>
@@ -104,8 +104,8 @@ export default function Hero() {
 								</a>
 							</div>
 						</div>
-						<div className="col-md-6">
-							<div className="sa-hero-info d-flex justify-content-lg-end">
+						<div className="col-md-6 mt-4 md:mt-0">
+							<div className="sa-hero-info d-flex md:justify-content-md-end">
 								<div className="sa-hero-info-item">
 									<a className="tp-line-black text-xl!" href="tel:0123456789">
 										+ (562) {data("phone")}

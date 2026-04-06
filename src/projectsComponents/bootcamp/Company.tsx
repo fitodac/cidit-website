@@ -66,7 +66,7 @@ export default function Company() {
 												<a
 													href="https://bolsa.ciditpy.org/"
 													target="_blank"
-													className="font-bold!"
+													className="font-bold! text-white!"
 												>
 													bolsa.ciditpy.org
 												</a>{" "}
@@ -74,12 +74,12 @@ export default function Company() {
 											</p>
 										</div>
 
-										<div className="parallax-img-small h-full right-0 bottom-0 absolute">
+										<div className="parallax-img-small- size-full right-0 bottom-0 absolute">
 											<img
-												src={staticPath("projects/img/bootcamp/8b2d6a4f.avif")}
+												src={staticPath("projects/img/bootcamp/V8nB2rD4.avif")}
 												alt="Illustration"
 												className={cn(
-													"size-full! object-cover mask-l-from-70%",
+													"size-full! object-cover object-top mask-l-from-10%",
 													"[&>img]:w-full!"
 												)}
 											/>
