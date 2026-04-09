@@ -6,13 +6,13 @@ export default function Hero() {
 			<div className="mxd-hero-09 pt-20! pb-100!">
 				<div className="mxd-hero-09__wrap loading-wrap xl:h-[90vh]!">
 					<div className="mxd-hero-09__headline">
-						<div className="hero-09-headline__title loading__item w-200">
-							<h2 className="text-[10rem]! leading-none!">
+						<div className="hero-09-headline__title loading__item lg:w-200">
+							<h2 className="text-7xl! leading-none! xl:text-[10rem]!">
 								Bootcamp Desarrollo Jóven
 							</h2>
 						</div>
 
-						<div className="hero-09-headline__caption loading__item w-200 mt-20!">
+						<div className="hero-09-headline__caption loading__item mt-20! lg:w-200">
 							<p>
 								Proyecto de formación tecnológica con alcance nacional, enfocado
 								en el desarrollo de talento joven.
@@ -28,16 +28,16 @@ export default function Hero() {
 						</div>
 					</div>
 
-					<div className="mxd-hero-09__objects top-60!">
+					<div className="mxd-hero-09__objects lg:top-60!">
 						<div className="hero-09-objects__image loading__item">
 							<img
 								src={staticPath("projects/img/bootcamp/hero.avif")}
 								alt="Hero Image"
-								className="mxd-move w-auto! h-200! max-w-screen -translate-x-1/4"
+								className="mxd-move object-cover! max-w-screen! sm:w-auto! sm:h-150! md:-translate-x-1/2! lg:h-200! xl:-translate-x-1/4!"
 							/>
 						</div>
 
-						<div className="hero-09-objects__item item-01 loading__item top-100!">
+						<div className="hero-09-objects__item item-01 loading__item xl:top-100!">
 							<div className="mxd-counter horizontal">
 								<p
 									id="stats-counter-1"
@@ -51,7 +51,7 @@ export default function Hero() {
 							</div>
 						</div>
 
-						<div className="hero-09-objects__item item-02 loading__item top-130!">
+						<div className="hero-09-objects__item item-02 loading__item xl:top-130!">
 							<div className="mxd-counter horizontal">
 								<p
 									id="stats-counter-2"
@@ -65,7 +65,7 @@ export default function Hero() {
 							</div>
 						</div>
 
-						<div className="hero-09-objects__item item-03 loading__item top-160! -right-20!">
+						<div className="hero-09-objects__item item-03 loading__item xl:-right-20! xl:top-160!">
 							<div className="mxd-counter horizontal">
 								<p
 									id="stats-counter-2"

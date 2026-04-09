@@ -57,9 +57,9 @@ const brands = [
 
 export default function Brands() {
 	return (
-		<div className="ds-brand-area">
+		<div className="ds-brand-area overflow-hidden">
 			<div className="ds-brand-wrapper">
-				<div className="dgm-brand-active-2 fix swiper">
+				<div className="dgm-brand-active-2 swiper">
 					<div className="swiper-wrapper slide-transtion">
 						{brands.map((brand) => (
 							<div

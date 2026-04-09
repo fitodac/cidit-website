@@ -14,6 +14,7 @@ export default function Cards() {
 											<h3 className="text-5xl! leading-none!">
 												Finalidad del proyecto
 											</h3>
+
 											<p className="t-140 t-bright">
 												Promover el desarrollo de capacidades digitales y
 												laborales en jóvenes, impulsando la empleabilidad y la
@@ -23,6 +24,13 @@ export default function Cards() {
 											</p>
 										</div>
 
+										<img
+											src={staticPath("projects/img/bootcamp/L5tY1gSj.avif")}
+											alt="Imagen de Finalidad del proyecto"
+											className="size-full inset-0 absolute object-cover mask-l-to-95%"
+										/>
+
+										{/* 
 										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
 											<video
 												src={staticPath(
@@ -35,8 +43,9 @@ export default function Cards() {
 												muted
 												autoPlay
 												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
-											/>
+											/> 
 										</div>
+											*/}
 									</div>
 								</div>
 
@@ -54,6 +63,13 @@ export default function Cards() {
 											</p>
 										</div>
 
+										<img
+											src={staticPath("projects/img/bootcamp/bV4nR8zQ.avif")}
+											alt="Imagen de ¿Cuál es el enfoque con los beneficiarios?"
+											className="size-full inset-0 absolute object-cover mask-l-to-90%"
+										/>
+
+										{/* 
 										<div className="parallax-img-small w-2/3 right-0 inset-y-0 absolute justify-end flex outline!">
 											<video
 												src={staticPath("projects/img/bootcamp/benefits.mp4")}
@@ -65,7 +81,8 @@ export default function Cards() {
 												autoPlay
 												className="h-full! object-cover object-left mask-l-from-80% mask-l-to-100%"
 											/>
-										</div>
+										</div> 
+										*/}
 									</div>
 								</div>
 							</div>

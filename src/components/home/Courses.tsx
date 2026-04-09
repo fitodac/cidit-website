@@ -19,14 +19,14 @@ export default function Courses() {
 								Calendario de cursos 2026
 							</span>
 
-							<h3 className="tp-section-title fs-72 tp-text-revel text-white!">
+							<h3 className="tp-section-title text-4xl lg:text-[72px] tp-text-revel text-white!">
 								Lo que puedes aprender
 							</h3>
 						</div>
 					</div>
 				</div>
 
-				<section className="grid grid-cols-3 gap-10">
+				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
 					<Card
 						{...{
 							id: 1,

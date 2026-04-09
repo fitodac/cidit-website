@@ -23,8 +23,8 @@ export default function Reviews() {
 			<div className="container">
 				<div className="row justify-content-center">
 					<div className="col-xl-8">
-						<div className="ma-testimonial-title-box text-center mb-70">
-							<h3 className="tp-section-title text-5xl! tl-unbounded">
+						<div className="ma-testimonial-title-box text-center mb-10 lg:mb-70">
+							<h3 className="tp-section-title text-3xl lg:text-5xl! tl-unbounded px-4">
 								Qué opinan nuestros estudiantes...
 							</h3>
 						</div>
@@ -38,11 +38,11 @@ export default function Reviews() {
 									<div className="ma-testimonial-item" key={idx}>
 										<div className="row align-items-center">
 											<div className="col-lg-4">
-												<div className="ma-testimonial-thumb">
+												<div className="ma-testimonial-thumb flex justify-center lg:block">
 													<img
 														src={staticPath(e.picture)}
 														alt={e.name}
-														className="object-cover aspect-square rounded-full"
+														className="object-cover aspect-square rounded-full w-3/5 lg:w-full"
 													/>
 													<span className="ma-testimonial-quote">
 														<svg

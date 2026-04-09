@@ -2,7 +2,7 @@ import { staticPath } from "../../utils/staticPath";
 
 export default function About() {
 	return (
-		<div className="tp-about-me-ab-ptb p-relative pt-220 pb-100">
+		<div className="tp-about-me-ab-ptb p-relative pt-30 lg:pt-220 pb-40 lg:pb-100 overflow-hidden">
 			{/* <div className="tp-about-me-ab-shape" data-speed=".9">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -31,9 +31,9 @@ export default function About() {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
-						<div className="tp-about-me-ab-heading mb-50">
-							<h4 className="tp-about-me-ab-title text-black tp-text-revel">
-								Innovación tecnológica <br />
+						<div className="tp-about-me-ab-heading mb-20 lg:mb-50">
+							<h4 className="tp-about-me-ab-title text-black text-4xl lg:text-7xl! tp-text-revel px-4 lg:px-0">
+								Innovación tecnológica <br className="hidden lg:block" />
 								que transforma Paraguay
 							</h4>
 						</div>
@@ -49,8 +49,8 @@ export default function About() {
 						</div>
 					</div>
 					<div className="col-lg-8 relative z-10">
-						<div className="tp-about-me-ab-wrap">
-							<p className="tp-text-perspective text-xl! text-black">
+						<div className="tp-about-me-ab-wrap px-4 lg:px-0">
+							<p className="tp-text-perspective text-lg lg:text-xl! text-black">
 								CIDIT impulsa la innovación tecnológica en Paraguay desde 2014.
 								<br />
 								Unimos academia, empresas y Estado para convertir investigación

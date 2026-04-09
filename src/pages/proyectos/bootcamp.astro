@@ -28,19 +28,21 @@ const seo = getSEO("bootcamp");
 	ogImage="/og/bootcamp.png"
 	ogType={seo.ogType}
 	logoSrc={staticPath("/projects/img/bootcamp/logo.svg")}
-	logoHeight="h-20!"
+	logoHeight="h-12! w-auto! lg:h-20!"
 	footerLogoSrc={staticPath("/projects/img/bootcamp/logo-black.svg")}
 >
-	<Hero />
-	<Intro />
-	<HowItWorks />
-	<HeadlineSection />
-	<NextSteps />
-	<DJCode />
-	<Courses />
-	<Stats />
-	<Company />
-	<Features />
-	<StudyPlan />
-	<Python />
+	<div class="overflow-x-hidden">
+		<Hero />
+		<Intro />
+		<HowItWorks />
+		<HeadlineSection />
+		<NextSteps />
+		<DJCode />
+		<Courses />
+		<Stats />
+		<Company />
+		<Features />
+		<StudyPlan />
+		<Python />
+	</div>
 </ProjectLayout>

@@ -17,7 +17,7 @@ export default function Hero() {
 										/>
 									</div>
 									<div className="hero-08-slide-out-scroll loading__item">
-										<h1 className="text-[#25c11a]!">
+										<h1 className="text-[#25c11a]! text-5xl! md:text-8xl!">
 											Predicción Inteligente de Riesgos Farmacológicos
 										</h1>
 									</div>

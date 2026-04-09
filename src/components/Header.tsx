@@ -127,8 +127,8 @@ export default function Header({
 						</div>
 					</div>
 
-					<div className="col-xl-3 col-lg-6 col-6 lg:hidden">
-						<div className="tp-header-right d-flex align-items-center justify-content-end">
+					<div className="lg:hidden flex items-center justify-end">
+						<div className="tp-header-right flex items-center justify-end">
 							<div className="tp-header-14-bar-wrap">
 								<button className="tp-header-8-bar tp-offcanvas-open-btn inline-flex">
 									<span>Menu</span>

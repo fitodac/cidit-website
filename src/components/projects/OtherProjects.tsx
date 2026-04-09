@@ -3,14 +3,14 @@ import { staticPath } from "../../utils/staticPath";
 export default function OtherProjects() {
 	return (
 		<>
-			<div className="service-details-style mt-21!">
+			<div className="service-details-style mt-10 lg:mt-21!">
 				<div className="container">
 					<div className="pb-28!">
 						<div className="row">
-							<div className="col-lg-6 order-lg-2">
-								<div className="service-details-content mr-50 mb-30">
-									<h2 className="service-details-title mb-20">
-										Cursos y Servicios <br />
+							<div className="col-lg-6 order-lg-2 px-4 lg:px-0">
+								<div className="service-details-content lg:mr-50 mb-30">
+									<h2 className="service-details-title text-4xl lg:text-5xl! mb-20">
+										Cursos y Servicios <br className="hidden lg:block" />
 										en el Sector Vial
 									</h2>
 									<p className="mb-25">
@@ -23,10 +23,10 @@ export default function OtherProjects() {
 									</p>
 								</div>
 							</div>
-							<div className="col-lg-6 order-lg-1">
+							<div className="col-lg-6 order-lg-1 px-4 lg:px-0">
 								<div className="service-details-thumb tp-clip-anim mb-30 text-lg-end">
 									<img
-										className="w-100 tp-anim-img"
+										className="w-100 h-60 lg:h-auto object-cover tp-anim-img"
 										data-animate="true"
 										data-speed=".8"
 										src={staticPath("assets/img/projects/sector-vial.avif")}
@@ -39,10 +39,10 @@ export default function OtherProjects() {
 
 					<div className="pb-39!">
 						<div className="row">
-							<div className="col-lg-6">
-								<div className="service-details-content mr-50 mb-30">
-									<h2 className="service-details-title mb-20">
-										DJ Code <br />
+							<div className="col-lg-6 px-4 lg:px-0">
+								<div className="service-details-content lg:mr-50 mb-30">
+									<h2 className="service-details-title text-4xl lg:text-5xl! mb-20">
+										DJ Code <br className="hidden lg:block" />
 										Formación en Tecnología
 									</h2>
 									<p className="mb-25">
@@ -86,7 +86,7 @@ export default function OtherProjects() {
 									</div>
 								</div>
 							</div>
-							<div className="col-lg-6">
+							<div className="col-lg-6 px-4 lg:px-0">
 								<div
 									className="service-details-thumb tp-clip-anim mb-30 text-lg-end not-hide-cursor"
 									data-cursor="Ver<br>Proyecto"
@@ -96,7 +96,7 @@ export default function OtherProjects() {
 										className="d-block cursor-hide"
 									>
 										<img
-											className="w-100 tp-anim-img"
+											className="w-100 h-60 lg:h-auto object-cover tp-anim-img"
 											data-animate="true"
 											data-speed=".8"
 											src={staticPath("assets/img/projects/djcode-2.avif")}

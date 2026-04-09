@@ -8,7 +8,7 @@ export default function DJCode() {
 					<div className="mxd-promo">
 						<div className="mxd-promo__inner anim-zoom-out-container bg-purple-950!">
 							<img
-								src={staticPath("projects/img/bootcamp/3f7a1c9e.avif")}
+								src={staticPath("projects/img/bootcamp/sF1gH7xZ.avif")}
 								alt="Ilustración DJ Code"
 								className="parallax-img-small w-350! h-full! absolute right-0 object-cover mask-l-from-60% -mask-l-to-50% "
 							/>
