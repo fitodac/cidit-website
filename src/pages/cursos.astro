@@ -1,8 +1,12 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import { getSEO } from "../data/seoData";
+
+const seo = getSEO("/cursos");
+
 import CoursesPageContent from "../components/courses/CoursesPageContent.tsx";
 ---
 
-<MainLayout title="Cursos" baseMenuLight={false} baseLogoColor="black">
+<MainLayout title={seo.title} description={seo.description} ogImage={seo.ogImage} baseMenuLight={false} baseLogoColor="black">
 	<CoursesPageContent />
 </MainLayout>

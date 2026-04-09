@@ -39,18 +39,22 @@ const navbar = [
 	},
 	{
 		label: "Cursos y Servicios en el Sector Vial",
+		shortLabel: "Cursos y Servicios",
 		href: "/cursos",
 	},
 	{
 		label: "DJ Code – Formación en Tecnología",
+		shortLabel: "DJ Code",
 		href: "/proyectos/bootcamp",
 	},
 	{
 		label: "Investigación, Desarrollo e innovación",
+		shortLabel: "Investigación",
 		href: "/proyectos",
 	},
 	{
 		label: "Acerca de nosotros",
+		shortLabel: "Nosotros",
 		href: "/nosotros",
 	},
 	{
@@ -98,15 +102,25 @@ export default function Header({
 							>
 								<nav className="tp-mobile-menu-active">
 									<ul>
-										{navbar.map((item) => (
-											<li key={item.href}>
-												{pathname === item.href ? (
-													<span>{item.label}</span>
-												) : (
-													<a href={staticPath(item.href)}>{item.label}</a>
-												)}
-											</li>
-										))}
+										{navbar.map((item) => {
+											const content = item.shortLabel ? (
+												<>
+													<span className="2xl:hidden">{item.shortLabel}</span>
+													<span className="hidden 2xl:inline">{item.label}</span>
+												</>
+											) : (
+												item.label
+											);
+											return (
+												<li key={item.href}>
+													{pathname === item.href ? (
+														<span>{content}</span>
+													) : (
+														<a href={staticPath(item.href)}>{content}</a>
+													)}
+												</li>
+											);
+										})}
 									</ul>
 								</nav>
 							</div>

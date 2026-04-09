@@ -5,15 +5,22 @@ import "../styles/global.css";
 import Header from "../components/Header.tsx";
 import OffCanvas from "../components/OffCanvas.tsx";
 import Footer from "../components/Footer.tsx";
+import SEO from "../components/SEO.astro";
 
 interface Props {
 	title?: string;
+	description?: string;
+	ogImage?: string;
+	ogType?: string;
 	baseLogoColor?: "white" | "black";
 	baseMenuLight?: boolean;
 }
 
 const {
 	title = "CIDIT",
+	description = "",
+	ogImage,
+	ogType,
 	baseMenuLight = true,
 	baseLogoColor = "white",
 } = Astro.props;
@@ -24,8 +31,12 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<title>{title === "CIDIT" ? "CIDIT" : `${title} - CIDIT`}</title>
-		<meta name="description" content="" />
+		<SEO
+			title={title}
+			description={description}
+			ogImage={ogImage}
+			ogType={ogType}
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Favicon and Touch Icons -->

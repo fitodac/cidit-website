@@ -1,11 +1,14 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import { getSEO } from "../data/seoData";
+
+const seo = getSEO("/publicaciones");
 
 import PageHeader from "../components/publications/PageHeader.tsx";
 import List from "../components/publications/List.tsx";
 ---
 
-<MainLayout title="Publicaciones">
+<MainLayout title={seo.title} description={seo.description} ogImage={seo.ogImage}>
 	<PageHeader />
 	<List />
 </MainLayout>

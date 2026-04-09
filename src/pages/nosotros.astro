@@ -1,5 +1,8 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import { getSEO } from "../data/seoData";
+
+const seo = getSEO("/nosotros");
 
 import Hero from "../components/about/hero.tsx";
 import About from "../components/about/About.tsx";
@@ -9,7 +12,7 @@ import Partners from "../components/about/Partners.tsx";
 import Reviews from "../components/Reviews.tsx";
 ---
 
-<MainLayout title="Nosotros">
+<MainLayout title={seo.title} description={seo.description} ogImage={seo.ogImage}>
 	<Hero />
 	<About />
 	<Values />

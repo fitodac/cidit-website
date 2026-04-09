@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../../layouts/mainLayout.astro";
 import CourseContent from "../../components/course/CourseContent.tsx";
+import { getSEO } from "../../data/seoData";
 
 export function getStaticPaths() {
 	return [
@@ -58,8 +59,15 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { title } = Astro.props;
+const seo = getSEO(slug!);
 ---
 
-<MainLayout title={title} baseMenuLight={false} baseLogoColor="black">
+<MainLayout
+	title={seo.title}
+	description={seo.description}
+	ogImage={`/og/${slug}.png`}
+	baseMenuLight={false}
+	baseLogoColor="black"
+>
 	<CourseContent title={title} />
 </MainLayout>

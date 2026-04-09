@@ -1,5 +1,8 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import { getSEO } from "../data/seoData";
+
+const seo = getSEO("/proyectos");
 
 import Hero from "../components/projects/Hero.tsx";
 import SocialInnovation from "../components/projects/SocialInnovation.tsx";
@@ -8,7 +11,7 @@ import ArtificialIntelligence from "../components/projects/ArtificialIntelligenc
 import OtherProjects from "../components/projects/OtherProjects.tsx";
 ---
 
-<MainLayout title="Proyectos">
+<MainLayout title={seo.title} description={seo.description} ogImage={seo.ogImage}>
 	<Hero />
 	<SocialInnovation />
 	<ArtificialIntelligence />

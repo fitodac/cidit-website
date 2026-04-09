@@ -163,7 +163,7 @@ export default function CourseContent({ title }: { title: string }) {
 											<div className="postbox-author-info text-start">
 												<span>Público general</span>
 												<p className="text-black text-3xl! font-bold!">
-													Gg. 2.600.000
+													Gs. 3.200.000
 												</p>
 											</div>
 											<div className="postbox-author-info text-start">
@@ -180,7 +180,7 @@ export default function CourseContent({ title }: { title: string }) {
 
 								<div className="flex gap-10 items-center justify-center [&_p]:text-black!">
 									<p>¿Necesitás más información?</p>
-									<p className="text-2xl! font-bold!">0981 966 144</p>
+									<p className="text-2xl! font-bold!">info@ciditpy.org</p>
 								</div>
 
 								<div className="h-10"></div>

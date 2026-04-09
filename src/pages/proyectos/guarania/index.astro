@@ -14,6 +14,7 @@ import StaffList from "../../../projectsComponents/guarania/StaffList.tsx";
 import Promo from "../../../projectsComponents/guarania/Promo.tsx";
 
 import { staticPath } from "../../../utils/staticPath";
+import { getSEO } from "../../../data/seoData";
 
 import type { StaffType } from "../types.d.ts";
 
@@ -28,10 +29,15 @@ const galleryData = categories.map((category) => ({
 		.filter((g) => g.categoryId === category.id)
 		.map((g) => ({ ...g })),
 }));
+
+const seo = getSEO("guarania");
 ---
 
 <ProjectLayout
-	title="Guarania"
+	title={seo.title}
+	description={seo.description}
+	ogImage="/og/guarania.png"
+	ogType={seo.ogType}
 	logoSrc={staticPath("projects/img/guarania/logo.svg")}
 	logoHeight="h-20!"
 	footerLogoSrc={staticPath("projects/img/guarania/logo-black.svg")}

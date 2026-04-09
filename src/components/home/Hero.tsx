@@ -107,11 +107,6 @@ export default function Hero() {
 						<div className="col-md-6 mt-4 md:mt-0">
 							<div className="sa-hero-info d-flex md:justify-content-md-end">
 								<div className="sa-hero-info-item">
-									<a className="tp-line-black text-xl!" href="tel:0123456789">
-										+ (562) {data("phone")}
-									</a>
-								</div>
-								<div className="sa-hero-info-item">
 									<span className="tp-line-black text-xl! text-black font-bold">
 										{data("email")}
 									</span>

@@ -9,6 +9,7 @@ import Staff from "../../projectsComponents/Staff.tsx";
 import Cards from "../../projectsComponents/cofar/Cards.tsx";
 
 import { staticPath } from "../../utils/staticPath";
+import { getSEO } from "../../data/seoData";
 
 import type { StaffType } from "./types.d.ts";
 
@@ -70,10 +71,15 @@ const staff = [
 		cv_src: "#",
 	},
 ] as StaffType[];
+
+const seo = getSEO("cofar");
 ---
 
 <ProjectLayout
-	title="Cofar"
+	title={seo.title}
+	description={seo.description}
+	ogImage="/og/cofar.png"
+	ogType={seo.ogType}
 	logoSrc={staticPath("/projects/img/cofar/logo.svg")}
 	logoHeight="h-14! w-auto! lg:h-20!"
 	footerLogoSrc={staticPath("/projects/img/cofar/logo-black.svg")}

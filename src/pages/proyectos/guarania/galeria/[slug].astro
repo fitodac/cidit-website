@@ -25,10 +25,15 @@ const videos = await db
 	.select()
 	.from(Video)
 	.where(eq(Video.galleryId, gallery.id));
+
+const galleryTitle = gallery.title.replace(/<\/?[^>]+(>|$)/g, "");
+const seoTitle = `${galleryTitle} — GuaranIA / CIDIT`;
+const seoDescription = `Galería del proyecto GuaranIA: ${galleryTitle}. Integrando el idioma guaraní en el ámbito digital.`;
 ---
 
 <ProjectLayout
-	title={gallery.title.replace(/<\/?[^>]+(>|$)/g, "")}
+	title={seoTitle}
+	description={seoDescription}
 	logoSrc={staticPath("projects/img/guarania/logo-dark.svg")}
 	logoHeight="h-20!"
 	footerLogoSrc={staticPath("projects/img/guarania/logo-black.svg")}
