@@ -163,7 +163,7 @@ export default function CourseContent({ title }: { title: string }) {
 											<div className="postbox-author-info text-start">
 												<span>Público general</span>
 												<p className="text-black text-3xl! font-bold!">
-													Gg. 2.600.000
+													Gs. 3.200.000
 												</p>
 											</div>
 											<div className="postbox-author-info text-start">
